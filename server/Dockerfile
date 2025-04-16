@@ -1,5 +1,7 @@
 FROM node:20-bookworm-slim
 
+# docker build -t theater_backend .
+
 WORKDIR /app
 COPY package.json ./
 RUN npm install
