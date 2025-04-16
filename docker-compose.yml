@@ -2,21 +2,17 @@ version: "3.9"
 
 services:
   server:
-    build:
-      context: ./server
-    container_name: theater-server
+    image: theater_backend:latest
     ports:
       - "3001:3001"
     restart: unless-stopped
 
   webapp:
-    build:
-      context: ./webapp
-    container_name: theater-webapp
+    image: theater_frontend:latest
     ports:
       - "3000:3000"
     environment:
-      - REACT_APP_SOCKET_URL=http://localhost:3001
+      - REACT_APP_SOCKET_URL=http://serbski-inkubator.de:3001
     restart: unless-stopped
     depends_on:
       - server

@@ -1,5 +1,5 @@
 import React from "react";
-import { cn } from "@/lib/utils";
+import { cn } from "../../lib/utils.ts";
 
 export const Card = ({ className, ...props }: React.HTMLAttributes<HTMLDivElement>) => {
   return (

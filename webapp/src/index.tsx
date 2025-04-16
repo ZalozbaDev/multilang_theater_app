@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
-import { Button } from "./components/ui/button";
-import { Card, CardContent } from "./components/ui/card";
-import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from "./components/ui/select";
-import { Input } from "./components/ui/input";
+import { Button } from "./components/ui/button.tsx";
+import { Card, CardContent } from "./components/ui/card.tsx";
+import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from "./components/ui/select.tsx";
+import { Input } from "./components/ui/input.tsx";
 import { io } from "socket.io-client";
 
 const LANGUAGES = ["de", "en", "fr", "es", "it", "ru"];
 const AUDIO_CUES = ["intro", "scene1", "scene2", "finale"];
-const socket = io(process.env.REACT_APP_SOCKET_URL || "http://localhost:3001");
+const socket = io(process.env.REACT_APP_SOCKET_URL || "http://serbski-inkubator.de:3001");
 
 const audioCache = {};
 
