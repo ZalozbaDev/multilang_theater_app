@@ -49,7 +49,8 @@ export default function TheaterTranslationApp() {
 
   const handleAdminLogin = () => {
     const password = prompt("Admin-Passwort eingeben:");
-    if (password === process.env.REACT_APP_ADMIN_PASSWORD) setIsAdmin(true);
+//     if (password === process.env.REACT_APP_ADMIN_PASSWORD) setIsAdmin(true);
+    if (password === "12345password") setIsAdmin(true);
   };
 
   const sendCue = cue => {
