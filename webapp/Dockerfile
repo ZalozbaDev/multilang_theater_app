@@ -6,6 +6,8 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm install
 COPY . .
+#RUN touch a
+#RUN ls -lR /app/src/
 RUN npm run build
 
 RUN npm install -g serve
