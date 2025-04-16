@@ -5,7 +5,7 @@ import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from ".
 import { Input } from "./components/ui/input.tsx";
 import { io } from "socket.io-client";
 
-const LANGUAGES = ["de", "en", "fr", "es", "it", "ru"];
+const LANGUAGES = ["de", "en", "fr", "es", "it"];
 const AUDIO_CUES = ["intro", "scene1", "scene2", "finale"];
 const socket = io(process.env.REACT_APP_SOCKET_URL || "http://serbski-inkubator.de:3001");
 
