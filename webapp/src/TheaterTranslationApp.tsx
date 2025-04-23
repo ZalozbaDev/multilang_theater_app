@@ -10,6 +10,7 @@ const AUDIO_CUES = ["intro", "scene1", "scene2", "finale"];
 const socket = io(globalThis.env?.ENVVAR_SOCKET_URL || "http://localhost:3001");
 
 const audioCache = {};
+const transcriptCache = {};
 
 export default function TheaterTranslationApp() {
   const [language, setLanguage] = useState("de");
@@ -17,11 +18,14 @@ export default function TheaterTranslationApp() {
   const [loaded, setLoaded] = useState(false);
   const [isAdmin, setIsAdmin] = useState(false);
   const [customCue, setCustomCue] = useState("");
+  const [transcript, setTranscript] = useState("");
+
 
   // Preload audio files for selected language
   useEffect(() => {
     setLoaded(false);
-    const promises = AUDIO_CUES.map(cue => {
+
+    const audioPromises = AUDIO_CUES.map(cue => {
       const audio = new Audio(`/audio/${language}/${cue}.mp3`);
       audioCache[`${language}-${cue}`] = audio;
       return new Promise(resolve => {
@@ -29,7 +33,20 @@ export default function TheaterTranslationApp() {
         audio.onerror = resolve;
       });
     });
-    Promise.all(promises).then(() => setLoaded(true));
+
+    const transcriptPromises = AUDIO_CUES.map(cue =>
+      fetch(`/transcripts/${language}/${cue}.txt`)
+        .then(res => res.ok ? res.text() : "")
+        .then(text => {
+          transcriptCache[`${language}-${cue}`] = text;
+        })
+        .catch(() => {
+          transcriptCache[`${language}-${cue}`] = "";
+        })
+    );
+  
+    Promise.all([...audioPromises, ...transcriptPromises])
+      .then(() => setLoaded(true));
   }, [language]);
 
   // Receive cue updates from server
@@ -43,6 +60,8 @@ export default function TheaterTranslationApp() {
   // Play audio when cue changes
   useEffect(() => {
     if (!currentCue || !loaded) return;
+    const text = transcriptCache[`${language}-${currentCue}`];
+    setTranscript(text || "");
     const audio = audioCache[`${language}-${currentCue}`];
     if (audio) audio.play();
   }, [currentCue, language, loaded]);
@@ -113,6 +132,16 @@ export default function TheaterTranslationApp() {
           </CardContent>
         </Card>
       )}
+
+      {currentCue && (
+        <Card>
+          <CardContent className="p-4">
+            <h2 className="text-lg font-semibold mb-2">Transkript</h2>
+            <p className="whitespace-pre-line">{transcript || "Kein Transkript verfügbar."}</p>
+          </CardContent>
+        </Card>
+      )}
+
     </div>
   );
 }
