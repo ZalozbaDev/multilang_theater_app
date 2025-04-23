@@ -1,98 +1,86 @@
-import React, { useEffect, useState } from "react";
-import { Button } from "./components/ui/button.tsx";
+import React, { useEffect, useState, useRef } from "react";
 import { Card, CardContent } from "./components/ui/card.tsx";
 import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from "./components/ui/select.tsx";
-import { Input } from "./components/ui/input.tsx";
 import { io } from "socket.io-client";
 
 const LANGUAGES = ["de", "en", "fr", "es", "it"];
-const AUDIO_CUES = ["intro", "scene1", "scene2", "finale"];
+const TOTAL_CUES = 10;
 const socket = io(globalThis.env?.ENVVAR_SOCKET_URL || "http://localhost:3001");
 
-const audioCache = {};
-const transcriptCache = {};
-
 export default function TheaterTranslationApp() {
-  const [language, setLanguage] = useState("de");
-  const [currentCue, setCurrentCue] = useState(null);
-  const [loaded, setLoaded] = useState(false);
-  const [isAdmin, setIsAdmin] = useState(false);
-  const [customCue, setCustomCue] = useState("");
+  const [selectedLanguage, setSelectedLanguage] = useState<string>("de");
+  const setCurrentCue = useState<number>(0);
   const [transcript, setTranscript] = useState("");
+  const transcriptCache = useRef<Record<number, Record<string, string>>>({});
+  const audioCache = useRef<Record<string, HTMLAudioElement>>({});
 
+  const loadAllResources = async () => {
+    for (let cue = 0; cue < TOTAL_CUES; cue++) {
+      if (!transcriptCache.current[cue]) transcriptCache.current[cue] = {};
+
+      for (const lang of LANGUAGES) {
+        // Transkript laden
+        try {
+          const res = await fetch(`/transcripts/${lang}/${cue}.txt`);
+          const text = await res.text();
+          transcriptCache.current[cue][lang] = text;
+        } catch {
+          transcriptCache.current[cue][lang] = "[n/a]";
+        }
+
+        // Audio vorladen
+        const key = `${cue}.${lang}`;
+        const audio = new Audio(`/audio/${lang}/${cue}.mp3`);
+        audio.load();
+        audioCache.current[key] = audio;
+      }
+    }
+  };
 
   // Preload audio files for selected language
   useEffect(() => {
-    setLoaded(false);
+    loadAllResources();
 
-    const audioPromises = AUDIO_CUES.map(cue => {
-      const audio = new Audio(`/audio/${language}/${cue}.mp3`);
-      audioCache[`${language}-${cue}`] = audio;
-      return new Promise(resolve => {
-        audio.oncanplaythrough = resolve;
-        audio.onerror = resolve;
-      });
+    socket.on("cue-update", (cue: string) => {
+      const cueNum = parseInt(cue, 10);
+      if (!isNaN(cueNum)) {
+        setCurrentCue(cueNum);
+        const audioKey = `${cueNum}.${selectedLanguage}`;
+        const audio = audioCache.current[audioKey];
+        if (audio) {
+          audio.currentTime = 0;
+          audio.play();
+        }
+        setTranscript(transcriptCache.current[cueNum]?.[selectedLanguage] || "[Lade...]");
+      }
     });
 
-    const transcriptPromises = AUDIO_CUES.map(cue =>
-      fetch(`/transcripts/${language}/${cue}.txt`)
-        .then(res => res.ok ? res.text() : "")
-        .then(text => {
-          transcriptCache[`${language}-${cue}`] = text;
-        })
-        .catch(() => {
-          transcriptCache[`${language}-${cue}`] = "";
-        })
-    );
-  
-    Promise.all([...audioPromises, ...transcriptPromises])
-      .then(() => setLoaded(true));
-  }, [language]);
-
-  // Receive cue updates from server
-  useEffect(() => {
-    socket.on("cue-update", cue => {
-      setCurrentCue(cue);
-    });
-    return () => socket.off("cue-update");
-  }, []);
-
-  // Play audio when cue changes
-  useEffect(() => {
-    if (!currentCue || !loaded) return;
-    const text = transcriptCache[`${language}-${currentCue}`];
-    setTranscript(text || "");
-    const audio = audioCache[`${language}-${currentCue}`];
-    if (audio) audio.play();
-  }, [currentCue, language, loaded]);
+    return () => {
+      socket.off("cue-update");
+    };
+  }, [selectedLanguage]);
 
   return (
-    <div className="p-6 space-y-4">
-      <Card>
-        <CardContent className="p-4 space-y-2">
-          <h2 className="text-xl font-bold">Wähle deine Sprache</h2>
-          <Select value={language} onValueChange={setLanguage}>
-            <SelectTrigger>
-              <SelectValue placeholder="Sprache wählen" />
-            </SelectTrigger>
-            <SelectContent>
-              {LANGUAGES.map(lang => (
-                <SelectItem key={lang} value={lang}>{lang.toUpperCase()}</SelectItem>
-              ))}
-            </SelectContent>
-          </Select>
-        </CardContent>
-      </Card>
+    <div className="p-4 max-w-2xl mx-auto">
+      <h1 className="text-2xl font-semibold mb-4">Live-Übersetzung</h1>
 
-      {currentCue && (
-        <Card>
-          <CardContent className="p-4">
-            <h2 className="text-lg font-semibold mb-2">Transkript</h2>
-            <p className="whitespace-pre-line">{transcript || "Kein Transkript verfügbar."}</p>
-          </CardContent>
-        </Card>
-      )}
+      <div className="mb-4">
+        <label htmlFor="language" className="mr-2 font-medium">Sprache wählen:</label>
+        <select
+          id="language"
+          value={selectedLanguage}
+          onChange={(e) => setSelectedLanguage(e.target.value)}
+          className="border p-1 rounded"
+        >
+          {LANGUAGES.map((lang) => (
+            <option key={lang} value={lang}>{lang.toUpperCase()}</option>
+          ))}
+        </select>
+      </div>
 
+      <div className="bg-gray-100 rounded p-4 whitespace-pre-wrap">
+        {transcript}
+      </div>
     </div>
   );
 }
