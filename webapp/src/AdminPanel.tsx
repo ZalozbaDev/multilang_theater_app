@@ -105,15 +105,24 @@ export default function AdminPanel() {
         <CardContent className="p-4 space-y-4">
           <h3 className="text-lg font-semibold">Transkripte für Cue {currentCue}</h3>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-            {LANGUAGES.map((lang) => (
-              <div key={lang}>
-                <strong>{lang.toUpperCase()}</strong>
-                <pre className="bg-gray-100 p-2 whitespace-pre-wrap rounded">
-                  {transcripts[currentCue]?.[lang] || "[Lade...]"}
-                </pre>
-              </div>
-            ))}
+        {[...LANGUAGES, "orig"].map((lang) => (
+          <div
+            key={lang}
+            className={`border p-3 rounded ${lang === "orig" ? "bg-yellow-100 border-yellow-400" : "bg-white"}`}
+          >
+            <h2 className="font-semibold mb-2">{lang.toUpperCase()}</h2>
+            {lang === "orig" && currentCue > 0 && (
+              <div className="text-sm text-gray-600 mb-1">← {transcripts[currentCue - 1]?.["orig"] || "..."}</div>
+            )}
+            <div className="whitespace-pre-wrap font-mono">
+              {transcripts[currentCue]?.[lang] || "[Lade...]"}
+            </div>
+            {lang === "orig" && currentCue < TOTAL_CUES - 1 && (
+              <div className="text-sm text-gray-600 mt-1">→ {transcripts[currentCue + 1]?.["orig"] || "..."}</div>
+            )}
           </div>
+        ))}
+      </div>
         </CardContent>
       </Card>
     </div>
