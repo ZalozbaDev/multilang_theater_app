@@ -66,26 +66,6 @@ export default function TheaterTranslationApp() {
     if (audio) audio.play();
   }, [currentCue, language, loaded]);
 
-  const handleAdminLogin = () => {
-    const password = prompt("Admin-Passwort eingeben:");
-     if (password === globalThis.env?.ENVVAR_ADMIN_PASSWORD) setIsAdmin(true);
-//    if (password === "12345password") setIsAdmin(true);
-  };
-
-  const sendCue = cue => {
-    socket.emit("cue-update", cue);
-  };
-
-  const handlePrevCue = () => {
-    const index = AUDIO_CUES.indexOf(currentCue);
-    if (index > 0) sendCue(AUDIO_CUES[index - 1]);
-  };
-
-  const handleNextCue = () => {
-    const index = AUDIO_CUES.indexOf(currentCue);
-    if (index < AUDIO_CUES.length - 1) sendCue(AUDIO_CUES[index + 1]);
-  };
-
   return (
     <div className="p-6 space-y-4">
       <Card>
@@ -103,35 +83,6 @@ export default function TheaterTranslationApp() {
           </Select>
         </CardContent>
       </Card>
-
-      {!isAdmin && (
-        <Button onClick={handleAdminLogin}>Als Admin einloggen</Button>
-      )}
-
-      {isAdmin && (
-        <Card>
-          <CardContent className="p-4 space-y-4">
-            <h2 className="text-xl font-bold">Steuerung (Admin)</h2>
-            <div className="grid grid-cols-2 gap-2">
-              {AUDIO_CUES.map(cue => (
-                <Button key={cue} onClick={() => sendCue(cue)}>{cue}</Button>
-              ))}
-            </div>
-            <div className="flex gap-2">
-              <Button onClick={handlePrevCue}>Zurück</Button>
-              <Button onClick={handleNextCue}>Vor</Button>
-            </div>
-            <div className="flex gap-2">
-              <Input
-                placeholder="Benutzerdefinierte Zeile"
-                value={customCue}
-                onChange={e => setCustomCue(e.target.value)}
-              />
-              <Button onClick={() => sendCue(customCue)}>Abspielen</Button>
-            </div>
-          </CardContent>
-        </Card>
-      )}
 
       {currentCue && (
         <Card>
