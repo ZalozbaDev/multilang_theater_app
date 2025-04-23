@@ -14,6 +14,7 @@ services:
     environment:
       - ENVVAR_SOCKET_URL
       - ENVVAR_ADMIN_PASSWORD
+      - ENVVAR_TOTAL_CUES
     restart: unless-stopped
     depends_on:
       - server

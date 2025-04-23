@@ -4,12 +4,12 @@ import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from ".
 import { io } from "socket.io-client";
 
 const LANGUAGES = ["de", "en", "fr", "es", "it"];
-const TOTAL_CUES = 10;
+const TOTAL_CUES = globalThis.env?.ENVVAR_TOTAL_CUES;
 const socket = io(globalThis.env?.ENVVAR_SOCKET_URL || "http://localhost:3001");
 
 export default function TheaterTranslationApp() {
   const [selectedLanguage, setSelectedLanguage] = useState<string>("de");
-  const setCurrentCue = useState<number>(0);
+  const [currentCue, setCurrentCue] = useState<number>(0);
   const [transcript, setTranscript] = useState("");
   const transcriptCache = useRef<Record<number, Record<string, string>>>({});
   const audioCache = useRef<Record<string, HTMLAudioElement>>({});
@@ -43,6 +43,7 @@ export default function TheaterTranslationApp() {
 
     socket.on("cue-update", (cue: string) => {
       const cueNum = parseInt(cue, 10);
+      console.log("Received cue:", cueNum);
       if (!isNaN(cueNum)) {
         setCurrentCue(cueNum);
         const audioKey = `${cueNum}.${selectedLanguage}`;
