@@ -9,6 +9,6 @@ COPY . .
 #RUN touch a
 #RUN ls -lR /app/src/
 RUN npm run build
-
 RUN npm install -g serve
+ENTRYPOINT ["./entrypoint.sh"]
 CMD ["serve", "-s", "build", "-l", "3000"]

@@ -12,8 +12,8 @@ services:
     ports:
       - "3000:3000"
     environment:
-      - REACT_APP_SOCKET_URL
-      - REACT_APP_ADMIN_PASSWORD
+      - ENVVAR_SOCKET_URL
+      - ENVVAR_ADMIN_PASSWORD
     restart: unless-stopped
     depends_on:
       - server

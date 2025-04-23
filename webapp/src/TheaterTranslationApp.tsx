@@ -7,7 +7,7 @@ import { io } from "socket.io-client";
 
 const LANGUAGES = ["de", "en", "fr", "es", "it"];
 const AUDIO_CUES = ["intro", "scene1", "scene2", "finale"];
-const socket = io(process.env.REACT_APP_SOCKET_URL || "http://serbski-inkubator.de:3001");
+const socket = io(globalThis.env?.ENVVAR_SOCKET_URL || "http://localhost:3001");
 
 const audioCache = {};
 
@@ -49,8 +49,8 @@ export default function TheaterTranslationApp() {
 
   const handleAdminLogin = () => {
     const password = prompt("Admin-Passwort eingeben:");
-//     if (password === process.env.REACT_APP_ADMIN_PASSWORD) setIsAdmin(true);
-    if (password === "12345password") setIsAdmin(true);
+     if (password === globalThis.env?.ENVVAR_ADMIN_PASSWORD) setIsAdmin(true);
+//    if (password === "12345password") setIsAdmin(true);
   };
 
   const sendCue = cue => {
