@@ -11,6 +11,8 @@ export default function TheaterTranslationApp() {
   const [selectedLanguage, setSelectedLanguage] = useState<string>("de");
   const [currentCue, setCurrentCue] = useState<number>(0);
   const [transcript, setTranscript] = useState("");
+  const [darkMode, setDarkMode] = useState<boolean>(false);
+  const [fontSize, setFontSize] = useState<number>(16);
   const transcriptCache = useRef<Record<number, Record<string, string>>>({});
   const audioCache = useRef<Record<string, HTMLAudioElement>>({});
   const loadedLanguages = useRef<Set<string>>(new Set());
@@ -63,8 +65,12 @@ export default function TheaterTranslationApp() {
     };
   }, [selectedLanguage]);
 
+  const toggleDarkMode = () => setDarkMode(!darkMode);
+  const increaseFont = () => setFontSize((size) => size + 2);
+  const decreaseFont = () => setFontSize((size) => Math.max(10, size - 2));
+
   return (
-    <div className="p-4 max-w-2xl mx-auto">
+    <div className={`p-4 max-w-2xl mx-auto ${darkMode ? "bg-gray-900 text-white" : "bg-white text-black"}`}>
       <h1 className="text-2xl font-semibold mb-4">Live-Übersetzung</h1>
 
       <div className="mb-4">
@@ -81,7 +87,13 @@ export default function TheaterTranslationApp() {
         </select>
       </div>
 
-      <div className="bg-gray-100 rounded p-4 whitespace-pre-wrap">
+      <div className="flex gap-2 mb-4">
+        <button onClick={toggleDarkMode} className="bg-blue-500 text-white px-2 py-1 rounded">Dark Mode umschalten</button>
+        <button onClick={increaseFont} className="bg-green-500 text-white px-2 py-1 rounded">Text vergrößern</button>
+        <button onClick={decreaseFont} className="bg-red-500 text-white px-2 py-1 rounded">Text verkleinern</button>
+      </div>
+
+      <div className="rounded p-4 whitespace-pre-wrap" style={{ fontSize: `${fontSize}px`, backgroundColor: darkMode ? '#1f2937' : '#f3f4f6' }}>
         {transcript}
       </div>
     </div>
