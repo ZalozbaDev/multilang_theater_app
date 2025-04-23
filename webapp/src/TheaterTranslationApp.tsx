@@ -13,12 +13,15 @@ export default function TheaterTranslationApp() {
   const [transcript, setTranscript] = useState("");
   const transcriptCache = useRef<Record<number, Record<string, string>>>({});
   const audioCache = useRef<Record<string, HTMLAudioElement>>({});
+  const loadedLanguages = useRef<Set<string>>(new Set());
 
-  const loadAllResources = async () => {
+  const loadResourcesForLanguage = async (lang: string) => {
+    if (loadedLanguages.current.has(lang)) return;
+    loadedLanguages.current.add(lang);
+    
     for (let cue = 0; cue < TOTAL_CUES; cue++) {
       if (!transcriptCache.current[cue]) transcriptCache.current[cue] = {};
 
-      for (const lang of LANGUAGES) {
         // Transkript laden
         try {
           const res = await fetch(`/transcripts/${lang}/${cue}.txt`);
@@ -33,13 +36,12 @@ export default function TheaterTranslationApp() {
         const audio = new Audio(`/audio/${lang}/${cue}.mp3`);
         audio.load();
         audioCache.current[key] = audio;
-      }
     }
   };
 
   // Preload audio files for selected language
   useEffect(() => {
-    loadAllResources();
+    loadResourcesForLanguage(selectedLanguage);
 
     socket.on("cue-update", (cue: string) => {
       const cueNum = parseInt(cue, 10);
