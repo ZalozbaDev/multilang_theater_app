@@ -1,13 +1,13 @@
 // src/AdminPanel.tsx
 import React, { useEffect, useState } from "react";
-import { Button } from "./components/ui/button";
-import { Card, CardContent } from "./components/ui/card";
-import { Input } from "./components/ui/input";
+import { Button } from "./components/ui/button.tsx";
+import { Card, CardContent } from "./components/ui/card.tsx";
+import { Input } from "./components/ui/input.tsx";
 import { io } from "socket.io-client";
 
 const AUDIO_CUES = ["intro", "scene1", "scene2", "finale"];
-const socket = io(globalThis.env?.SOCKET_URL || "http://localhost:3001");
-const ADMIN_PASSWORD = globalThis.env?.ADMIN_PASSWORD || "";
+const socket = io(globalThis.env?.ENVVAR_SOCKET_URL || "http://localhost:3001");
+const ADMIN_PASSWORD = globalThis.env?.ENVVAR_ADMIN_PASSWORD || "";
 
 export default function AdminPanel() {
   const [authenticated, setAuthenticated] = useState(false);
