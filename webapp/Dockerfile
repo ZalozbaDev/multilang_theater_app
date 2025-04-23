@@ -10,5 +10,6 @@ COPY . .
 #RUN ls -lR /app/src/
 RUN npm run build
 RUN npm install -g serve
+RUN chmod 755 ./entrypoint.sh
 ENTRYPOINT ["./entrypoint.sh"]
 CMD ["serve", "-s", "build", "-l", "3000"]
