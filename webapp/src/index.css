@@ -4,6 +4,6 @@
 
 /* Optional: eigene Styles */
 body {
-  @apply bg-white text-gray-900;
+  @apply bg-black text-white;
   font-family: system-ui, sans-serif;
 }
