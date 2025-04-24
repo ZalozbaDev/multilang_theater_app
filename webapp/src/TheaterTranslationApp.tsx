@@ -56,7 +56,7 @@ export default function TheaterTranslationApp() {
           audio.currentTime = 0;
           audio.play();
         }
-        setTranscript(transcriptCache.current[cueNum]?.[selectedLanguage] || "[Lade...]");
+        setTranscript(transcriptCache.current[cueNum]?.[selectedLanguage] || "[...]");
       }
     });
 
@@ -71,10 +71,10 @@ export default function TheaterTranslationApp() {
 
   return (
     <div className={`p-4 max-w-2xl mx-auto ${darkMode ? "bg-gray-900 text-white" : "bg-white text-black"}`}>
-      <h1 className="text-2xl font-semibold mb-4">Live-Übersetzung</h1>
+      <h1 className="text-2xl font-semibold mb-4">Pasion 2025</h1>
 
       <div className="mb-4">
-        <label htmlFor="language" className="mr-2 font-medium">Sprache wählen:</label>
+        <label htmlFor="language" className="mr-2 font-medium">Rěč / Sprache / Language</label>
         <select
           id="language"
           value={selectedLanguage}
@@ -88,9 +88,9 @@ export default function TheaterTranslationApp() {
       </div>
 
       <div className="flex gap-2 mb-4">
-        <button onClick={toggleDarkMode} className="bg-blue-500 text-white px-2 py-1 rounded">Dark Mode umschalten</button>
-        <button onClick={increaseFont} className="bg-green-500 text-white px-2 py-1 rounded">Text vergrößern</button>
-        <button onClick={decreaseFont} className="bg-red-500 text-white px-2 py-1 rounded">Text verkleinern</button>
+        <button onClick={toggleDarkMode} className="text-2xl bg-blue-500 text-white px-2 py-1 rounded">🌙</button>
+        <button onClick={increaseFont} className="text-2xl font-bold bg-green-500 text-white px-2 py-1 rounded">+</button>
+        <button onClick={decreaseFont} className="text-2xl font-bold bg-red-500 text-white px-2 py-1 rounded">-</button>
       </div>
 
       <div className="rounded p-4 whitespace-pre-wrap" style={{ fontSize: `${fontSize}px`, backgroundColor: darkMode ? '#1f2937' : '#f3f4f6' }}>

@@ -18,7 +18,7 @@ export default function AdminPanel() {
   const transcriptCache = useRef<Record<string, Record<string, string>>>({});
   
   const handleLogin = () => {
-    const password = prompt("Admin-Passwort eingeben:");
+    const password = prompt("Prošu hesło za administratora:");
     if (password === ADMIN_PASSWORD) setAuthenticated(true);
   };
 
@@ -48,7 +48,7 @@ export default function AdminPanel() {
             const text = await res.text();
             newTranscripts[cue][lang] = text;
           } catch {
-            newTranscripts[cue][lang] = "[Nicht verfügbar]";
+            newTranscripts[cue][lang] = "[žadyn transkript za tutu linku]";
           }
 
         })
@@ -72,18 +72,18 @@ export default function AdminPanel() {
     };
   }, []);
 
-  if (!authenticated) return <Button onClick={handleLogin}>Als Admin einloggen</Button>;
+  if (!authenticated) return <Button onClick={handleLogin}>Jako administrator přizjewić</Button>;
 
   return (
     <div className="p-6 space-y-6 text-black">
       <Card>
         <CardContent className="p-4 space-y-4">
-          <h2 className="text-xl font-bold">Steuerung (Admin)</h2>
+          <h2 className="text-xl font-bold">Posłužowanje</h2>
           <div className="flex gap-2">
-            <Button onClick={handlePrevCue}>Zurück</Button>
-            <Button onClick={handleNextCue}>Vor</Button>
+            <Button onClick={handlePrevCue}>Wróćo</Button>
+            <Button onClick={handleNextCue}>Doprědka</Button>
             <Input
-              placeholder="Cue-Nummer"
+              placeholder="Ličba linki"
               value={customCueInput}
               onChange={(e) => setCustomCueInput(e.target.value)}
             />
@@ -95,7 +95,7 @@ export default function AdminPanel() {
                 }
               }}
             >
-              Abspielen
+              Linku wothrać
             </Button>
           </div>
         </CardContent>
@@ -103,7 +103,7 @@ export default function AdminPanel() {
 
       <Card>
         <CardContent className="p-4 space-y-4">
-          <h3 className="text-lg font-semibold">Transkripte für Cue {currentCue}</h3>
+          <h3 className="text-lg font-semibold">Linka čisło: -- {currentCue} --</h3>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
         {LANGUAGES.map((lang) => (
           <div
