@@ -107,9 +107,13 @@ export default function AdminPanel() {
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
         {LANGUAGES.map((lang) => (
           <div
-            key={lang}
-            className={`border p-3 rounded ${lang === "orig" ? "bg-yellow-100 border-yellow-400" : "bg-white"}`}
-          >
+          key={lang}
+          className={`border p-3 rounded ${
+            lang === "orig"
+              ? "bg-yellow-100 border-yellow-600 shadow-lg ring-2 ring-yellow-500 font-bold text-yellow-900"
+              : "bg-white"
+          }`}
+        >
             <h2 className="font-semibold mb-2">{lang.toUpperCase()}</h2>
             {lang === "orig" && currentCue > 0 && (
               <div className="text-sm text-gray-600 mb-1">← {transcripts[currentCue - 1]?.["orig"] || "..."}</div>
