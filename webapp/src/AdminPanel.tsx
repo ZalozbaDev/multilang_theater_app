@@ -75,7 +75,7 @@ export default function AdminPanel() {
   if (!authenticated) return <Button onClick={handleLogin}>Als Admin einloggen</Button>;
 
   return (
-    <div className="p-6 space-y-6">
+    <div className="p-6 space-y-6 text-black">
       <Card>
         <CardContent className="p-4 space-y-4">
           <h2 className="text-xl font-bold">Steuerung (Admin)</h2>
