@@ -105,7 +105,7 @@ export default function AdminPanel() {
         <CardContent className="p-4 space-y-4">
           <h3 className="text-lg font-semibold">Transkripte für Cue {currentCue}</h3>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-        {[...LANGUAGES, "orig"].map((lang) => (
+        {LANGUAGES.map((lang) => (
           <div
             key={lang}
             className={`border p-3 rounded ${lang === "orig" ? "bg-yellow-100 border-yellow-400" : "bg-white"}`}
