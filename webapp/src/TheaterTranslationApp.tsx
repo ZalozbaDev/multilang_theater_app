@@ -79,7 +79,10 @@ export default function TheaterTranslationApp() {
           id="language"
           value={selectedLanguage}
           onChange={(e) => setSelectedLanguage(e.target.value)}
-          className="border p-1 rounded"
+          className={`border p-1 rounded ${darkMode
+          		? "bg-gray-800 text-white border-gray-600"
+          		: "bg-white text-black border-gray-300"
+          		}`}
         >
           {LANGUAGES.map((lang) => (
             <option key={lang} value={lang}>{lang.toUpperCase()}</option>
@@ -88,9 +91,9 @@ export default function TheaterTranslationApp() {
       </div>
 
       <div className="flex gap-2 mb-4">
-        <button onClick={toggleDarkMode} className="text-2xl bg-blue-500 text-white px-2 py-1 rounded">🌙</button>
-        <button onClick={increaseFont} className="text-2xl font-bold bg-green-500 text-white px-2 py-1 rounded">+</button>
-        <button onClick={decreaseFont} className="text-2xl font-bold bg-red-500 text-white px-2 py-1 rounded">-</button>
+        <button onClick={toggleDarkMode} className="flex-1 text-2xl bg-blue-500 text-white px-2 py-1 rounded">🌙</button>
+        <button onClick={increaseFont} className="flex-1 text-2xl font-bold bg-green-500 text-white px-2 py-1 rounded">+</button>
+        <button onClick={decreaseFont} className="flex-1 text-2xl font-bold bg-red-500 text-white px-2 py-1 rounded">-</button>
       </div>
 
       <div className="rounded p-4 whitespace-pre-wrap" style={{ fontSize: `${fontSize}px`, backgroundColor: darkMode ? '#1f2937' : '#f3f4f6' }}>
