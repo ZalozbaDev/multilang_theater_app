@@ -40,7 +40,9 @@ webapp/public/audio/en/intro.mp3
 	* webapp/src/AdminPanel.tsx
 - Anzahl Sätze:
 	* .env --> ENVVAR_TOTAL_CUES
-
+- Container bauen
+	* webapp reicht, wenn nur Audio neu ist
+	
 ## 🛠 Admin-Login
 
 Wird durch Passwort aus `.env` geschützt (`REACT_APP_ADMIN_PASSWORD`).
