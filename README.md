@@ -12,6 +12,18 @@ cp .env.example .env
 docker-compose up --build
 ```
 
+If you use your own compose file, build the containers individually:
+
+```bash
+cd server/
+docker build -t theater_backend .
+
+cd webapp/
+docker build -t theater_frontend .
+
+```
+
+
 ## 📁 Audio-Dateien
 
 Ordnerstruktur:
@@ -20,6 +32,14 @@ webapp/public/audio/de/intro.mp3
 webapp/public/audio/en/intro.mp3
 ...
 ```
+
+## Anpassungen
+
+- Sprachliste:
+	* webapp/src/TheaterTranslationApp.tsx
+	* webapp/src/AdminPanel.tsx
+- Anzahl Sätze:
+	* .env --> ENVVAR_TOTAL_CUES
 
 ## 🛠 Admin-Login
 

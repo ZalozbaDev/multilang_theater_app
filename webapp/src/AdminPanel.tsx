@@ -6,7 +6,7 @@ import { Input } from "./components/ui/input.tsx";
 import { io } from "socket.io-client";
 
 const TOTAL_CUES = globalThis.env?.ENVVAR_TOTAL_CUES;
-const LANGUAGES = ["orig", "de", "en", "fr", "es", "it"];
+const LANGUAGES = ["orig", "de", "en", "fr", "es", "it", "cs", "pl"];
 const socket = io(globalThis.env?.ENVVAR_SOCKET_URL || "http://localhost:3001");
 const ADMIN_PASSWORD = globalThis.env?.ENVVAR_ADMIN_PASSWORD || "";
 

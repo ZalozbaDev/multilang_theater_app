@@ -3,7 +3,7 @@ import { Card, CardContent } from "./components/ui/card.tsx";
 import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from "./components/ui/select.tsx";
 import { io } from "socket.io-client";
 
-const LANGUAGES = ["de", "en", "fr", "es", "it"];
+const LANGUAGES = ["de", "en", "fr", "es", "it", "cs", "pl"];
 const TOTAL_CUES = globalThis.env?.ENVVAR_TOTAL_CUES;
 const socket = io(globalThis.env?.ENVVAR_SOCKET_URL || "http://localhost:3001");
 
