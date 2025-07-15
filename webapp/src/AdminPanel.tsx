@@ -29,7 +29,7 @@ export default function AdminPanel() {
       socket.emit("cue-update", cue);
     } else {
       // Do NOT emit cue-update if autoPlay is off.
-      // Optionally, you can still update local currentCue state:
+      // Optionally, update local currentCue state:
       setCurrentCue(cue);
     }
   };
@@ -109,35 +109,49 @@ export default function AdminPanel() {
       <Card>
         <CardContent className="p-4 space-y-4">
           <h2 className="text-xl font-bold">Posłužowanje</h2>
-          <div className="flex gap-2 flex-wrap">
+
+          <div className="flex flex-wrap items-center gap-2">
             <Button onClick={handlePrevCue}>Wróćo (←)</Button>
             <Button onClick={handleNextCue}>Doprědka (→)</Button>
-            <Input
-              placeholder="Ličba linki"
-              value={customCueInput}
-              onChange={(e) => setCustomCueInput(e.target.value)}
-            />
-            <Button
-              onClick={() => {
-                const num = parseInt(customCueInput, 10);
-                if (!isNaN(num) && num >= 0 && num < TOTAL_CUES) {
-                  sendCue(num);
-                }
-              }}
-            >
-              Linku wothrać
-            </Button>
-            <label className="flex items-center space-x-2">
-              <input
-                type="checkbox"
-                checked={autoPlay}
-                onChange={(e) => setAutoPlay(e.target.checked)}
+
+            {/* Input + controls container */}
+            <div className="flex items-center gap-2 flex-grow min-w-[250px] max-w-[400px]">
+              <Input
+                placeholder="Ličba linki"
+                value={customCueInput}
+                onChange={(e) => setCustomCueInput(e.target.value)}
+                className="flex-grow max-w-[150px]"
               />
-              <span>Auto display/playback</span>
-            </label>
-            <Button onClick={handlePlayCurrent} disabled={autoPlay}>
+
+              <Button
+                onClick={() => {
+                  const num = parseInt(customCueInput, 10);
+                  if (!isNaN(num) && num >= 0 && num < TOTAL_CUES) {
+                    sendCue(num);
+                  }
+                }}
+              >
+                Linku wothrać
+              </Button>
+
+              <label className="flex items-center space-x-2 whitespace-nowrap">
+                <input
+                  type="checkbox"
+                  checked={autoPlay}
+                  onChange={(e) => setAutoPlay(e.target.checked)}
+                />
+                <span>Auto display/playback</span>
+              </label>
+            </div>
+
+            <Button
+              onClick={handlePlayCurrent}
+              disabled={autoPlay}
+              className={`ml-auto ${autoPlay ? "opacity-50 cursor-not-allowed" : ""}`}
+            >
               Play Current Line (SPACE)
             </Button>
+
             <Button
               onClick={handleStopPlayback}
               className="bg-red-600 text-white hover:bg-red-700"
