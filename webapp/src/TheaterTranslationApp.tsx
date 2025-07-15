@@ -6,25 +6,30 @@ const TOTAL_CUES = globalThis.env?.ENVVAR_TOTAL_CUES;
 const socket = io(globalThis.env?.ENVVAR_SOCKET_URL || "http://localhost:3001");
 
 export default function TheaterTranslationApp() {
-  const [selectedLanguage, setSelectedLanguage] = useState<string>("de");
+  const [selectedLanguage, setSelectedLanguage] = useState<string>(""); // ✅ Default: none
+  const [enableAudio, setEnableAudio] = useState<boolean>(false); // ✅ Default: disabled
   const [currentCue, setCurrentCue] = useState<number>(0);
   const [transcript, setTranscript] = useState("");
   const [darkMode, setDarkMode] = useState<boolean>(false);
   const [fontSize, setFontSize] = useState<number>(16);
 
+  const [isDownloadingAudio, setIsDownloadingAudio] = useState(false);
+  const [downloadProgress, setDownloadProgress] = useState(0);
+
   const transcriptCache = useRef<Record<number, Record<string, string>>>({});
   const audioCache = useRef<Record<string, HTMLAudioElement>>({});
-  const loadedLanguages = useRef<Set<string>>(new Set());
+  const loadedTranscripts = useRef<Set<string>>(new Set());
+  const loadedAudio = useRef<Set<string>>(new Set());
   const currentlyPlayingAudio = useRef<HTMLAudioElement | null>(null);
 
-  const loadResourcesForLanguage = async (lang: string) => {
-    if (loadedLanguages.current.has(lang)) return;
-    loadedLanguages.current.add(lang);
+  /** ✅ Load transcripts ONCE per language */
+  const loadTranscriptsForLanguage = async (lang: string) => {
+    if (!lang || loadedTranscripts.current.has(lang)) return;
+    loadedTranscripts.current.add(lang);
 
     for (let cue = 0; cue < TOTAL_CUES; cue++) {
       if (!transcriptCache.current[cue]) transcriptCache.current[cue] = {};
 
-      // Load transcript
       try {
         const res = await fetch(`/transcripts/${lang}/${cue}.txt`);
         const text = await res.text();
@@ -32,16 +37,30 @@ export default function TheaterTranslationApp() {
       } catch {
         transcriptCache.current[cue][lang] = "[n/a]";
       }
-
-      // Preload audio
-      const key = `${cue}.${lang}`;
-      const audio = new Audio(`/audio/${lang}/${cue}.mp3`);
-      audio.load();
-      audioCache.current[key] = audio;
     }
   };
 
-  // Stop any currently playing audio
+  /** ✅ Load audio (can be called multiple times, e.g., after enabling audio) */
+  const loadAudioForLanguage = async (lang: string) => {
+    if (!lang || loadedAudio.current.has(lang)) return;
+    loadedAudio.current.add(lang);
+
+    setIsDownloadingAudio(true);
+    setDownloadProgress(0);
+
+    for (let cue = 0; cue < TOTAL_CUES; cue++) {
+      const key = `${cue}.${lang}`;
+      if (!audioCache.current[key]) {
+        const audio = new Audio(`/audio/${lang}/${cue}.mp3`);
+        audio.load();
+        audioCache.current[key] = audio;
+      }
+      setDownloadProgress(Math.round(((cue + 1) / TOTAL_CUES) * 100));
+    }
+
+    setIsDownloadingAudio(false);
+  };
+
   const stopCurrentAudio = () => {
     if (currentlyPlayingAudio.current) {
       currentlyPlayingAudio.current.pause();
@@ -50,43 +69,48 @@ export default function TheaterTranslationApp() {
     }
   };
 
-  // Play a specific cue manually (used for both auto cue updates & admin play-current)
   const playCue = (cueNum: number) => {
     setCurrentCue(cueNum);
-    const audioKey = `${cueNum}.${selectedLanguage}`;
-    const audio = audioCache.current[audioKey];
-    stopCurrentAudio(); // stop previous playback before starting new one
+    stopCurrentAudio();
 
-    if (audio) {
-      audio.currentTime = 0;
-      audio.play();
-      currentlyPlayingAudio.current = audio;
+    if (enableAudio && selectedLanguage) {
+      const audioKey = `${cueNum}.${selectedLanguage}`;
+      const audio = audioCache.current[audioKey];
+      if (audio) {
+        audio.currentTime = 0;
+        audio.play();
+        currentlyPlayingAudio.current = audio;
+      }
     }
 
-    setTranscript(transcriptCache.current[cueNum]?.[selectedLanguage] || "[...]");
+    setTranscript(
+      transcriptCache.current[cueNum]?.[selectedLanguage] || "[...]"
+    );
   };
 
+  /** ✅ Handle language & audio changes */
   useEffect(() => {
-    loadResourcesForLanguage(selectedLanguage);
+    if (!selectedLanguage) return;
 
-    // Normal automatic cue updates
+    loadTranscriptsForLanguage(selectedLanguage);
+
+    if (enableAudio) {
+      loadAudioForLanguage(selectedLanguage);
+    }
+  }, [selectedLanguage, enableAudio]);
+
+  /** ✅ Socket listeners */
+  useEffect(() => {
     socket.on("cue-update", (cue: string) => {
       const cueNum = parseInt(cue, 10);
-      console.log("Received cue:", cueNum);
-      if (!isNaN(cueNum)) {
-        playCue(cueNum);
-      }
+      if (!isNaN(cueNum)) playCue(cueNum);
     });
 
-    // ✅ Handle admin manual play request
     socket.on("play-current", (data: { cue: number }) => {
-      console.log("Admin requested play of current cue:", data.cue);
       playCue(data.cue);
     });
 
-    // ✅ Handle admin stop playback request
     socket.on("stop-playback", () => {
-      console.log("Admin requested STOP playback");
       stopCurrentAudio();
     });
 
@@ -95,7 +119,7 @@ export default function TheaterTranslationApp() {
       socket.off("play-current");
       socket.off("stop-playback");
     };
-  }, [selectedLanguage]);
+  }, [selectedLanguage, enableAudio]);
 
   const toggleDarkMode = () => setDarkMode(!darkMode);
   const increaseFont = () => setFontSize((size) => size + 2);
@@ -109,6 +133,7 @@ export default function TheaterTranslationApp() {
     >
       <h1 className="text-2xl font-semibold mb-4">Pasion 2025</h1>
 
+      {/* ✅ Language Selector */}
       <div className="mb-4">
         <label htmlFor="language" className="mr-2 font-medium">
           Rěč / Sprache / Language
@@ -116,13 +141,17 @@ export default function TheaterTranslationApp() {
         <select
           id="language"
           value={selectedLanguage}
-          onChange={(e) => setSelectedLanguage(e.target.value)}
+          onChange={(e) => {
+            setSelectedLanguage(e.target.value);
+            setTranscript(""); // Clear transcript when changing language
+          }}
           className={`border p-1 rounded ${
             darkMode
               ? "bg-gray-800 text-white border-gray-600"
               : "bg-white text-black border-gray-300"
           }`}
         >
+          <option value="">-- Please select language --</option>
           {LANGUAGES.map((lang) => (
             <option key={lang} value={lang}>
               {lang.toUpperCase()}
@@ -131,6 +160,20 @@ export default function TheaterTranslationApp() {
         </select>
       </div>
 
+      {/* ✅ Audio Playback Toggle */}
+      <div className="mb-4">
+        <label className="flex items-center gap-2">
+          <input
+            type="checkbox"
+            checked={enableAudio}
+            onChange={(e) => setEnableAudio(e.target.checked)}
+            disabled={!selectedLanguage}
+          />
+          <span>Enable Audio Playback</span>
+        </label>
+      </div>
+
+      {/* ✅ Controls */}
       <div className="flex gap-2 mb-4">
         <button
           onClick={toggleDarkMode}
@@ -152,6 +195,7 @@ export default function TheaterTranslationApp() {
         </button>
       </div>
 
+      {/* Transcript */}
       <div
         className="rounded p-4 whitespace-pre-wrap"
         style={{
@@ -161,6 +205,24 @@ export default function TheaterTranslationApp() {
       >
         {transcript}
       </div>
+
+      {/* ✅ Modal Progress Bar */}
+      {isDownloadingAudio && (
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+          <div className="bg-white p-6 rounded shadow-md w-80 text-center">
+            <h2 className="mb-4 font-bold text-lg">
+              Downloading Audio Files...
+            </h2>
+            <div className="w-full bg-gray-200 rounded-full h-4">
+              <div
+                className="bg-green-500 h-4 rounded-full"
+                style={{ width: `${downloadProgress}%` }}
+              ></div>
+            </div>
+            <p className="mt-2 text-sm">{downloadProgress}%</p>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
