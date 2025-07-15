@@ -16,7 +16,9 @@ export default function AdminPanel() {
   const [transcripts, setTranscripts] = useState<Record<string, string>>({});
   const [customCueInput, setCustomCueInput] = useState("");
   const transcriptCache = useRef<Record<string, Record<string, string>>>({});
-  
+
+  const [autoPlay, setAutoPlay] = useState(false);
+
   const handleLogin = () => {
     const password = prompt("Prošu hesło za administratora:");
     if (password === ADMIN_PASSWORD) setAuthenticated(true);
@@ -34,15 +36,22 @@ export default function AdminPanel() {
     if (currentCue < TOTAL_CUES - 1) sendCue(currentCue + 1);
   };
 
+  const handlePlayCurrent = () => {
+    if (!autoPlay) {
+      socket.emit("play-current", { cue: currentCue });
+    }
+  };
+
+  const handleStopPlayback = () => {
+    socket.emit("stop-playback", {});
+  };
+
   const fetchAllResources = async () => {
     const newTranscripts: Record<number, Record<string, string>> = {};
-
     for (let cue = 0; cue < TOTAL_CUES; cue++) {
       newTranscripts[cue] = {};
-
       await Promise.all(
         LANGUAGES.map(async (lang) => {
-          // Transkripte laden
           try {
             const res = await fetch(`/transcripts/${lang}/${cue}.txt`);
             const text = await res.text();
@@ -50,38 +59,53 @@ export default function AdminPanel() {
           } catch {
             newTranscripts[cue][lang] = "[žadyn transkript za tutu linku]";
           }
-
         })
       );
     }
-
     transcriptCache.current = newTranscripts;
     setTranscripts(newTranscripts);
   };
-      
+
   useEffect(() => {
-    fetchAllResources(); // Lade alle Transkripte bei der Initialisierung
-
+    fetchAllResources();
     socket.on("cue-update", (cue: string) => {
-        const num = parseInt(cue, 10);
-        if (!isNaN(num)) setCurrentCue(num);
-      });
-
+      const num = parseInt(cue, 10);
+      if (!isNaN(num)) setCurrentCue(num);
+    });
     return () => {
       socket.off("cue-update");
     };
   }, []);
 
-  if (!authenticated) return <Button onClick={handleLogin}>Jako administrator přizjewić</Button>;
+  // ✅ Keyboard shortcuts
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.code === "ArrowRight") {
+        handleNextCue();
+      } else if (e.code === "ArrowLeft") {
+        handlePrevCue();
+      } else if (e.code === "Space") {
+        e.preventDefault();
+        if (!autoPlay) {
+          handlePlayCurrent();
+        }
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [autoPlay, currentCue]);
+
+  if (!authenticated)
+    return <Button onClick={handleLogin}>Jako administrator přizjewić</Button>;
 
   return (
     <div className="p-6 space-y-6 text-black">
       <Card>
         <CardContent className="p-4 space-y-4">
           <h2 className="text-xl font-bold">Posłužowanje</h2>
-          <div className="flex gap-2">
-            <Button onClick={handlePrevCue}>Wróćo</Button>
-            <Button onClick={handleNextCue}>Doprědka</Button>
+          <div className="flex gap-2 flex-wrap">
+            <Button onClick={handlePrevCue}>Wróćo (←)</Button>
+            <Button onClick={handleNextCue}>Doprědka (→)</Button>
             <Input
               placeholder="Ličba linki"
               value={customCueInput}
@@ -97,6 +121,23 @@ export default function AdminPanel() {
             >
               Linku wothrać
             </Button>
+            <label className="flex items-center space-x-2">
+              <input
+                type="checkbox"
+                checked={autoPlay}
+                onChange={(e) => setAutoPlay(e.target.checked)}
+              />
+              <span>Auto display/playback</span>
+            </label>
+            <Button onClick={handlePlayCurrent} disabled={autoPlay}>
+              Play Current Line (SPACE)
+            </Button>
+            <Button
+              onClick={handleStopPlayback}
+              className="bg-red-600 text-white hover:bg-red-700"
+            >
+              STOP Playback
+            </Button>
           </div>
         </CardContent>
       </Card>
@@ -105,28 +146,34 @@ export default function AdminPanel() {
         <CardContent className="p-4 space-y-4">
           <h3 className="text-lg font-semibold">Linka čisło: -- {currentCue} --</h3>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-        {LANGUAGES.map((lang) => (
-          <div
-          key={lang}
-          className={`border p-3 rounded ${
-            lang === "orig"
-              ? "bg-yellow-100 border-yellow-600 shadow-lg ring-2 ring-yellow-500 font-bold text-yellow-900"
-              : "bg-white"
-          }`}
-        >
-            <h2 className="font-semibold mb-2">{lang.toUpperCase()}</h2>
-            {lang === "orig" && currentCue > 0 && (
-              <div className="text-sm text-gray-600 mb-1">← {transcripts[currentCue - 1]?.["orig"] || "..."}</div>
-            )}
-            <div className="whitespace-pre-wrap font-mono">
-              {transcripts[currentCue]?.[lang] || "[Lade...]"}
+
+            {/* ✅ ORIG spans all columns */}
+            <div className="col-span-2 md:col-span-3 border p-4 rounded bg-yellow-50 border-yellow-600 shadow-lg ring-2 ring-yellow-500 text-center">
+              {currentCue > 0 && (
+                <div className="text-sm text-gray-600 mb-2">
+                  ← {transcripts[currentCue - 1]?.["orig"] || "..."}
+                </div>
+              )}
+              <div className="text-4xl font-bold text-red-600 whitespace-pre-wrap">
+                {transcripts[currentCue]?.["orig"] || "[Lade...]"}
+              </div>
+              {currentCue < TOTAL_CUES - 1 && (
+                <div className="text-sm text-gray-600 mt-2">
+                  → {transcripts[currentCue + 1]?.["orig"] || "..."}
+                </div>
+              )}
             </div>
-            {lang === "orig" && currentCue < TOTAL_CUES - 1 && (
-              <div className="text-sm text-gray-600 mt-1">→ {transcripts[currentCue + 1]?.["orig"] || "..."}</div>
-            )}
+
+            {/* ✅ Other languages */}
+            {LANGUAGES.filter((lang) => lang !== "orig").map((lang) => (
+              <div key={lang} className="border p-3 rounded bg-white">
+                <h2 className="font-semibold mb-2">{lang.toUpperCase()}</h2>
+                <div className="whitespace-pre-wrap font-mono">
+                  {transcripts[currentCue]?.[lang] || "[Lade...]"}
+                </div>
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
         </CardContent>
       </Card>
     </div>
