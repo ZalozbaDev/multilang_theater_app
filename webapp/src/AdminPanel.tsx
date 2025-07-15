@@ -128,6 +128,7 @@ export default function AdminPanel() {
                   const num = parseInt(customCueInput, 10);
                   if (!isNaN(num) && num >= 0 && num < TOTAL_CUES) {
                     sendCue(num);
+                    setCustomCueInput(""); // Clear input after pressing the button
                   }
                 }}
               >
