@@ -132,7 +132,7 @@ export default function AdminPanel() {
                   }
                 }}
               >
-                Linku wothrać
+                Na tutu linku skočić
               </Button>
 
               <label className="flex items-center space-x-2 whitespace-nowrap">
@@ -141,7 +141,7 @@ export default function AdminPanel() {
                   checked={autoPlay}
                   onChange={(e) => setAutoPlay(e.target.checked)}
                 />
-                <span>Auto display/playback</span>
+                <span>Automatisce wothrać</span>
               </label>
             </div>
 
@@ -150,14 +150,14 @@ export default function AdminPanel() {
               disabled={autoPlay}
               className={`ml-auto ${autoPlay ? "opacity-50 cursor-not-allowed" : ""}`}
             >
-              Play Current Line (SPACE)
+              Wothrać (SPACE)
             </Button>
 
             <Button
               onClick={handleStopPlayback}
               className="bg-red-600 text-white hover:bg-red-700"
             >
-              STOP Playback
+              STOP
             </Button>
           </div>
         </CardContent>
