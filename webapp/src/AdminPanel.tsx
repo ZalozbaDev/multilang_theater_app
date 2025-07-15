@@ -25,7 +25,13 @@ export default function AdminPanel() {
   };
 
   const sendCue = (cue: number) => {
-    socket.emit("cue-update", cue);
+    if (autoPlay) {
+      socket.emit("cue-update", cue);
+    } else {
+      // Do NOT emit cue-update if autoPlay is off.
+      // Optionally, you can still update local currentCue state:
+      setCurrentCue(cue);
+    }
   };
 
   const handlePrevCue = () => {

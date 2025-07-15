@@ -21,9 +21,9 @@ io.on("connection", (socket) => {
   });
 
   // ✅ New: play current line manually
-  socket.on("play-current", (data: { cue: number }) => {
-    console.log("Admin requested play of current cue:", data.cue);
-    io.emit("play-current", data); // send to all clients
+  socket.on("play-current", (cue) => {
+    console.log("Admin requested play of current cue:", cue);
+    io.emit("play-current", cue); // send to all clients
   });
 
   // ✅ New: stop playback on all clients
