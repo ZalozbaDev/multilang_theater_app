@@ -19,6 +19,9 @@ export default function AdminPanel() {
 
   const [autoPlay, setAutoPlay] = useState(false);
 
+  const [isDownloading, setIsDownloading] = useState(false);
+  const [downloadProgress, setDownloadProgress] = useState(0);
+
   const handleLogin = () => {
     const password = prompt("Prošu hesło za administratora:");
     if (password === ADMIN_PASSWORD) setAuthenticated(true);
@@ -52,25 +55,37 @@ export default function AdminPanel() {
     socket.emit("stop-playback", {});
   };
 
-  const fetchAllResources = async () => {
-    const newTranscripts: Record<number, Record<string, string>> = {};
-    for (let cue = 0; cue < TOTAL_CUES; cue++) {
-      newTranscripts[cue] = {};
-      await Promise.all(
-        LANGUAGES.map(async (lang) => {
-          try {
-            const res = await fetch(`/transcripts/${lang}/${cue}.txt`);
-            const text = await res.text();
-            newTranscripts[cue][lang] = text;
-          } catch {
-            newTranscripts[cue][lang] = "[žadyn transkript za tutu linku]";
-          }
-        })
-      );
-    }
-    transcriptCache.current = newTranscripts;
-    setTranscripts(newTranscripts);
-  };
+	const fetchAllResources = async () => {
+	  setIsDownloading(true);
+	  setDownloadProgress(0);
+	
+	  const newTranscripts: Record<number, Record<string, string>> = {};
+	  for (let cue = 0; cue < TOTAL_CUES; cue++) {
+		newTranscripts[cue] = {};
+	
+		await Promise.all(
+		  LANGUAGES.map(async (lang) => {
+			try {
+			  const res = await fetch(`/transcripts/${lang}/${cue}.txt`);
+			  const text = await res.text();
+			  newTranscripts[cue][lang] = text;
+			} catch {
+			  newTranscripts[cue][lang] = "[žadyn transkript za tutu linku]";
+			}
+		  })
+		);
+	
+		// 👉 einfachen Fortschritt pro Cue
+		setDownloadProgress(Math.round(((cue + 1) / TOTAL_CUES) * 100));
+	
+		// 👉 kleine Pause, damit Fortschritt sichtbar ist
+		await new Promise((resolve) => setTimeout(resolve, 20));
+	  }
+	
+	  transcriptCache.current = newTranscripts;
+	  setTranscripts(newTranscripts);
+	  setIsDownloading(false);
+	};
 
   useEffect(() => {
     fetchAllResources();
@@ -198,5 +213,19 @@ export default function AdminPanel() {
         </CardContent>
       </Card>
     </div>
+	{isDownloading && (
+	  <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+		<div className="bg-white p-6 rounded shadow-md w-80 text-center">
+		  <h2 className="mb-4 font-bold text-lg">Downloading Transcripts...</h2>
+		  <div className="w-full bg-gray-200 rounded-full h-4">
+			<div
+			  className="bg-blue-500 h-4 rounded-full transition-all"
+			  style={{ width: `${downloadProgress}%` }}
+			></div>
+		  </div>
+		  <p className="mt-2 text-sm">{downloadProgress}%</p>
+		</div>
+	  </div>
+	)}
   );
 }
