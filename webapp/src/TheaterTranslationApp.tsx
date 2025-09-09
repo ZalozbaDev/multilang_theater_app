@@ -158,11 +158,12 @@ export default function TheaterTranslationApp() {
 			setSelectedLanguage(e.target.value);
 			setTranscript("");
 		  }}
-		  className={`border p-1 rounded font-semibold ${
+		  className={`border p-1 rounded font-semibold text-white ${
 			!selectedLanguage
-			  ? "bg-red-500 border-red-600 text-white"
-			  : "bg-green-500 border-green-600 text-white"
+			  ? "bg-red-500 border-red-600"   // nur Hintergrund für zugeklappten Select
+			  : "bg-green-500 border-green-600"
 		  }`}
+		  style={{ appearance: "none" }} // optional, für sauberes Styling auf allen Browsern
 		>
 		  <option value="">-- Wubrać / Auswählen / Select --</option>
 		  {LANGUAGES.map((lang) => (
