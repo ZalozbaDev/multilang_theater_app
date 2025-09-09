@@ -120,6 +120,7 @@ export default function AdminPanel() {
     return <Button onClick={handleLogin}>Jako administrator přizjewić</Button>;
 
   return (
+  <>
     <div className="p-6 space-y-6 text-black">
       <Card>
         <CardContent className="p-4 space-y-4">
@@ -227,5 +228,6 @@ export default function AdminPanel() {
 		</div>
 	  </div>
 	)}
+  </>
   );
 }
