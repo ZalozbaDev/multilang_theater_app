@@ -49,26 +49,30 @@ export default function TheaterTranslationApp() {
 	  setIsDownloadingTranscript(false);
 	};
 
-  /** ✅ Load audio (can be called multiple times, e.g., after enabling audio) */
-  const loadAudioForLanguage = async (lang: string) => {
-    if (!lang || loadedAudio.current.has(lang)) return;
-    loadedAudio.current.add(lang);
-
-    setIsDownloadingAudio(true);
-    setDownloadProgress(0);
-
-    for (let cue = 0; cue < TOTAL_CUES; cue++) {
-      const key = `${cue}.${lang}`;
-      if (!audioCache.current[key]) {
-        const audio = new Audio(`/audio/${lang}/${cue}.mp3`);
-        audio.load();
-        audioCache.current[key] = audio;
-      }
-      setDownloadProgress(Math.round(((cue + 1) / TOTAL_CUES) * 100));
-    }
-
-    setIsDownloadingAudio(false);
-  };
+	/** ✅ Load audio (with visible pseudo-progress) */
+	const loadAudioForLanguage = async (lang: string) => {
+	  if (!lang || loadedAudio.current.has(lang)) return;
+	  loadedAudio.current.add(lang);
+	
+	  setIsDownloadingAudio(true);
+	  setDownloadProgress(0);
+	
+	  for (let cue = 0; cue < TOTAL_CUES; cue++) {
+		const key = `${cue}.${lang}`;
+		if (!audioCache.current[key]) {
+		  const audio = new Audio(`/audio/${lang}/${cue}.mp3`);
+		  audio.load();
+		  audioCache.current[key] = audio;
+		}
+	
+		// 👉 künstliche kleine Pause, damit Progress sichtbar wird
+		await new Promise((resolve) => setTimeout(resolve, 30));
+	
+		setDownloadProgress(Math.round(((cue + 1) / TOTAL_CUES) * 100));
+	  }
+	
+	  setIsDownloadingAudio(false);
+	};
 
   const stopCurrentAudio = () => {
     if (currentlyPlayingAudio.current) {
