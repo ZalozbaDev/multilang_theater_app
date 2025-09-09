@@ -146,11 +146,12 @@ export default function TheaterTranslationApp() {
     >
       <h1 className="text-2xl font-semibold mb-4">Pasion 2025</h1>
 
-      {/* ✅ Language Selector */}
-      <div className="mb-4">
-        <label htmlFor="language" className="mr-2 font-medium">
-          Rěč / Sprache / Language
-        </label>
+	<div className="mb-4 flex items-center gap-2">
+	  <label htmlFor="language" className="font-medium">
+		Rěč / Sprache / Language
+	  </label>
+	
+	  <div className="relative flex-1">
 		<select
 		  id="language"
 		  value={selectedLanguage}
@@ -158,12 +159,9 @@ export default function TheaterTranslationApp() {
 			setSelectedLanguage(e.target.value);
 			setTranscript("");
 		  }}
-		  className={`border p-1 rounded font-semibold text-white ${
-			!selectedLanguage
-			  ? "bg-red-500 border-red-600"   // nur Hintergrund für zugeklappten Select
-			  : "bg-green-500 border-green-600"
-		  }`}
-		  style={{ appearance: "none" }} // optional, für sauberes Styling auf allen Browsern
+		  className={`w-full p-1 rounded appearance-none font-semibold text-white
+			${!selectedLanguage ? "bg-red-500 border-red-600" : "bg-green-500 border-green-600"}
+		  `}
 		>
 		  <option value="">-- Wubrać / Auswählen / Select --</option>
 		  {LANGUAGES.map((lang) => (
@@ -172,7 +170,13 @@ export default function TheaterTranslationApp() {
 			</option>
 		  ))}
 		</select>
+	
+		{/* Pfeil für Dropdown */}
+		<span className="absolute right-2 top-1/2 -translate-y-1/2 pointer-events-none text-white">
+		  ▼
+		</span>
 	  </div>
+	</div>
 
       {/* ✅ Audio Playback Toggle */}
       <div className="mb-4">
