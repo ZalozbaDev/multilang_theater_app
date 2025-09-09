@@ -11,8 +11,12 @@ const io = new Server(httpServer, {
   }
 });
 
+// 🔢 Client-Zähler
+let connectedClients = 0;
+
 io.on("connection", (socket) => {
-  console.log("Client connected");
+  connectedClients++;
+  console.log(`Client connected. Aktuell verbunden: ${connectedClients}`);
 
   // Existing event: broadcasting cue updates
   socket.on("cue-update", (cue) => {
@@ -33,7 +37,8 @@ io.on("connection", (socket) => {
   });
 
   socket.on("disconnect", () => {
-    console.log("Client disconnected");
+    connectedClients--;
+    console.log(`Client disconnected. Aktuell verbunden: ${connectedClients}`);
   });
 });
 
