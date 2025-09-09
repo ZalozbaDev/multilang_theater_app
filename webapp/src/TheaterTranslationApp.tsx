@@ -16,29 +16,38 @@ export default function TheaterTranslationApp() {
   const [isDownloadingAudio, setIsDownloadingAudio] = useState(false);
   const [downloadProgress, setDownloadProgress] = useState(0);
 
+  const [isDownloadingTranscript, setIsDownloadingTranscript] = useState(false);
+  const [transcriptProgress, setTranscriptProgress] = useState(0);
+  
   const transcriptCache = useRef<Record<number, Record<string, string>>>({});
   const audioCache = useRef<Record<string, HTMLAudioElement>>({});
   const loadedTranscripts = useRef<Set<string>>(new Set());
   const loadedAudio = useRef<Set<string>>(new Set());
   const currentlyPlayingAudio = useRef<HTMLAudioElement | null>(null);
 
-  /** ✅ Load transcripts ONCE per language */
-  const loadTranscriptsForLanguage = async (lang: string) => {
-    if (!lang || loadedTranscripts.current.has(lang)) return;
-    loadedTranscripts.current.add(lang);
-
-    for (let cue = 0; cue < TOTAL_CUES; cue++) {
-      if (!transcriptCache.current[cue]) transcriptCache.current[cue] = {};
-
-      try {
-        const res = await fetch(`/transcripts/${lang}/${cue}.txt`);
-        const text = await res.text();
-        transcriptCache.current[cue][lang] = text;
-      } catch {
-        transcriptCache.current[cue][lang] = "[n/a]";
-      }
-    }
-  };
+	const loadTranscriptsForLanguage = async (lang: string) => {
+	  if (!lang || loadedTranscripts.current.has(lang)) return;
+	  loadedTranscripts.current.add(lang);
+	
+	  setIsDownloadingTranscript(true);
+	  setTranscriptProgress(0);
+	
+	  for (let cue = 0; cue < TOTAL_CUES; cue++) {
+		if (!transcriptCache.current[cue]) transcriptCache.current[cue] = {};
+	
+		try {
+		  const res = await fetch(`/transcripts/${lang}/${cue}.txt`);
+		  const text = await res.text();
+		  transcriptCache.current[cue][lang] = text;
+		} catch {
+		  transcriptCache.current[cue][lang] = "[n/a]";
+		}
+	
+		setTranscriptProgress(Math.round(((cue + 1) / TOTAL_CUES) * 100));
+	  }
+	
+	  setIsDownloadingTranscript(false);
+	};
 
   /** ✅ Load audio (can be called multiple times, e.g., after enabling audio) */
   const loadAudioForLanguage = async (lang: string) => {
@@ -236,6 +245,21 @@ export default function TheaterTranslationApp() {
           </div>
         </div>
       )}
+	{/* ✅ Transcript Download Progress */}
+	{isDownloadingTranscript && (
+	  <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+		<div className="bg-white p-6 rounded shadow-md w-80 text-center">
+		  <h2 className="mb-4 font-bold text-lg">Downloading Transcripts...</h2>
+		  <div className="w-full bg-gray-200 rounded-full h-4">
+			<div
+			  className="bg-blue-500 h-4 rounded-full"
+			  style={{ width: `${transcriptProgress}%` }}
+			></div>
+		  </div>
+		  <p className="mt-2 text-sm">{transcriptProgress}%</p>
+		</div>
+	  </div>
+	)}
     </div>
   );
 }
