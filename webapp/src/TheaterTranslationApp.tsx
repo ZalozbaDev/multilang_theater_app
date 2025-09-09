@@ -138,27 +138,40 @@ export default function TheaterTranslationApp() {
         <label htmlFor="language" className="mr-2 font-medium">
           Rěč / Sprache / Language
         </label>
-        <select
-          id="language"
-          value={selectedLanguage}
-          onChange={(e) => {
-            setSelectedLanguage(e.target.value);
-            setTranscript(""); // Clear transcript when changing language
-          }}
-          className={`border p-1 rounded ${
-            darkMode
-              ? "bg-gray-800 text-white border-gray-600"
-              : "bg-white text-black border-gray-300"
-          }`}
-        >
-          <option value="">-- Please select language --</option>
-          {LANGUAGES.map((lang) => (
-            <option key={lang} value={lang}>
-              {lang.toUpperCase()}
-            </option>
-          ))}
-        </select>
-      </div>
+		<select
+		  id="language"
+		  value={selectedLanguage}
+		  onChange={(e) => {
+			setSelectedLanguage(e.target.value);
+			setTranscript("");
+		  }}
+		  className={`border p-1 rounded ${
+			darkMode
+			  ? "bg-gray-800 text-white border-gray-600"
+			  : "bg-white text-black border-gray-300"
+		  }`}
+		>
+		  <option
+			value=""
+			className="bg-red-500 text-white"
+		  >
+			-- Wubrać/Auswählen/Select --
+		  </option>
+		  {LANGUAGES.map((lang) => (
+			<option
+			  key={lang}
+			  value={lang}
+			  className={
+				selectedLanguage === lang
+				  ? "bg-green-500 text-white"
+				  : ""
+			  }
+			>
+			  {lang.toUpperCase()}
+			</option>
+		  ))}
+		</select>
+	  </div>
 
       {/* ✅ Audio Playback Toggle */}
       <div className="mb-4">
