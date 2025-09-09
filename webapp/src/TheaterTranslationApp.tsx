@@ -158,28 +158,15 @@ export default function TheaterTranslationApp() {
 			setSelectedLanguage(e.target.value);
 			setTranscript("");
 		  }}
-		  className={`border p-1 rounded ${
-			darkMode
-			  ? "bg-gray-800 text-white border-gray-600"
-			  : "bg-white text-black border-gray-300"
+		  className={`border p-1 rounded font-semibold ${
+			!selectedLanguage
+			  ? "bg-red-500 border-red-600 text-white"
+			  : "bg-green-500 border-green-600 text-white"
 		  }`}
 		>
-		  <option
-			value=""
-			className="bg-red-500 text-white"
-		  >
-			-- Wubrać/Auswählen/Select --
-		  </option>
+		  <option value="">-- Wubrać / Auswählen / Select --</option>
 		  {LANGUAGES.map((lang) => (
-			<option
-			  key={lang}
-			  value={lang}
-			  className={
-				selectedLanguage === lang
-				  ? "bg-green-500 text-white"
-				  : ""
-			  }
-			>
+			<option key={lang} value={lang}>
 			  {lang.toUpperCase()}
 			</option>
 		  ))}
@@ -195,7 +182,7 @@ export default function TheaterTranslationApp() {
             onChange={(e) => setEnableAudio(e.target.checked)}
             disabled={!selectedLanguage}
           />
-          <span>Enable Audio Playback</span>
+          <span>Zwuk / Ton / Audio</span>
         </label>
       </div>
 
@@ -232,35 +219,34 @@ export default function TheaterTranslationApp() {
         {transcript}
       </div>
 
-      {/* ✅ Modal Progress Bar */}
-      {isDownloadingAudio && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-          <div className="bg-white p-6 rounded shadow-md w-80 text-center">
-            <h2 className="mb-4 font-bold text-lg">
-              Downloading Audio Files...
-            </h2>
-            <div className="w-full bg-gray-200 rounded-full h-4">
-              <div
-                className="bg-green-500 h-4 rounded-full"
-                style={{ width: `${downloadProgress}%` }}
-              ></div>
-            </div>
-            <p className="mt-2 text-sm">{downloadProgress}%</p>
-          </div>
-        </div>
-      )}
-	{/* ✅ Transcript Download Progress */}
-	{isDownloadingTranscript && (
+	{(isDownloadingTranscript || isDownloadingAudio) && (
 	  <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
 		<div className="bg-white p-6 rounded shadow-md w-80 text-center">
-		  <h2 className="mb-4 font-bold text-lg">Downloading Transcripts...</h2>
-		  <div className="w-full bg-gray-200 rounded-full h-4">
-			<div
-			  className="bg-blue-500 h-4 rounded-full"
-			  style={{ width: `${transcriptProgress}%` }}
-			></div>
-		  </div>
-		  <p className="mt-2 text-sm">{transcriptProgress}%</p>
+		  <h2 className="mb-4 font-bold text-lg">Downloading Resources...</h2>
+		  
+		  {isDownloadingTranscript && (
+			<>
+			  <p className="font-medium">Transcripts</p>
+			  <div className="w-full bg-gray-200 rounded-full h-4 mb-4">
+				<div
+				  className="bg-blue-500 h-4 rounded-full"
+				  style={{ width: `${transcriptProgress}%` }}
+				/>
+			  </div>
+			</>
+		  )}
+	
+		  {isDownloadingAudio && (
+			<>
+			  <p className="font-medium">Audio</p>
+			  <div className="w-full bg-gray-200 rounded-full h-4">
+				<div
+				  className="bg-green-500 h-4 rounded-full"
+				  style={{ width: `${downloadProgress}%` }}
+				/>
+			  </div>
+			</>
+		  )}
 		</div>
 	  </div>
 	)}
