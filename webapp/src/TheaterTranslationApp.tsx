@@ -72,7 +72,7 @@ export default function TheaterTranslationApp() {
       }
     }
 
-    setTranscript(transcripts[selectedLanguage][cueNum] || '[...]')
+    setTranscript(transcripts[selectedLanguage][cueNum]['text'] || '[...]')
   }
 
   /** ✅ Handle language changes */
