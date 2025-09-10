@@ -1,6 +1,6 @@
 FROM node:20-bookworm-slim
 
-# docker build -t theater_frontend .
+# docker build -t theater_frontend_staging .
 
 WORKDIR /app
 COPY package*.json ./
