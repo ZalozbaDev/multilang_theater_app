@@ -7,7 +7,7 @@ import { io } from 'socket.io-client'
 import { transcripts } from './constants/transcripts.ts'
 
 const TOTAL_CUES = globalThis.env?.ENVVAR_TOTAL_CUES
-const LANGUAGES = ['orig', 'de', 'en', 'fr', 'es', 'it', 'cs', 'pl']
+const LANGUAGES = ['hsb', 'de', 'en', 'fr', 'es', 'it', 'cs', 'pl']
 const socket = io(
   globalThis.env?.ENVVAR_SOCKET_URL || 'https://pasionapi.serbski-inkubator.de'
 )
@@ -156,25 +156,25 @@ export default function AdminPanel() {
               <div className='col-span-2 md:col-span-3 border p-4 rounded bg-yellow-50 border-yellow-600 shadow-lg ring-2 ring-yellow-500 text-center'>
                 {currentCue > 0 && (
                   <div className='text-sm text-gray-600 mb-2'>
-                    ← {transcripts['orig'][currentCue - 1] || '...'}
+                    ← {transcripts['hsb'][currentCue - 1]['text'] || '...'}
                   </div>
                 )}
                 <div className='text-4xl font-bold text-red-600 whitespace-pre-wrap'>
-                  {transcripts['orig'][currentCue] || '[Lade...]'}
+                  {transcripts['hsb'][currentCue]['text'] || '[Lade...]'}
                 </div>
                 {currentCue < TOTAL_CUES - 1 && (
                   <div className='text-sm text-gray-600 mt-2'>
-                    → {transcripts['orig'][currentCue + 1] || '...'}
+                    → {transcripts['hsb'][currentCue + 1]['text'] || '...'}
                   </div>
                 )}
               </div>
 
               {/* ✅ Other languages */}
-              {LANGUAGES.filter(lang => lang !== 'orig').map(lang => (
+              {LANGUAGES.filter(lang => lang !== 'hsb').map(lang => (
                 <div key={lang} className='border p-3 rounded bg-white'>
                   <h2 className='font-semibold mb-2'>{lang.toUpperCase()}</h2>
                   <div className='whitespace-pre-wrap font-mono'>
-                    {transcripts[lang][currentCue] || '[Lade...]'}
+                    {transcripts[lang][currentCue]['text'] || '[Lade...]'}
                   </div>
                 </div>
               ))}
