@@ -4,10 +4,11 @@ import { Button } from './components/ui/button.tsx'
 import { Card, CardContent } from './components/ui/card.tsx'
 import { Input } from './components/ui/input.tsx'
 import { io } from 'socket.io-client'
-import { transcripts } from './constants/transcripts.ts'
+import { languages, transcripts } from './constants/transcripts.ts'
+import { AdminLanguageCell } from './components/admin-language-cell.tsx'
 
-const TOTAL_CUES = globalThis.env?.ENVVAR_TOTAL_CUES
-const LANGUAGES = ['hsb', 'de', 'en', 'fr', 'es', 'it', 'cs', 'pl']
+const TOTAL_CUES = globalThis.env?.ENVVAR_TOTAL_CUES || 100
+
 const socket = io(
   globalThis.env?.ENVVAR_SOCKET_URL || 'https://pasionapi.serbski-inkubator.de'
 )
@@ -170,14 +171,15 @@ export default function AdminPanel() {
               </div>
 
               {/* ✅ Other languages */}
-              {LANGUAGES.filter(lang => lang !== 'hsb').map(lang => (
-                <div key={lang} className='border p-3 rounded bg-white'>
-                  <h2 className='font-semibold mb-2'>{lang.toUpperCase()}</h2>
-                  <div className='whitespace-pre-wrap font-mono'>
-                    {transcripts[lang][currentCue]['text'] || '[Lade...]'}
-                  </div>
-                </div>
-              ))}
+              {languages
+                .filter(lang => lang !== 'hsb')
+                .map(lang => (
+                  <AdminLanguageCell
+                    key={lang}
+                    language={lang}
+                    currentCue={currentCue}
+                  />
+                ))}
             </div>
           </CardContent>
         </Card>
