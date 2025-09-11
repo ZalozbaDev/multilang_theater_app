@@ -17,38 +17,36 @@ export default function TheaterTranslationApp() {
   const [darkMode, setDarkMode] = useState<boolean>(false)
   const [fontSize, setFontSize] = useState<number>(16)
   const [showMainInterface, setShowMainInterface] = useState<boolean>(false)
+  const [isDownloadingAudio, setIsDownloadingAudio] = useState(false)
+  const [downloadProgress, setDownloadProgress] = useState(0)
 
+  const loadedAudio = useRef<Set<string>>(new Set())
   const audioCache = useRef<Record<string, HTMLAudioElement>>({})
   const currentlyPlayingAudio = useRef<HTMLAudioElement | null>(null)
 
-  /** ✅ Load audio on-demand for specific cue and language */
-  const loadAudioForCue = async (
-    cueNum: number,
-    lang: string
-  ): Promise<HTMLAudioElement | null> => {
-    const key = `${cueNum}.${lang}`
+  /** ✅ Load audio (with visible pseudo-progress) */
+  const loadAudioForLanguage = async (lang: string) => {
+    if (!lang || loadedAudio.current.has(lang)) return
+    loadedAudio.current.add(lang)
 
-    // Return cached audio if available
-    if (audioCache.current[key]) {
-      return audioCache.current[key]
+    setIsDownloadingAudio(true)
+    setDownloadProgress(0)
+
+    for (let cue = 0; cue < TOTAL_CUES; cue++) {
+      const key = `${cue}.${lang}`
+      if (!audioCache.current[key]) {
+        const audio = new Audio(`/audio/${lang}/${cue}.mp3`)
+        audio.load()
+        audioCache.current[key] = audio
+      }
+
+      // 👉 künstliche kleine Pause, damit Progress sichtbar wird
+      await new Promise(resolve => setTimeout(resolve, 30))
+
+      setDownloadProgress(Math.round(((cue + 1) / TOTAL_CUES) * 100))
     }
 
-    try {
-      // Create and load audio file on-demand
-      const audio = new Audio(`/audio/${lang}/${cueNum}.mp3`)
-      audio.preload = 'auto'
-
-      // Cache the audio element
-      audioCache.current[key] = audio
-
-      return audio
-    } catch (error) {
-      console.error(
-        `Failed to load audio for cue ${cueNum} in language ${lang}:`,
-        error
-      )
-      return null
-    }
+    setIsDownloadingAudio(false)
   }
 
   const stopCurrentAudio = () => {
@@ -59,12 +57,13 @@ export default function TheaterTranslationApp() {
     }
   }
 
-  const playCue = async (cueNum: number) => {
+  const playCue = (cueNum: number) => {
     setCurrentCue(cueNum)
     stopCurrentAudio()
 
     if (enableAudio && selectedLanguage) {
-      const audio = await loadAudioForCue(cueNum, selectedLanguage)
+      const audioKey = `${cueNum}.${selectedLanguage}`
+      const audio = audioCache.current[audioKey]
       if (audio) {
         audio.currentTime = 0
         audio.play()
@@ -75,10 +74,13 @@ export default function TheaterTranslationApp() {
     setTranscript(transcripts[selectedLanguage][cueNum]['text'] || '[...]')
   }
 
-  /** ✅ Handle language changes */
+  /** ✅ Handle language & audio changes */
   useEffect(() => {
     if (!selectedLanguage) return
-    // Audio is now loaded on-demand, no preloading needed
+
+    if (enableAudio) {
+      loadAudioForLanguage(selectedLanguage)
+    }
   }, [selectedLanguage, enableAudio])
 
   /** ✅ Socket listeners */
@@ -304,6 +306,21 @@ export default function TheaterTranslationApp() {
           </div>
         </div>
       </div>
+      {isDownloadingAudio && (
+        <div className='fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50'>
+          <div className='bg-white p-6 rounded shadow-md w-80 text-center'>
+            <h2 className='mb-4 font-bold text-lg'>Downloading Resources...</h2>
+
+            <p className='font-medium'>Audio</p>
+            <div className='w-full bg-gray-200 rounded-full h-4'>
+              <div
+                className='bg-green-500 h-4 rounded-full'
+                style={{ width: `${downloadProgress}%` }}
+              />
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   )
 }
