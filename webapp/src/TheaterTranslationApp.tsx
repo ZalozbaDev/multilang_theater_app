@@ -3,6 +3,7 @@ import { io } from 'socket.io-client'
 import { transcripts } from './constants/transcripts.ts'
 import { TRANSLATIONS } from './constants/translations.ts'
 import { LANGUAGES } from './constants/languages.ts'
+import { useWakeLock } from './hooks/useWakeLock.ts'
 
 const TOTAL_CUES = globalThis.env?.ENVVAR_TOTAL_CUES
 const socket = io(
@@ -19,6 +20,9 @@ export default function TheaterTranslationApp() {
   const [showMainInterface, setShowMainInterface] = useState<boolean>(false)
   const [isDownloadingAudio, setIsDownloadingAudio] = useState(false)
   const [downloadProgress, setDownloadProgress] = useState(0)
+
+  // Wake lock to prevent screen from sleeping
+  useWakeLock()
 
   const loadedAudio = useRef<Set<string>>(new Set())
   const audioCache = useRef<Record<string, HTMLAudioElement>>({})

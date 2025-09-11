@@ -6,6 +6,7 @@ import { Input } from './components/ui/input.tsx'
 import { io } from 'socket.io-client'
 import { languages, transcripts } from './constants/transcripts.ts'
 import { AdminLanguageCell } from './components/admin-language-cell.tsx'
+import { useWakeLock } from './hooks/useWakeLock.ts'
 
 const TOTAL_CUES = globalThis.env?.ENVVAR_TOTAL_CUES
 
@@ -20,6 +21,9 @@ export default function AdminPanel() {
   const [customCueInput, setCustomCueInput] = useState('')
 
   const [autoPlay, setAutoPlay] = useState(false)
+
+  // Wake lock to prevent screen from sleeping
+  useWakeLock()
 
   const handleLogin = () => {
     const password = prompt('Prošu hesło za administratora:')
