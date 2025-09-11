@@ -7,7 +7,7 @@ import { io } from 'socket.io-client'
 import { languages, transcripts } from './constants/transcripts.ts'
 import { AdminLanguageCell } from './components/admin-language-cell.tsx'
 
-const TOTAL_CUES = globalThis.env?.ENVVAR_TOTAL_CUES || 100
+const TOTAL_CUES = globalThis.env?.ENVVAR_TOTAL_CUES
 
 const socket = io(
   globalThis.env?.ENVVAR_SOCKET_URL || 'https://pasionapi.serbski-inkubator.de'
