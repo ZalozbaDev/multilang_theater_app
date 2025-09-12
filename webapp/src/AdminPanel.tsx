@@ -3,19 +3,16 @@ import React, { useEffect, useState, useRef } from 'react'
 import { Button } from './components/ui/button.tsx'
 import { Card, CardContent } from './components/ui/card.tsx'
 import { Input } from './components/ui/input.tsx'
-import { io } from 'socket.io-client'
 import { languages, getTranscript } from './constants/transcripts.ts'
 import { AdminLanguageCell } from './components/admin-language-cell.tsx'
 import { useWakeLock } from './hooks/useWakeLock.ts'
+import { useSocket } from './hooks/useSocket.tsx'
 
 const TOTAL_CUES = globalThis.env?.ENVVAR_TOTAL_CUES || 5
-
-const socket = io(
-  globalThis.env?.ENVVAR_SOCKET_URL || 'https://pasionapi.serbski-inkubator.de'
-)
 const ADMIN_PASSWORD = globalThis.env?.ENVVAR_ADMIN_PASSWORD || ''
 
 export default function AdminPanel() {
+  const socket = useSocket()
   const [authenticated, setAuthenticated] = useState(false)
   const [currentCue, setCurrentCue] = useState<number>(0)
   const [customCueInput, setCustomCueInput] = useState('')

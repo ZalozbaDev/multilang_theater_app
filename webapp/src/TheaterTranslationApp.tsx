@@ -1,17 +1,14 @@
 import React, { useEffect, useState, useRef } from 'react'
-import { io } from 'socket.io-client'
 import { getTranscript } from './constants/transcripts.ts'
 import { TRANSLATIONS } from './constants/translations.ts'
 import { LANGUAGES } from './constants/languages.ts'
 import { useWakeLock } from './hooks/useWakeLock.ts'
+import { useSocket } from './hooks/useSocket.tsx'
 
 const TOTAL_CUES = globalThis.env?.ENVVAR_TOTAL_CUES
-const socket = io(
-  globalThis.env?.ENVVAR_SOCKET_URL ||
-    'https://staging.pasionapi.serbski-inkubator.de'
-)
 
 export default function TheaterTranslationApp() {
+  const socket = useSocket()
   const [selectedLanguage, setSelectedLanguage] = useState<string>('') // ✅ Default: none
   const [enableAudio, setEnableAudio] = useState<boolean>(false) // ✅ Default: disabled
   const [currentCue, setCurrentCue] = useState<number>(0)

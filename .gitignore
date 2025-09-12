@@ -1,4 +1,5 @@
 webapp/build
 webapp/node_modules
+server/node_modules
 .env
 webapp/public/audio/
