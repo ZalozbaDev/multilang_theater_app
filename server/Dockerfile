@@ -1,6 +1,10 @@
 FROM node:20-bookworm-slim
 
+# productive
 # docker build -t theater_backend .
+
+# staging
+# docker build -t theater_backend_staging .
 
 WORKDIR /app
 COPY package.json ./
