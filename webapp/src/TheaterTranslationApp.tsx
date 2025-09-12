@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react'
 import { io } from 'socket.io-client'
-import { transcripts } from './constants/transcripts.ts'
+import { getTranscript } from './constants/transcripts.ts'
 import { TRANSLATIONS } from './constants/translations.ts'
 import { LANGUAGES } from './constants/languages.ts'
 import { useWakeLock } from './hooks/useWakeLock.ts'
@@ -75,7 +75,7 @@ export default function TheaterTranslationApp() {
       }
     }
 
-    setTranscript(transcripts[selectedLanguage][cueNum]['text'] || '[...]')
+    setTranscript(getTranscript(selectedLanguage, cueNum).text || '[...]')
   }
 
   /** ✅ Handle language & audio changes */

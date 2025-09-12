@@ -4,11 +4,11 @@ import { Button } from './components/ui/button.tsx'
 import { Card, CardContent } from './components/ui/card.tsx'
 import { Input } from './components/ui/input.tsx'
 import { io } from 'socket.io-client'
-import { languages, transcripts } from './constants/transcripts.ts'
+import { languages, getTranscript } from './constants/transcripts.ts'
 import { AdminLanguageCell } from './components/admin-language-cell.tsx'
 import { useWakeLock } from './hooks/useWakeLock.ts'
 
-const TOTAL_CUES = globalThis.env?.ENVVAR_TOTAL_CUES
+const TOTAL_CUES = globalThis.env?.ENVVAR_TOTAL_CUES || 5
 
 const socket = io(
   globalThis.env?.ENVVAR_SOCKET_URL || 'https://pasionapi.serbski-inkubator.de'
@@ -21,10 +21,14 @@ export default function AdminPanel() {
   const [customCueInput, setCustomCueInput] = useState('')
 
   const [autoPlay, setAutoPlay] = useState(false)
-  const [playTrigger, setPlayTrigger] = useState(0) // Counter to trigger play in language cells
+  const [playTrigger, setPlayTrigger] = useState(false)
 
   // Wake lock to prevent screen from sleeping
   useWakeLock()
+
+  const resetPlayTrigger = (state: boolean) => {
+    setPlayTrigger(prev => state)
+  }
 
   const handleLogin = () => {
     const password = prompt('Prošu hesło za administratora:')
@@ -42,10 +46,12 @@ export default function AdminPanel() {
   }
 
   const handlePrevCue = () => {
+    resetPlayTrigger(false)
     if (currentCue > 0) sendCue(currentCue - 1)
   }
 
   const handleNextCue = () => {
+    resetPlayTrigger(false)
     if (currentCue < TOTAL_CUES - 1) sendCue(currentCue + 1)
   }
 
@@ -54,11 +60,12 @@ export default function AdminPanel() {
       socket.emit('play-current', { cue: currentCue })
     }
     // Trigger play in language cells
-    setPlayTrigger(prev => prev + 1)
+    resetPlayTrigger(true)
   }
 
   const handleStopPlayback = () => {
     socket.emit('stop-playback', {})
+    resetPlayTrigger(false)
   }
 
   useEffect(() => {
@@ -68,6 +75,7 @@ export default function AdminPanel() {
     })
     return () => {
       socket.off('cue-update')
+      resetPlayTrigger(false)
     }
   }, [])
 
@@ -119,6 +127,7 @@ export default function AdminPanel() {
                       sendCue(num)
                       setCustomCueInput('') // Clear input after pressing the button
                     }
+                    setPlayTrigger(false)
                   }}
                 >
                   Na tutu linku skočić
@@ -128,7 +137,10 @@ export default function AdminPanel() {
                   <input
                     type='checkbox'
                     checked={autoPlay}
-                    onChange={e => setAutoPlay(e.target.checked)}
+                    onChange={e => {
+                      setAutoPlay(e.target.checked)
+                      resetPlayTrigger(false)
+                    }}
                   />
                   <span>Automatisce wothrać</span>
                 </label>
@@ -164,15 +176,15 @@ export default function AdminPanel() {
               <div className='col-span-2 md:col-span-3 border p-4 rounded bg-yellow-50 border-yellow-600 shadow-lg ring-2 ring-yellow-500 text-center'>
                 {currentCue > 0 && (
                   <div className='text-sm text-gray-600 mb-2'>
-                    ← {transcripts['hsb'][currentCue - 1]['text'] || '...'}
+                    ← {getTranscript('hsb', currentCue - 1).text || '...'}
                   </div>
                 )}
                 <div className='text-4xl font-bold text-red-600 whitespace-pre-wrap'>
-                  {transcripts['hsb'][currentCue]['text'] || '[Lade...]'}
+                  {getTranscript('hsb', currentCue).text || '[Lade...]'}
                 </div>
                 {currentCue < TOTAL_CUES - 1 && (
                   <div className='text-sm text-gray-600 mt-2'>
-                    → {transcripts['hsb'][currentCue + 1]['text'] || '...'}
+                    → {getTranscript('hsb', currentCue + 1).text || '...'}
                   </div>
                 )}
               </div>

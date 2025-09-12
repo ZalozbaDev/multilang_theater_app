@@ -30231,3 +30231,15 @@ export type TranscriptData = {
   text: string
   duration: number
 }
+
+export const getTranscript = (language: Language, cue: number) => {
+  // Check if the cue exists for the given language
+  if (!transcripts[language] || !transcripts[language][cue]) {
+    return {
+      text: null,
+      duration: 0,
+    }
+  }
+
+  return transcripts[language][cue]
+}

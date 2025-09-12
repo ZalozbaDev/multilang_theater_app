@@ -1,14 +1,13 @@
 import React, { FC, useState, useEffect } from 'react'
-import { Language, transcripts } from '../constants/transcripts.ts'
+import { getTranscript, Language } from '../constants/transcripts.ts'
 
 export const AdminLanguageCell: FC<{
   language: Language
   currentCue: number
   autoPlay: boolean
-  playTrigger: number
+  playTrigger: boolean
 }> = ({ language, currentCue, autoPlay, playTrigger }) => {
-  const text = transcripts[language][currentCue]['text'] || '[Lade...]'
-  const duration = transcripts[language][currentCue]['duration'] || 0
+  const { text, duration } = getTranscript(language, currentCue)
   const [showDot, setShowDot] = useState(false)
 
   const startTimer = () => {
@@ -23,12 +22,15 @@ export const AdminLanguageCell: FC<{
       const timer = startTimer()
 
       return () => clearTimeout(timer)
+    } else if (!autoPlay) {
+      // Hide dot when autoPlay is turned off
+      setShowDot(false)
     }
   }, [duration, currentCue, autoPlay])
 
   // Start timer when play is triggered (SPACE button)
   useEffect(() => {
-    if (duration > 0 && playTrigger > 0) {
+    if (duration > 0 && playTrigger) {
       const timer = startTimer()
 
       return () => clearTimeout(timer)
@@ -46,7 +48,7 @@ export const AdminLanguageCell: FC<{
           </div>
         )}
       </div>
-      <div className='whitespace-pre-wrap font-mono'>{text}</div>
+      <div className='whitespace-pre-wrap font-mono'>{text || '[Lade...]'}</div>
     </div>
   )
 }
