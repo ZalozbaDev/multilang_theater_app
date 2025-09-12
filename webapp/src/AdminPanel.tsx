@@ -21,6 +21,7 @@ export default function AdminPanel() {
   const [customCueInput, setCustomCueInput] = useState('')
 
   const [autoPlay, setAutoPlay] = useState(false)
+  const [playTrigger, setPlayTrigger] = useState(0) // Counter to trigger play in language cells
 
   // Wake lock to prevent screen from sleeping
   useWakeLock()
@@ -52,6 +53,8 @@ export default function AdminPanel() {
     if (!autoPlay) {
       socket.emit('play-current', { cue: currentCue })
     }
+    // Trigger play in language cells
+    setPlayTrigger(prev => prev + 1)
   }
 
   const handleStopPlayback = () => {
@@ -182,6 +185,8 @@ export default function AdminPanel() {
                     key={lang}
                     language={lang}
                     currentCue={currentCue}
+                    autoPlay={autoPlay}
+                    playTrigger={playTrigger}
                   />
                 ))}
             </div>

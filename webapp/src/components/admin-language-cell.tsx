@@ -4,21 +4,36 @@ import { Language, transcripts } from '../constants/transcripts.ts'
 export const AdminLanguageCell: FC<{
   language: Language
   currentCue: number
-}> = ({ language, currentCue }) => {
+  autoPlay: boolean
+  playTrigger: number
+}> = ({ language, currentCue, autoPlay, playTrigger }) => {
   const text = transcripts[language][currentCue]['text'] || '[Lade...]'
   const duration = transcripts[language][currentCue]['duration'] || 0
   const [showDot, setShowDot] = useState(false)
 
+  const startTimer = () => {
+    setShowDot(true)
+    return setTimeout(() => {
+      setShowDot(false)
+    }, duration)
+  }
+
   useEffect(() => {
-    if (duration > 0) {
-      setShowDot(true)
-      const timer = setTimeout(() => {
-        setShowDot(false)
-      }, duration)
+    if (duration > 0 && autoPlay) {
+      const timer = startTimer()
 
       return () => clearTimeout(timer)
     }
-  }, [duration, currentCue])
+  }, [duration, currentCue, autoPlay])
+
+  // Start timer when play is triggered (SPACE button)
+  useEffect(() => {
+    if (duration > 0 && playTrigger > 0) {
+      const timer = startTimer()
+
+      return () => clearTimeout(timer)
+    }
+  }, [playTrigger, duration])
 
   return (
     <div key={language} className='border p-3 rounded bg-white'>
@@ -31,9 +46,7 @@ export const AdminLanguageCell: FC<{
           </div>
         )}
       </div>
-      <div className='whitespace-pre-wrap font-mono'>
-        {transcripts[language][currentCue]['text'] || '[Lade...]'}
-      </div>
+      <div className='whitespace-pre-wrap font-mono'>{text}</div>
     </div>
   )
 }
