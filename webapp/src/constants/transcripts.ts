@@ -9143,7 +9143,7 @@ export const transcripts =
     },
     "392": {
       "text": "-",
-      "duration": 1176
+      "duration": 1032
     },
     "393": {
       "text": "He is a prophet!",
@@ -9159,7 +9159,7 @@ export const transcripts =
     },
     "396": {
       "text": "-",
-      "duration": 1344
+      "duration": 1032
     },
     "397": {
       "text": "He is the awaited Messiah.",
@@ -10923,7 +10923,7 @@ export const transcripts =
     },
     "837": {
       "text": "It is finished!",
-      "duration": 1248
+      "duration": 1536
     },
     "838": {
       "text": "Surely he was the Son of God!",
@@ -11287,7 +11287,7 @@ export const transcripts =
     },
     "928": {
       "text": "Hallelujah!",
-      "duration": 1104
+      "duration": 1440
     },
     "929": {
       "text": "Forgiving is a gift.",
@@ -11299,7 +11299,7 @@ export const transcripts =
     },
     "931": {
       "text": "Hallelujah!",
-      "duration": 1176
+      "duration": 1440
     },
     "932": {
       "text": "Those who search for the signs and recognize them will find him.",
@@ -12929,7 +12929,7 @@ export const transcripts =
     },
     "392": {
       "text": "-",
-      "duration": 1224
+      "duration": 1032
     },
     "393": {
       "text": "C'est un prophète !",
@@ -12945,7 +12945,7 @@ export const transcripts =
     },
     "396": {
       "text": "-",
-      "duration": 528
+      "duration": 1032
     },
     "397": {
       "text": "Il est le Messie attendu.",
@@ -15535,7 +15535,7 @@ export const transcripts =
     },
     "97": {
       "text": "No veo nada",
-      "duration": 1344
+      "duration": 1632
     },
     "98": {
       "text": "¡Saul!",
@@ -16359,7 +16359,7 @@ export const transcripts =
     },
     "303": {
       "text": "Doce.",
-      "duration": 1320
+      "duration": 528
     },
     "304": {
       "text": "Doce canastas de piezas rotas que quedaron.",
@@ -16491,7 +16491,7 @@ export const transcripts =
     },
     "336": {
       "text": "Bueno.",
-      "duration": 792
+      "duration": 672
     },
     "337": {
       "text": "No estuve con él todo el tiempo.",
@@ -16715,7 +16715,7 @@ export const transcripts =
     },
     "392": {
       "text": "-",
-      "duration": 1176
+      "duration": 1032
     },
     "393": {
       "text": "¡Es un profeta!",
@@ -16731,7 +16731,7 @@ export const transcripts =
     },
     "396": {
       "text": "-",
-      "duration": 1344
+      "duration": 1032
     },
     "397": {
       "text": "Él es el Mesías esperado.",
@@ -16959,7 +16959,7 @@ export const transcripts =
     },
     "453": {
       "text": "Viene diariamente al templo.",
-      "duration": 2256
+      "duration": 1800
     },
     "454": {
       "text": "Allí podríamos capturarlo.",
@@ -18495,7 +18495,7 @@ export const transcripts =
     },
     "837": {
       "text": "¡Está acabado!",
-      "duration": 1248
+      "duration": 1536
     },
     "838": {
       "text": "¡Seguro que era el Hijo de Dios!",
@@ -20417,7 +20417,7 @@ export const transcripts =
     },
     "371": {
       "text": "Každá rostlina, kterou nezasadil můj nebeský Otec, bude vyvrácena i s kořeny.",
-      "duration": 576
+      "duration": 5208
     },
     "372": {
       "text": "Nech je.",
@@ -20501,7 +20501,7 @@ export const transcripts =
     },
     "392": {
       "text": "-",
-      "duration": 216
+      "duration": 1032
     },
     "393": {
       "text": "Je to prorok!",
@@ -20517,7 +20517,7 @@ export const transcripts =
     },
     "396": {
       "text": "-",
-      "duration": 1224
+      "duration": 1032
     },
     "397": {
       "text": "On je očekávaný Mesiáš.",
@@ -21173,7 +21173,7 @@ export const transcripts =
     },
     "560": {
       "text": "Petrovo trojí zapření?",
-      "duration": 1368
+      "duration": 2328
     },
     "561": {
       "text": "Pokušení: Zkoušet něco, co znám, je zakázáno.",
@@ -24203,7 +24203,7 @@ export const transcripts =
     },
     "371": {
       "text": "Każda roślina, której mój Ojciec niebiański nie zasadził, będzie wyrwana z korzeniami.",
-      "duration": 4392
+      "duration": 7752
     },
     "372": {
       "text": "Zostaw je.",
@@ -24287,7 +24287,7 @@ export const transcripts =
     },
     "392": {
       "text": "-",
-      "duration": 1176
+      "duration": 1032
     },
     "393": {
       "text": "On jest prorokiem!",
@@ -24303,7 +24303,7 @@ export const transcripts =
     },
     "396": {
       "text": "-",
-      "duration": 1344
+      "duration": 1032
     },
     "397": {
       "text": "On jest oczekującym Mesjaszem.",
@@ -25091,7 +25091,7 @@ export const transcripts =
     },
     "593": {
       "text": "Judaszu, oszalałeś?",
-      "duration": 1824
+      "duration": 2520
     },
     "594": {
       "text": "Judaszu, co nam zrobiłeś?",
@@ -28073,7 +28073,7 @@ export const transcripts =
     },
     "392": {
       "text": "-",
-      "duration": 1440
+      "duration": 1032
     },
     "393": {
       "text": "È un profeta!",
@@ -28089,7 +28089,7 @@ export const transcripts =
     },
     "396": {
       "text": "-",
-      "duration": 1224
+      "duration": 1032
     },
     "397": {
       "text": "Egli è il Messia atteso.",
@@ -28185,7 +28185,7 @@ export const transcripts =
     },
     "420": {
       "text": "Quando vi ho assunti, non eravate persone di nessuno senza una guida.",
-      "duration": 3000
+      "duration": 4512
     },
     "421": {
       "text": "Pilato!",
@@ -29089,7 +29089,7 @@ export const transcripts =
     },
     "646": {
       "text": "Per questo sono nato e per questo sono venuto al mondo: per rendere testimonianza alla verità.",
-      "duration": 6432
+      "duration": 5784
     },
     "647": {
       "text": "Tutti dalla parte della verità mi ascoltano.",
