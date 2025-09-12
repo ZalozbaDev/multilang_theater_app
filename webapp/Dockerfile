@@ -1,9 +1,11 @@
 FROM node:20-bookworm-slim
 
 # productive
+# diff src/constants/transcripts.ts ../../simultrans_pasion_2025/transcripts.ts
 # docker build -t theater_frontend .
 
 # staging
+# diff src/constants/transcripts.ts ../../simultrans_pasion_2025/transcripts.ts
 # docker build -t theater_frontend_staging .
 
 WORKDIR /app
