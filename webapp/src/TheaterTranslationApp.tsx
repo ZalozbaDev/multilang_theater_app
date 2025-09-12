@@ -7,7 +7,8 @@ import { useWakeLock } from './hooks/useWakeLock.ts'
 
 const TOTAL_CUES = globalThis.env?.ENVVAR_TOTAL_CUES
 const socket = io(
-  globalThis.env?.ENVVAR_SOCKET_URL || 'https://pasionapi.serbski-inkubator.de'
+  globalThis.env?.ENVVAR_SOCKET_URL ||
+    'https://staging.pasionapi.serbski-inkubator.de'
 )
 
 export default function TheaterTranslationApp() {
@@ -87,6 +88,12 @@ export default function TheaterTranslationApp() {
     }
   }, [selectedLanguage, enableAudio])
 
+  useEffect(() => {
+    if (selectedLanguage) {
+      setTranscript(getTranscript(selectedLanguage, currentCue).text || '[...]')
+    }
+  }, [selectedLanguage, currentCue])
+
   /** ✅ Socket listeners */
   useEffect(() => {
     socket.on('cue-update', async (cue: string) => {
@@ -110,8 +117,24 @@ export default function TheaterTranslationApp() {
   }, [selectedLanguage, enableAudio])
 
   const handleLanguageSelect = (languageCode: string) => {
+    // Stop any currently playing audio
+    stopCurrentAudio()
+
+    // Reset audio state
+    setEnableAudio(false)
+
+    // Clear audio cache for the new language
+    loadedAudio.current.clear()
+    audioCache.current = {}
+
+    // Set new language
     setSelectedLanguage(languageCode)
     setShowMainInterface(true)
+
+    // Update transcript immediately for the new language
+    setTranscript(
+      getTranscript(languageCode as any, currentCue).text || '[...]'
+    )
   }
 
   const getTranslations = () => {
