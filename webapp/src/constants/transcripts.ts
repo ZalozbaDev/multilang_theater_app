@@ -3789,3787 +3789,3787 @@ export const transcripts =
   "de": {
     "0": {
       "text": "Großvater, komm!",
-      "duration": 0
+      "duration": 2616
     },
     "1": {
       "text": "Ich komme doch, Hanka!",
-      "duration": 0
+      "duration": 1896
     },
     "2": {
       "text": "Du sagtest, dass du mir folgst, aber tust es nicht!",
-      "duration": 0
+      "duration": 5112
     },
     "3": {
       "text": "Wenn ich könnte",
-      "duration": 0
+      "duration": 1896
     },
     "4": {
       "text": "Aber Großvater, so alt bist du noch nicht.",
-      "duration": 0
+      "duration": 4248
     },
     "5": {
       "text": "Komm, Großvater, ich will nichts verpassen!",
-      "duration": 0
+      "duration": 3672
     },
     "6": {
       "text": "Du bringst mich noch ins Grab!",
-      "duration": 0
+      "duration": 3240
     },
     "7": {
       "text": "Mir tut alles weh.",
-      "duration": 0
+      "duration": 1776
     },
     "8": {
       "text": "Ruh dich etwas aus!",
-      "duration": 0
+      "duration": 2856
     },
     "9": {
       "text": "Großvater, ich höre ständig den Namen Jesus",
-      "duration": 0
+      "duration": 4704
     },
     "10": {
       "text": "und Messias",
-      "duration": 0
+      "duration": 1584
     },
     "11": {
       "text": "und Erlöser der Welt.",
-      "duration": 0
+      "duration": 1680
     },
     "12": {
       "text": "Aber Großvater, ich sehe ihn nicht. Komm weiter!",
-      "duration": 0
+      "duration": 5832
     },
     "13": {
       "text": "Psst, Hanka! Nicht so laut! Das ist gefährlich.",
-      "duration": 0
+      "duration": 6600
     },
     "14": {
       "text": "Großvater, ich fürchte mich nicht! Folge mir! Folge mir!",
-      "duration": 0
+      "duration": 5616
     },
     "15": {
       "text": "Annanias! Sei gegrüßt, Annanias! Wohin des Weges?",
-      "duration": 0
+      "duration": 3984
     },
     "16": {
       "text": "Zum Stadttor, Marta.",
-      "duration": 0
+      "duration": 2568
     },
     "17": {
       "text": "Zum Stadttor?",
-      "duration": 0
+      "duration": 1488
     },
     "18": {
       "text": "Ja, dort erzählt der Diakon Stephan gerade von Jesus aus Nazareth.",
-      "duration": 0
+      "duration": 6552
     },
     "19": {
       "text": "Wer ist dieser Stephan?",
-      "duration": 0
+      "duration": 2232
     },
     "20": {
       "text": "Er ist weise und voller Gnade.",
-      "duration": 0
+      "duration": 3288
     },
     "21": {
       "text": "Er erklärt die Lehren Jesu wie ein Gelehrter und ist im Volk sehr beliebt.",
-      "duration": 0
+      "duration": 6408
     },
     "22": {
       "text": "Er erzählt von den Taten Jesu und immer mehr Menschen lassen sich taufen.",
-      "duration": 0
+      "duration": 5640
     },
     "23": {
       "text": "Die Pharisäer haben große Angst vor ihm und hassen ihn.",
-      "duration": 0
+      "duration": 4320
     },
     "24": {
       "text": "Schon mehrfach versuchten sie, ihn zu verhaften.",
-      "duration": 0
+      "duration": 4224
     },
     "25": {
       "text": "Er erzählt von Jesus?",
-      "duration": 0
+      "duration": 1872
     },
     "26": {
       "text": "Marta, psst!",
-      "duration": 0
+      "duration": 1680
     },
     "27": {
       "text": "Ich begleite dich!",
-      "duration": 0
+      "duration": 2184
     },
     "28": {
       "text": "Ich will ihn sehen und ihm zuhören.",
-      "duration": 0
+      "duration": 3216
     },
     "29": {
       "text": "Erzähle uns mehr von diesem Jesus",
-      "duration": 0
+      "duration": 4368
     },
     "30": {
       "text": "Ja, sprich weiter",
-      "duration": 0
+      "duration": 2376
     },
     "31": {
       "text": "Ja, erzähl uns mehr",
-      "duration": 0
+      "duration": 2688
     },
     "32": {
       "text": "Jesus war nicht nur ein Prophet, nein, er ist für uns gestorben.",
-      "duration": 0
+      "duration": 6744
     },
     "33": {
       "text": "Er hat sich am Kreuz geopfert.",
-      "duration": 0
+      "duration": 2328
     },
     "34": {
       "text": "Er führt uns in eine neue Zukunft.",
-      "duration": 0
+      "duration": 3120
     },
     "35": {
       "text": "Glaubt mir!",
-      "duration": 0
+      "duration": 1536
     },
     "36": {
       "text": "Er ist der gesandte Erlöser.",
-      "duration": 0
+      "duration": 4704
     },
     "37": {
       "text": "Der Messias, wie in den Schriften angekündigt.",
-      "duration": 0
+      "duration": 5136
     },
     "38": {
       "text": "Er führt uns in das Reich Gottes.",
-      "duration": 0
+      "duration": 3576
     },
     "39": {
       "text": "Lügen, alles Lügen!",
-      "duration": 0
+      "duration": 3120
     },
     "40": {
       "text": "Jesus aus Nazareth ist ein Gotteslästerer, der gegen Moses und unsere Hohepriester gesprochen hat.",
-      "duration": 0
+      "duration": 8688
     },
     "41": {
       "text": "Mann, du lügst!",
-      "duration": 0
+      "duration": 2136
     },
     "42": {
       "text": "Aber Hanka!",
-      "duration": 0
+      "duration": 2088
     },
     "43": {
       "text": "Da hat sie Recht. Stephan, sprich weiter!",
-      "duration": 0
+      "duration": 4056
     },
     "44": {
       "text": "Welchen Propheten haben eure Väter nicht verfolgt?",
-      "duration": 0
+      "duration": 4008
     },
     "45": {
       "text": "Und sie haben getötet, die zuvor verkündigten das Kommen des Gerechten.",
-      "duration": 0
+      "duration": 5328
     },
     "46": {
       "text": "Dessen Verräter und Mörder ihr nun geworden seid.",
-      "duration": 0
+      "duration": 5016
     },
     "47": {
       "text": "Ihr habt das Gesetz empfangen durch Weisung von Engeln und habt’s nicht gehalten.",
-      "duration": 0
+      "duration": 5976
     },
     "48": {
       "text": "Was ist das für ein Lärm?",
-      "duration": 0
+      "duration": 2880
     },
     "49": {
       "text": "Komm, Saulus, wir müssen weiter, es ist noch ein weiter Weg.",
-      "duration": 0
+      "duration": 5208
     },
     "50": {
       "text": "Wir werden in Damaskus erwartet.",
-      "duration": 0
+      "duration": 2880
     },
     "51": {
       "text": "Der Hohepriester ist ungeduldig.",
-      "duration": 0
+      "duration": 3864
     },
     "52": {
       "text": "Halt die Klappe und das Pferd!",
-      "duration": 0
+      "duration": 2520
     },
     "53": {
       "text": "Weshalb versammelt ihr euch vor dem Stadttor?",
-      "duration": 0
+      "duration": 3792
     },
     "54": {
       "text": "Der junge Diakon Stephan spricht über das Wirken Jesu.",
-      "duration": 0
+      "duration": 4008
     },
     "55": {
       "text": "Ist er auch so ein Anhänger des Nazareners?",
-      "duration": 0
+      "duration": 3408
     },
     "56": {
       "text": "Ich denke schon.",
-      "duration": 0
+      "duration": 1416
     },
     "57": {
       "text": "Ich sehe den Himmel offen stehen!  Ich sehe den Menschensohn, wie er an der rechten Seite Gottes steht!",
-      "duration": 0
+      "duration": 10224
     },
     "58": {
       "text": "Dieser Mensch hört nicht auf, zu reden gegen diese heiligen Stätte und das Gesetz.",
-      "duration": 0
+      "duration": 4920
     },
     "59": {
       "text": "Denn wir haben ihn sagen hören:",
-      "duration": 0
+      "duration": 3432
     },
     "60": {
       "text": "Dieser Jesus von Nazareth wird diese Stätte zerstören und die Ordnungen ändern, die uns Mose gegeben hat.",
-      "duration": 0
+      "duration": 8039
     },
     "61": {
       "text": "Diesen ganzen Anhängern werden wir brutale Härte zeigen.",
-      "duration": 0
+      "duration": 4008
     },
     "62": {
       "text": "In ein paar Monaten, glaubt mir, redet keiner mehr über diesen Jesus, den man in Jerusalem gekreuzigt hat.",
-      "duration": 0
+      "duration": 7800
     },
     "63": {
       "text": "Man spricht sogar davon, dass er am dritten Tage",
-      "duration": 0
+      "duration": 3960
     },
     "64": {
       "text": "auferstanden ist.",
-      "duration": 0
+      "duration": 1872
     },
     "65": {
       "text": "Alles Märchen!",
-      "duration": 0
+      "duration": 2352
     },
     "66": {
       "text": "Über Jesus und seine Lehren spricht bald niemand mehr.",
-      "duration": 0
+      "duration": 5352
     },
     "67": {
       "text": "Dafür sorge ich.",
-      "duration": 0
+      "duration": 1752
     },
     "68": {
       "text": "Steinigt ihn!",
-      "duration": 0
+      "duration": 1944
     },
     "69": {
       "text": "Herr Jesus, nimm meinen Geist auf!",
-      "duration": 0
+      "duration": 4656
     },
     "70": {
       "text": "Steinigt ihn!",
-      "duration": 0
+      "duration": 1536
     },
     "71": {
       "text": "Herr, rechne ihnen diese Sünde nicht an!",
-      "duration": 0
+      "duration": 4944
     },
     "72": {
       "text": "Steinigt ihn!",
-      "duration": 0
+      "duration": 1896
     },
     "73": {
       "text": "Mensch, was hat er gesagt?",
-      "duration": 0
+      "duration": 3024
     },
     "74": {
       "text": "Herr, rechne ihnen diese Sünde nicht an, wenn ich es richtig gehört habe.",
-      "duration": 0
+      "duration": 5640
     },
     "75": {
       "text": "Gotteslästerung!",
-      "duration": 0
+      "duration": 2688
     },
     "76": {
       "text": "Saulus, komm weiter!",
-      "duration": 0
+      "duration": 2664
     },
     "77": {
       "text": "Misch dich nicht ein!",
-      "duration": 0
+      "duration": 2136
     },
     "78": {
       "text": "Unser Weg ist weit.",
-      "duration": 0
+      "duration": 3240
     },
     "79": {
       "text": "Reitet weiter und nehmt mein Pferd mit.",
-      "duration": 0
+      "duration": 3864
     },
     "80": {
       "text": "Ich",
-      "duration": 0
+      "duration": 1200
     },
     "81": {
       "text": "Aber Saulus",
-      "duration": 0
+      "duration": 2280
     },
     "82": {
       "text": "Ich kenne den Weg!",
-      "duration": 0
+      "duration": 1680
     },
     "83": {
       "text": "Saulus, es ist noch weit.",
-      "duration": 0
+      "duration": 3432
     },
     "84": {
       "text": "Reitet weiter!",
-      "duration": 0
+      "duration": 2568
     },
     "85": {
       "text": "Rechne ihnen diese Sünde nicht an",
-      "duration": 0
+      "duration": 3264
     },
     "86": {
       "text": "Herr, rechne ihnen diese Sünde nicht an.",
-      "duration": 0
+      "duration": 3888
     },
     "87": {
       "text": "Was habe ich getan?",
-      "duration": 0
+      "duration": 2232
     },
     "88": {
       "text": "Ich habe einen jungen Mann verurteilt und sie haben ihn gesteinigt.",
-      "duration": 0
+      "duration": 4920
     },
     "89": {
       "text": "Warum?",
-      "duration": 0
+      "duration": 1416
     },
     "90": {
       "text": "Ich habe gemordet",
-      "duration": 0
+      "duration": 2184
     },
     "91": {
       "text": "Ich bin ein Mörder",
-      "duration": 0
+      "duration": 2088
     },
     "92": {
       "text": "Nein, das will ich nicht",
-      "duration": 0
+      "duration": 3072
     },
     "93": {
       "text": "Das bin ich nicht.",
-      "duration": 0
+      "duration": 2064
     },
     "94": {
       "text": "Saulus, Saulus!",
-      "duration": 0
+      "duration": 2616
     },
     "95": {
       "text": "Saulus, Saulus!",
-      "duration": 0
+      "duration": 1824
     },
     "96": {
       "text": "Wer ist da?",
-      "duration": 0
+      "duration": 1440
     },
     "97": {
       "text": "Ich sehe nichts",
-      "duration": 0
+      "duration": 1680
     },
     "98": {
       "text": "Saulus!",
-      "duration": 0
+      "duration": 1344
     },
     "99": {
       "text": "Saulus! Warum verfolgst du mich?",
-      "duration": 0
+      "duration": 4032
     },
     "100": {
       "text": "Verfolgst du mich",
-      "duration": 0
+      "duration": 1968
     },
     "101": {
       "text": "Verfolgst du mich",
-      "duration": 0
+      "duration": 1968
     },
     "102": {
       "text": "Wer bist du?",
-      "duration": 0
+      "duration": 1416
     },
     "103": {
       "text": "Ich bin Jesus.",
-      "duration": 0
+      "duration": 1968
     },
     "104": {
       "text": "Der, den du nicht anerkennst.",
-      "duration": 0
+      "duration": 2976
     },
     "105": {
       "text": "Bekehre dich und folge mir nach.",
-      "duration": 0
+      "duration": 3120
     },
     "106": {
       "text": "Folge mir nach!",
-      "duration": 0
+      "duration": 1584
     },
     "107": {
       "text": "Folge mir nach!",
-      "duration": 0
+      "duration": 1656
     },
     "108": {
       "text": "Wie?",
-      "duration": 0
+      "duration": 1128
     },
     "109": {
       "text": "Was soll ich tun?",
-      "duration": 0
+      "duration": 2208
     },
     "110": {
       "text": "Ich kenne dich nicht.",
-      "duration": 0
+      "duration": 1872
     },
     "111": {
       "text": "Steh auf und gehe in die Stadt.",
-      "duration": 0
+      "duration": 3336
     },
     "112": {
       "text": "Trage ab sofort den Namen Paulus.",
-      "duration": 0
+      "duration": 3864
     },
     "113": {
       "text": "Suche nach Menschen, die mich kennen.",
-      "duration": 0
+      "duration": 3216
     },
     "114": {
       "text": "Folge mir nach!",
-      "duration": 0
+      "duration": 1584
     },
     "115": {
       "text": "Folge mir nach!",
-      "duration": 0
+      "duration": 1440
     },
     "116": {
       "text": "Mensch, was ist dir widerfahren?",
-      "duration": 0
+      "duration": 3120
     },
     "117": {
       "text": "Wer bist du?",
-      "duration": 0
+      "duration": 1344
     },
     "118": {
       "text": "Ich sehe nichts.",
-      "duration": 0
+      "duration": 1824
     },
     "119": {
       "text": "Lass mich in Ruhe!",
-      "duration": 0
+      "duration": 2184
     },
     "120": {
       "text": "Fürchte dich nicht!",
-      "duration": 0
+      "duration": 2112
     },
     "121": {
       "text": "Sprich, was ist geschehen?",
-      "duration": 0
+      "duration": 2856
     },
     "122": {
       "text": "Das glaubt mir keiner!",
-      "duration": 0
+      "duration": 2280
     },
     "123": {
       "text": "Niemand wird glauben, was mir eben widerfahren ist.",
-      "duration": 0
+      "duration": 3912
     },
     "124": {
       "text": "Ich bin ein Mörder.",
-      "duration": 0
+      "duration": 2304
     },
     "125": {
       "text": "Herr, rechne ihnen diese Sünde nicht an!",
-      "duration": 0
+      "duration": 4536
     },
     "126": {
       "text": "Rief der junge Diakon gen Himmel.",
-      "duration": 0
+      "duration": 3864
     },
     "127": {
       "text": "Und ich habe ihn zum Tode verurteilt",
-      "duration": 0
+      "duration": 4056
     },
     "128": {
       "text": "Ich befahl. Steinigt ihn!",
-      "duration": 0
+      "duration": 3048
     },
     "129": {
       "text": "Ich habe eben eine Stimme gehört, die sagte. Ich bin Jesus. Bekehre dich und folge mir nach.",
-      "duration": 0
+      "duration": 7680
     },
     "130": {
       "text": "Aber ich kenne ihn nicht.",
-      "duration": 0
+      "duration": 2664
     },
     "131": {
       "text": "Wer war dieser Jesus?",
-      "duration": 0
+      "duration": 2856
     },
     "132": {
       "text": "Ich bin ein Mörder",
-      "duration": 0
+      "duration": 1992
     },
     "133": {
       "text": "Ein Mörder",
-      "duration": 0
+      "duration": 1488
     },
     "134": {
       "text": "Er liebt dich",
-      "duration": 0
+      "duration": 1320
     },
     "135": {
       "text": "und hat mich hergeschickt, um dir zu helfen.",
-      "duration": 0
+      "duration": 4512
     },
     "136": {
       "text": "Mensch, wie heißt du?",
-      "duration": 0
+      "duration": 2688
     },
     "137": {
       "text": "Ich heiße Sau Paulus!",
-      "duration": 0
+      "duration": 3264
     },
     "138": {
       "text": "Paulus, komm mit mir.",
-      "duration": 0
+      "duration": 2544
     },
     "139": {
       "text": "Annanias!",
-      "duration": 0
+      "duration": 1536
     },
     "140": {
       "text": "Friede sei mit euch!",
-      "duration": 0
+      "duration": 1896
     },
     "141": {
       "text": "Erschreckt nicht!",
-      "duration": 0
+      "duration": 1416
     },
     "142": {
       "text": "Ich habe einen neuen Freund mitgebracht.",
-      "duration": 0
+      "duration": 3072
     },
     "143": {
       "text": "Bist du verrückt, einen Fremden mitzubringen?",
-      "duration": 0
+      "duration": 3264
     },
     "144": {
       "text": "Du weißt doch, dass man uns verfolgt und dass unser Treffen hier geheim ist.",
-      "duration": 0
+      "duration": 5496
     },
     "145": {
       "text": "Wer ist er, Annanias?",
-      "duration": 0
+      "duration": 2880
     },
     "146": {
       "text": "Fürchtet euch nicht.",
-      "duration": 0
+      "duration": 1584
     },
     "147": {
       "text": "Er ist wirklich ein Freund.",
-      "duration": 0
+      "duration": 2856
     },
     "148": {
       "text": "Paulus.",
-      "duration": 0
+      "duration": 1416
     },
     "149": {
       "text": "Ich bin Paulus.",
-      "duration": 0
+      "duration": 1728
     },
     "150": {
       "text": "Ja und?",
-      "duration": 0
+      "duration": 2088
     },
     "151": {
       "text": "Er erzählte, dass Jesus sich ihm offenbarte und zu ihm sprach.",
-      "duration": 0
+      "duration": 5112
     },
     "152": {
       "text": "Jesus, unser Herr?",
-      "duration": 0
+      "duration": 2280
     },
     "153": {
       "text": "Das glaube ich nicht.",
-      "duration": 0
+      "duration": 2928
     },
     "154": {
       "text": "Ich glaube es.",
-      "duration": 0
+      "duration": 1632
     },
     "155": {
       "text": "Der Herr hat mich zu ihm geschickt, um ihm zu helfen.",
-      "duration": 0
+      "duration": 4176
     },
     "156": {
       "text": "Ich habe Paulus geholfen.",
-      "duration": 0
+      "duration": 2376
     },
     "157": {
       "text": "Seid gegrüßt.",
-      "duration": 0
+      "duration": 2112
     },
     "158": {
       "text": "Annanias hat mir sehr geholfen.",
-      "duration": 0
+      "duration": 3120
     },
     "159": {
       "text": "Ich bin erblindet und Jesus sprach zu mir, dass ich mich ändern soll, mich bekehren, und ihm nachfolgen.",
-      "duration": 0
+      "duration": 8520
     },
     "160": {
       "text": "Folge mir nach!",
-      "duration": 0
+      "duration": 1632
     },
     "161": {
       "text": "Folge mir nach!",
-      "duration": 0
+      "duration": 1776
     },
     "162": {
       "text": "Folge mir nach!",
-      "duration": 0
+      "duration": 1824
     },
     "163": {
       "text": "Ich kenne ihn nicht.",
-      "duration": 0
+      "duration": 2232
     },
     "164": {
       "text": "Wie soll ich ihm denn folgen?",
-      "duration": 0
+      "duration": 2256
     },
     "165": {
       "text": "Dasselbe habe ich mich damals auch gefragt.",
-      "duration": 0
+      "duration": 3912
     },
     "166": {
       "text": "Fürchte dich nicht",
-      "duration": 0
+      "duration": 2136
     },
     "167": {
       "text": "Er führt.",
-      "duration": 0
+      "duration": 1728
     },
     "168": {
       "text": "Er lehrte. Liebe deinen Nächsten, wie dich selbst!",
-      "duration": 0
+      "duration": 5496
     },
     "169": {
       "text": "Behandle andere, wie du selbst behandelt werden möchtest.",
-      "duration": 0
+      "duration": 5064
     },
     "170": {
       "text": "Sie kreuzigten ihn.",
-      "duration": 0
+      "duration": 2208
     },
     "171": {
       "text": "Er ist auferstanden und überwand den Tod.",
-      "duration": 0
+      "duration": 3912
     },
     "172": {
       "text": "Er war menschlich.",
-      "duration": 0
+      "duration": 2376
     },
     "173": {
       "text": "Der himmlische Vater hat ihn nach Jerusalem geschickt.",
-      "duration": 0
+      "duration": 4608
     },
     "174": {
       "text": "Nur langsam erkennen wir, wie alles zusammengehört.",
-      "duration": 0
+      "duration": 4752
     },
     "175": {
       "text": "Seine Lehren sind seine Predigten",
-      "duration": 0
+      "duration": 3096
     },
     "176": {
       "text": "seine Taten",
-      "duration": 0
+      "duration": 1584
     },
     "177": {
       "text": "seine Zeichen",
-      "duration": 0
+      "duration": 2400
     },
     "178": {
       "text": "seine Wunder.",
-      "duration": 0
+      "duration": 1896
     },
     "179": {
       "text": "Das verstehe ich nicht.",
-      "duration": 0
+      "duration": 1896
     },
     "180": {
       "text": "Welche Taten?",
-      "duration": 0
+      "duration": 1944
     },
     "181": {
       "text": "Welche Zeichen?",
-      "duration": 0
+      "duration": 1872
     },
     "182": {
       "text": "Welche Wunder?",
-      "duration": 0
+      "duration": 2184
     },
     "183": {
       "text": "Verzeih!",
-      "duration": 0
+      "duration": 1080
     },
     "184": {
       "text": "Setz dich.",
-      "duration": 0
+      "duration": 1536
     },
     "185": {
       "text": "Ich erzähle dir von der Hochzeit in Kana.",
-      "duration": 0
+      "duration": 4152
     },
     "186": {
       "text": "Hej Gastmahl!",
-      "duration": 0
+      "duration": 1320
     },
     "187": {
       "text": "Zum Tanze, Gastmal, komm!",
-      "duration": 0
+      "duration": 2520
     },
     "188": {
       "text": "Jesus, komm!",
-      "duration": 0
+      "duration": 2232
     },
     "189": {
       "text": "Hier ist es so schön!",
-      "duration": 0
+      "duration": 2520
     },
     "190": {
       "text": "Komm tanzen!",
-      "duration": 0
+      "duration": 1464
     },
     "191": {
       "text": "Magdalena, nimm ihn mit und Judas auch.",
-      "duration": 0
+      "duration": 3336
     },
     "192": {
       "text": "Jesus, komm!",
-      "duration": 0
+      "duration": 2328
     },
     "193": {
       "text": "Komm!",
-      "duration": 0
+      "duration": 1728
     },
     "194": {
       "text": "Ob er das kann?",
-      "duration": 0
+      "duration": 1584
     },
     "195": {
       "text": "Petrus, das kann jedes Kind.",
-      "duration": 0
+      "duration": 3480
     },
     "196": {
       "text": "Komm, Jesus!",
-      "duration": 0
+      "duration": 1776
     },
     "197": {
       "text": "Es ist nicht richtig, was wir hier tun, Johannes!",
-      "duration": 0
+      "duration": 3024
     },
     "198": {
       "text": "Andreas, glaube an ihn und habe Geduld.",
-      "duration": 0
+      "duration": 5400
     },
     "199": {
       "text": "Andreas, wenn du meinem Sohn nicht glaubst, warum folgst du ihm dann nach?",
-      "duration": 0
+      "duration": 4752
     },
     "200": {
       "text": "Unser Volk wurde versklavt.",
-      "duration": 0
+      "duration": 2400
     },
     "201": {
       "text": "Die Römischen Machthaber ermordeten unsere Führer.",
-      "duration": 0
+      "duration": 4104
     },
     "202": {
       "text": "Und was tut er?",
-      "duration": 0
+      "duration": 2760
     },
     "203": {
       "text": "Er feiert, vertreibt sich die Zeit und tanzt.",
-      "duration": 0
+      "duration": 4560
     },
     "204": {
       "text": "Tanzt - freut Euch!",
-      "duration": 0
+      "duration": 624
     },
     "205": {
       "text": "Das ist menschlich.",
-      "duration": 0
+      "duration": 1680
     },
     "206": {
       "text": "Er wurde als Mensch geboren wie du und ich.",
-      "duration": 0
+      "duration": 3672
     },
     "207": {
       "text": "Ja, das merke ich.",
-      "duration": 0
+      "duration": 1920
     },
     "208": {
       "text": "Davor habe ich am meisten Angst.",
-      "duration": 0
+      "duration": 3480
     },
     "209": {
       "text": "Wir sind einfache Fischer.",
-      "duration": 0
+      "duration": 3192
     },
     "210": {
       "text": "Mit Netzen auf dem Meer.",
-      "duration": 0
+      "duration": 3576
     },
     "211": {
       "text": "Unsere Brüder und Freunde quälen sich mit den schweren Netzen",
-      "duration": 0
+      "duration": 5568
     },
     "212": {
       "text": "und wir sollten bei ihnen sein",
-      "duration": 0
+      "duration": 2760
     },
     "213": {
       "text": "Nein, Andreas.",
-      "duration": 0
+      "duration": 2616
     },
     "214": {
       "text": "Wir suchen Antworten und haben ihn gefunden.",
-      "duration": 0
+      "duration": 4200
     },
     "215": {
       "text": "Ihr folgt ihm nach.",
-      "duration": 0
+      "duration": 1584
     },
     "216": {
       "text": "Beständig.",
-      "duration": 0
+      "duration": 1416
     },
     "217": {
       "text": "Müssen wir das?",
-      "duration": 0
+      "duration": 1872
     },
     "218": {
       "text": "Ja, weil er euch auserwählt hat.",
-      "duration": 0
+      "duration": 2928
     },
     "219": {
       "text": "Hier ist es wirklich schön.",
-      "duration": 0
+      "duration": 3120
     },
     "220": {
       "text": "Diese Freude und Gemeinschaft.",
-      "duration": 0
+      "duration": 3408
     },
     "221": {
       "text": "Jetzt habe ich Durst.",
-      "duration": 0
+      "duration": 2136
     },
     "222": {
       "text": "Warte, mein Sohn!",
-      "duration": 0
+      "duration": 2376
     },
     "223": {
       "text": "Ich bringe dir einen Krug Wein.",
-      "duration": 0
+      "duration": 3024
     },
     "224": {
       "text": "Was ist mit dir, Andreas?",
-      "duration": 0
+      "duration": 3264
     },
     "225": {
       "text": "Du tanzt nicht",
-      "duration": 0
+      "duration": 1320
     },
     "226": {
       "text": "Das ist mir vergangen.",
-      "duration": 0
+      "duration": 2832
     },
     "227": {
       "text": "Erst wenn das Volk Israels erlöst ist und Gerechtigkeit über Ungerechtigkeit siegt, dann werde ich fröhlich bis zum Umfallen tanzen.",
-      "duration": 0
+      "duration": 9480
     },
     "228": {
       "text": "Auf diesen Tanz warten wir noch lange.",
-      "duration": 0
+      "duration": 3960
     },
     "229": {
       "text": "Oder erleben ihn nie.",
-      "duration": 0
+      "duration": 2616
     },
     "230": {
       "text": "Johannes der Täufer sagte uns, du seist der, auf den wir schon lange warten.",
-      "duration": 0
+      "duration": 6888
     },
     "231": {
       "text": "Unser Messias und der Erlöser Israels.",
-      "duration": 0
+      "duration": 4224
     },
     "232": {
       "text": "Und was machst du?",
-      "duration": 0
+      "duration": 2064
     },
     "233": {
       "text": "Feierst, trinkst Wein und tanzt.",
-      "duration": 0
+      "duration": 3960
     },
     "234": {
       "text": "Andreas!",
-      "duration": 0
+      "duration": 1608
     },
     "235": {
       "text": "Beruhige dich!",
-      "duration": 0
+      "duration": 1656
     },
     "236": {
       "text": "Jesus, bist du wirklich der erwartete Erlöser?",
-      "duration": 0
+      "duration": 4608
     },
     "237": {
       "text": "Du bist es!",
-      "duration": 0
+      "duration": 1728
     },
     "238": {
       "text": "Du bist es!",
-      "duration": 0
+      "duration": 1632
     },
     "239": {
       "text": "Du bist es",
-      "duration": 0
+      "duration": 1488
     },
     "240": {
       "text": "Die Hochzeitsgäste haben keinen Wein!",
-      "duration": 0
+      "duration": 3672
     },
     "241": {
       "text": "Andreas, verzeih mir, dass ich dich enttäuscht und verletzt habe.",
-      "duration": 0
+      "duration": 5304
     },
     "242": {
       "text": "Ich möchte nur",
-      "duration": 0
+      "duration": 2136
     },
     "243": {
       "text": "Jesus!",
-      "duration": 0
+      "duration": 1344
     },
     "244": {
       "text": "Ja, Mutter.",
-      "duration": 0
+      "duration": 1992
     },
     "245": {
       "text": "Der Wein ist leer.",
-      "duration": 0
+      "duration": 1824
     },
     "246": {
       "text": "Das habe ich gehört.",
-      "duration": 0
+      "duration": 2616
     },
     "247": {
       "text": "Aber was habe ich damit zu tun?",
-      "duration": 0
+      "duration": 3528
     },
     "248": {
       "text": "Könntest du?",
-      "duration": 0
+      "duration": 1152
     },
     "249": {
       "text": "Was willst du von mir, Frau?",
-      "duration": 0
+      "duration": 2664
     },
     "250": {
       "text": "Meine Stunde ist noch nicht gekommen.",
-      "duration": 0
+      "duration": 3024
     },
     "251": {
       "text": "Sie ist gekommen.",
-      "duration": 0
+      "duration": 1800
     },
     "252": {
       "text": "Es ist Zeit, Andreas, Johannes und den anderen, uns allen",
-      "duration": 0
+      "duration": 5664
     },
     "253": {
       "text": "Wir haben keinen Wein!",
-      "duration": 0
+      "duration": 2664
     },
     "254": {
       "text": "Jesus hilft bestimmt.",
-      "duration": 0
+      "duration": 1824
     },
     "255": {
       "text": "Was er euch sagt, das tut!",
-      "duration": 0
+      "duration": 3072
     },
     "256": {
       "text": "Füllt die Krüge mit Wasser.",
-      "duration": 0
+      "duration": 2928
     },
     "257": {
       "text": "Schöpft jetzt und bringt es dem Hochzeitsbitter!",
-      "duration": 0
+      "duration": 3744
     },
     "258": {
       "text": "Andreas, trink!",
-      "duration": 0
+      "duration": 2232
     },
     "259": {
       "text": "Andreas, Johannes, er ist es.",
-      "duration": 0
+      "duration": 3120
     },
     "260": {
       "text": "Zweifelt nicht und folgt ihm!",
-      "duration": 0
+      "duration": 2760
     },
     "261": {
       "text": "Zum Tanze, Gastmal, komm!",
-      "duration": 0
+      "duration": 2376
     },
     "262": {
       "text": "Was ist das?",
-      "duration": 0
+      "duration": 1632
     },
     "263": {
       "text": "Wo ist der Bräutigam?",
-      "duration": 0
+      "duration": 2256
     },
     "264": {
       "text": "Wo ist der Bräutigam?",
-      "duration": 0
+      "duration": 3336
     },
     "265": {
       "text": "Jeder setzt zuerst den guten Wein vor und erst, wenn die Gäste zu viel getrunken haben, den weniger guten ;du jedoch hast den guten Wein bis jetzt zurückgehalten.",
-      "duration": 0
+      "duration": 9888
     },
     "266": {
       "text": "Das habe ich nicht.",
-      "duration": 0
+      "duration": 1728
     },
     "267": {
       "text": "Warum sollte ich?",
-      "duration": 0
+      "duration": 2112
     },
     "268": {
       "text": "Koste und sag, was du schmeckst?",
-      "duration": 0
+      "duration": 2736
     },
     "269": {
       "text": "Wie ist das möglich?",
-      "duration": 0
+      "duration": 1512
     },
     "270": {
       "text": "Diesen Wein kenne ich nicht.",
-      "duration": 0
+      "duration": 2664
     },
     "271": {
       "text": "Großartiger Tropfen.",
-      "duration": 0
+      "duration": 1824
     },
     "272": {
       "text": "Woher habt ihr ihn?",
-      "duration": 0
+      "duration": 1632
     },
     "273": {
       "text": "Und davon sechs große Krüge.",
-      "duration": 0
+      "duration": 3192
     },
     "274": {
       "text": "Woher habt ihr diese Menge Wein?",
-      "duration": 0
+      "duration": 2472
     },
     "275": {
       "text": "Wir haben auf Befehl von Jesus aus Nazareth die Krüge gefüllt.",
-      "duration": 0
+      "duration": 5088
     },
     "276": {
       "text": "Bis zum Rand haben wir sie gefüllt, wie er es uns befohlen hat, mit dem Wasser aus dem Brunnen.",
-      "duration": 0
+      "duration": 6600
     },
     "277": {
       "text": "Aus welchem Brunnen wurde das Wasser für so einen guten Wein geschöpft?",
-      "duration": 0
+      "duration": 5448
     },
     "278": {
       "text": "Wer wünscht sich nicht so einen Brunnen, aus dem man Wein schöpft?",
-      "duration": 0
+      "duration": 4776
     },
     "279": {
       "text": "Wir haben das Wasser vom Brunnen in die Krüge gebracht.",
-      "duration": 0
+      "duration": 3264
     },
     "280": {
       "text": "Ich bin mir ganz sicher, weil ich unterwegs etwas getrunken habe.",
-      "duration": 0
+      "duration": 5448
     },
     "281": {
       "text": "Wo ist dieser Jesus aus Nazareth?",
-      "duration": 0
+      "duration": 2760
     },
     "282": {
       "text": "Ich möchte mich wenigstens bedanken.",
-      "duration": 0
+      "duration": 3264
     },
     "283": {
       "text": "Ich glaube, er ist unter den Gästen.",
-      "duration": 0
+      "duration": 2928
     },
     "284": {
       "text": "Ich sehe ihn aber nicht.",
-      "duration": 0
+      "duration": 1680
     },
     "285": {
       "text": "Hat jemand Jesus aus Nazareth gesehen?",
-      "duration": 0
+      "duration": 4776
     },
     "286": {
       "text": "Er ist mit seinen Freunden nach Kafarnaum gegangen.",
-      "duration": 0
+      "duration": 4656
     },
     "287": {
       "text": "Das weiß ich von seiner Mutter.",
-      "duration": 0
+      "duration": 3432
     },
     "288": {
       "text": "Zum Tanze, Prosit, komm!",
-      "duration": 0
+      "duration": 4416
     },
     "289": {
       "text": "Paulus, glaub mir, von der Hochzeit in Kana sprechen die Menschen heute noch.",
-      "duration": 0
+      "duration": 4944
     },
     "290": {
       "text": "Das war das erste Mal, dass er seine Göttlichkeit zeigte.",
-      "duration": 0
+      "duration": 4920
     },
     "291": {
       "text": "Scheinbar hat er überall Wunder vollbracht.",
-      "duration": 0
+      "duration": 3216
     },
     "292": {
       "text": "Aber immerfort erzählte er vom Reich Gottes.",
-      "duration": 0
+      "duration": 4656
     },
     "293": {
       "text": "Ich erinnere mich, dass er einer verwitweten Mutter, die ihren einzigen Sohn verlor, sagte. Weine nicht!",
-      "duration": 0
+      "duration": 6864
     },
     "294": {
       "text": "Er hatte Mitleid mit ihr.",
-      "duration": 0
+      "duration": 2424
     },
     "295": {
       "text": "Er berührte den Jüngling auf der Totenbahre und sprach. Steh auf!",
-      "duration": 0
+      "duration": 5544
     },
     "296": {
       "text": "Und der Tote richtete sich auf.",
-      "duration": 0
+      "duration": 3168
     },
     "297": {
       "text": "Und er nahm sechs Brote und",
-      "duration": 0
+      "duration": 2664
     },
     "298": {
       "text": "Fünf.",
-      "duration": 0
+      "duration": 840
     },
     "299": {
       "text": "fünf Brote und drei Fische",
-      "duration": 0
+      "duration": 2184
     },
     "300": {
       "text": "Zwei.",
-      "duration": 0
+      "duration": 528
     },
     "301": {
       "text": "zwei Fische, blickte zum Himmel auf und segnete sie, brach und gab sie den Jüngern, damit sie sie dem Volke vorlegten.",
-      "duration": 0
+      "duration": 7080
     },
     "302": {
       "text": "Und sie aßen und wurden alle satt; und es wurde aufgehoben, was ihnen von den Stücken übrig blieb, fünfzehn Körbe –",
-      "duration": 0
+      "duration": 7536
     },
     "303": {
       "text": "Zwölf.",
-      "duration": 0
+      "duration": 888
     },
     "304": {
       "text": "zwölf Körbe voll.",
-      "duration": 0
+      "duration": 2016
     },
     "305": {
       "text": "Dort waren",
-      "duration": 0
+      "duration": 1344
     },
     "306": {
       "text": "Fünftausend Männer.",
-      "duration": 0
+      "duration": 2016
     },
     "307": {
       "text": "Ich weiß es doch, fünftausend Männer.",
-      "duration": 0
+      "duration": 3312
     },
     "308": {
       "text": "Ich erinnere mich gern an seine Bergpredigt.",
-      "duration": 0
+      "duration": 2976
     },
     "309": {
       "text": "Ich war noch ein kleiner Junge, jedoch habe ich mir vieles gemerkt",
-      "duration": 0
+      "duration": 3768
     },
     "310": {
       "text": "Selig sind die geistlich Armen; denn ihrer ist das Himmelreich!",
-      "duration": 0
+      "duration": 6360
     },
     "311": {
       "text": "Selig sind die Trauernden; denn sie sollen getröstet werden!",
-      "duration": 0
+      "duration": 5232
     },
     "312": {
       "text": "Selig sind die Sanftmütigen; denn sie werden das Land ererben!",
-      "duration": 0
+      "duration": 6744
     },
     "313": {
       "text": "Selig sind, die nach der Gerechtigkeit hungern und dürsten; denn sie sollen satt werden!",
-      "duration": 0
+      "duration": 7104
     },
     "314": {
       "text": "Selig sind die Barmherzigen; denn sie werden Barmherzigkeit erlangen!",
-      "duration": 0
+      "duration": 6096
     },
     "315": {
       "text": "Selig sind, die reines Herzens sind; denn sie werden Gott schauen!",
-      "duration": 0
+      "duration": 6384
     },
     "316": {
       "text": "Selig sind die Friedfertigen; denn sie werden Gottes Kinder heißen!",
-      "duration": 0
+      "duration": 6288
     },
     "317": {
       "text": "Selig sind, die um der Gerechtigkeit willen verfolgt werden; denn ihrer ist das Himmelreich!",
-      "duration": 0
+      "duration": 8087
     },
     "318": {
       "text": "Selig seid ihr, wenn sie euch schmähen und verfolgen und lügnerischallerlei Arges wider euch reden um meinetwillen!",
-      "duration": 0
+      "duration": 9624
     },
     "319": {
       "text": "Folge mir nach!",
-      "duration": 0
+      "duration": 1584
     },
     "320": {
       "text": "Freuet euch und frohlocket; denn euer Lohn im Himmel wird groß!",
-      "duration": 0
+      "duration": 5640
     },
     "321": {
       "text": "Denn ich sage euch. Wenn eure Gerechtigkeit die der Schriftgelehrten und Pharisäer nicht weit übertrifft, so werdet ihr gar nicht in das Himmelreich eingehen!",
-      "duration": 0
+      "duration": 11040
     },
     "322": {
       "text": "Was möchtest du von uns?",
-      "duration": 0
+      "duration": 2424
     },
     "323": {
       "text": "Gehet aber hin, prediget und sprechet. Das Himmelreich ist nahe herbeigekommen, heilet Kranke, weckt Tote auf, reiniget Aussätzige, treibet Dämonen aus!",
-      "duration": 0
+      "duration": 13608
     },
     "324": {
       "text": "Umsonst habt ihr es empfangen, umsonst gebt es!",
-      "duration": 0
+      "duration": 4848
     },
     "325": {
       "text": "Nehmet weder Gold noch Silber noch Erz in eure Gürtel.",
-      "duration": 0
+      "duration": 5904
     },
     "326": {
       "text": "Keine Tasche auf den Weg, auch nicht zwei Röcke, weder Schuhe noch Stab; denn der Arbeiter ist seiner Nahrung wert.",
-      "duration": 0
+      "duration": 9240
     },
     "327": {
       "text": "Siehe, ich sende euch wie Schafe mitten unter die Wölfe.",
-      "duration": 0
+      "duration": 5400
     },
     "328": {
       "text": "Darum seid klug wie die Schlangen und ohne Falsch wie die Tauben!",
-      "duration": 0
+      "duration": 5808
     },
     "329": {
       "text": "Ich habe mir diese Seligsprechungen gut gemerkt",
-      "duration": 0
+      "duration": 3768
     },
     "330": {
       "text": "Sie umzusetzen ist nicht ganz einfach.",
-      "duration": 0
+      "duration": 2640
     },
     "331": {
       "text": "Ich bin ihm gefolgt.",
-      "duration": 0
+      "duration": 1728
     },
     "332": {
       "text": "Mittlerweile schon viele Jahrhunderte.",
-      "duration": 0
+      "duration": 2208
     },
     "333": {
       "text": "Du meinst Jahrzehnte.",
-      "duration": 0
+      "duration": 2760
     },
     "334": {
       "text": "Du Glücklicher.",
-      "duration": 0
+      "duration": 2064
     },
     "335": {
       "text": "Du hast ihn sozusagen begleitet.",
-      "duration": 0
+      "duration": 4008
     },
     "336": {
       "text": "Naja",
-      "duration": 0
+      "duration": 1632
     },
     "337": {
       "text": "Überall war ich nicht dabei.",
-      "duration": 0
+      "duration": 2376
     },
     "338": {
       "text": "Als er die Händler aus dem Tempel vertrieb, habe ich mit Freunden in der Stadt Seile geflochten.",
-      "duration": 0
+      "duration": 5064
     },
     "339": {
       "text": "Der Seiler war froh, wenn wir ihm halfen.",
-      "duration": 0
+      "duration": 3312
     },
     "340": {
       "text": "Und trotzdem habe ich viele interessante Erinnerungen an Jesus.",
-      "duration": 0
+      "duration": 4944
     },
     "341": {
       "text": "Zum Beispiel",
-      "duration": 0
+      "duration": 1344
     },
     "342": {
       "text": "Wo er hielt, versammelten sich stets viele Menschen.",
-      "duration": 0
+      "duration": 3912
     },
     "343": {
       "text": "In ganz Judäa hat er gepredigt und die Leute zum Bekehren ermahnt.",
-      "duration": 0
+      "duration": 4848
     },
     "344": {
       "text": "Immer mehr Menschen erkannten, dass er der wahre Messias ist.",
-      "duration": 0
+      "duration": 5064
     },
     "345": {
       "text": "War er überall allein?",
-      "duration": 0
+      "duration": 3168
     },
     "346": {
       "text": "Nein, er wählte einfache Fischer zu seinen Begleitern.",
-      "duration": 0
+      "duration": 4176
     },
     "347": {
       "text": "Jakobus, Johannes, Andreas, Simon Petrus und weitere.",
-      "duration": 0
+      "duration": 5760
     },
     "348": {
       "text": "Zu Simon sagte er. Fürchte dich nicht; von nun an sollst du Menschen fangen!",
-      "duration": 0
+      "duration": 7440
     },
     "349": {
       "text": "Da verließen sie alsbald ihre Netze und folgten ihm nach.",
-      "duration": 0
+      "duration": 4560
     },
     "350": {
       "text": "Demnach hatte er viele Jünger und war sehr beliebt.",
-      "duration": 0
+      "duration": 4872
     },
     "351": {
       "text": "Sie haben Jesus sogar mit Palmen als den Erlöser Israels in Jerusalem empfangen.",
-      "duration": 0
+      "duration": 6360
     },
     "352": {
       "text": "Das hat den Hohen Rat sehr verunsichert.",
-      "duration": 0
+      "duration": 3384
     },
     "353": {
       "text": "Kinder!",
-      "duration": 0
+      "duration": 1680
     },
     "354": {
       "text": "Kinder, seid vorsichtig mit ihm.",
-      "duration": 0
+      "duration": 2760
     },
     "355": {
       "text": "Thomas!",
-      "duration": 0
+      "duration": 1320
     },
     "356": {
       "text": "Lasset die Kindlein zu mir kommen, wehret es ihnen nicht; denn solcher ist das Reich Gottes!",
-      "duration": 0
+      "duration": 7344
     },
     "357": {
       "text": "Das Reich Gottes",
-      "duration": 0
+      "duration": 2088
     },
     "358": {
       "text": "Wahrlich, ich sage euch: Wer das Reich Gottes nicht annimmt wie ein Kind, wird nicht hineinkommen!",
-      "duration": 0
+      "duration": 8592
     },
     "359": {
       "text": "Ist es einem Manne erlaubt, seine Frau zu entlassen?",
-      "duration": 0
+      "duration": 6312
     },
     "360": {
       "text": "Was hat euch Mose geboten?",
-      "duration": 0
+      "duration": 2280
     },
     "361": {
       "text": "Mose hat erlaubt, einen Scheidebrief zu schreiben und die Frau zu entlassen.",
-      "duration": 0
+      "duration": 5208
     },
     "362": {
       "text": "Wegen der Härte eures Herzens hat er euch dieses Gebot geschrieben",
-      "duration": 0
+      "duration": 5856
     },
     "363": {
       "text": "Am Anfang der Schöpfung aber hat Gott sie erschaffen als Mann und Weib.",
-      "duration": 0
+      "duration": 5952
     },
     "364": {
       "text": "Darum wird ein Mensch seinen Vater und seine Mutter verlassen und seinem Weibe anhangen; und die zwei werden ein Fleisch sein, so sind sie nicht mehr zwei, sondern ein Fleisch.",
-      "duration": 0
+      "duration": 12072
     },
     "365": {
       "text": "Was nun Gott zusammengefügt hat, das soll der Mensch nicht scheiden!",
-      "duration": 0
+      "duration": 5712
     },
     "366": {
       "text": "nicht scheiden",
-      "duration": 0
+      "duration": 1872
     },
     "367": {
       "text": "nicht scheiden",
-      "duration": 0
+      "duration": 2040
     },
     "368": {
       "text": "Höret und verstehet!",
-      "duration": 0
+      "duration": 2424
     },
     "369": {
       "text": "Nicht das, was zum Munde eingeht, verunreinigt den Menschen; sondern was aus dem Munde herauskommt, das verunreinigt den Menschen.",
-      "duration": 0
+      "duration": 9672
     },
     "370": {
       "text": "Weißt du, dass die Pharisäer Anstoß nahmen, als sie das hörten?",
-      "duration": 0
+      "duration": 5304
     },
     "371": {
       "text": "Jede Pflanze, die nicht mein himmlischer Vater gepflanzt hat, wird ausgerissen werden.",
-      "duration": 0
+      "duration": 6408
     },
     "372": {
       "text": "Lasset sie",
-      "duration": 0
+      "duration": 1272
     },
     "373": {
       "text": "Sie sind blinde Blindenleiter.",
-      "duration": 0
+      "duration": 3432
     },
     "374": {
       "text": "Wenn aber ein Blinder den andern leitet, werden beide in die Grube fallen.",
-      "duration": 0
+      "duration": 6096
     },
     "375": {
       "text": "Hosianna!",
-      "duration": 0
+      "duration": 1536
     },
     "376": {
       "text": "Hosianna!",
-      "duration": 0
+      "duration": 1584
     },
     "377": {
       "text": "Gesegnet sei der, der im Namen des Herren kommt, der König Israels!",
-      "duration": 0
+      "duration": 5352
     },
     "378": {
       "text": "Hosianna!",
-      "duration": 0
+      "duration": 1488
     },
     "379": {
       "text": "Hosianna!",
-      "duration": 0
+      "duration": 1344
     },
     "380": {
       "text": "Gesegnet sei der, der im Namen des Herren kommt.",
-      "duration": 0
+      "duration": 4560
     },
     "381": {
       "text": "Hosianna, dem Sohne Davids!",
-      "duration": 0
+      "duration": 2856
     },
     "382": {
       "text": "Hosianna, dem Sohne Davids!",
-      "duration": 0
+      "duration": 2544
     },
     "383": {
       "text": "Hosianna, dem Sohne Davids!",
-      "duration": 0
+      "duration": 2544
     },
     "384": {
       "text": "Hosianna",
-      "duration": 0
+      "duration": 1272
     },
     "385": {
       "text": "Der Hohepriester Kaiphas kommt!",
-      "duration": 0
+      "duration": 2808
     },
     "386": {
       "text": "Ruhm und Segen dem Hohepriester!",
-      "duration": 0
+      "duration": 4008
     },
     "387": {
       "text": "Was geschieht hier?",
-      "duration": 0
+      "duration": 1704
     },
     "388": {
       "text": "Sie rühmen und loben diesen Jesus aus Nazareth.",
-      "duration": 0
+      "duration": 3672
     },
     "389": {
       "text": "Aber er hetzt öffentlich gegen Hohepriester!",
-      "duration": 0
+      "duration": 4848
     },
     "390": {
       "text": "Man erzählt, er sei ein König.",
-      "duration": 0
+      "duration": 3336
     },
     "391": {
       "text": "Er begeistert seine Anhänger mit Predigten vom Reich Gottes.",
-      "duration": 0
+      "duration": 5016
     },
     "392": {
       "text": "-",
-      "duration": 0
+      "duration": 288
     },
     "393": {
       "text": "Er ist ein Prophet!",
-      "duration": 0
+      "duration": 1872
     },
     "394": {
       "text": "Das bezweifle ich!",
-      "duration": 0
+      "duration": 2184
     },
     "395": {
       "text": "Vielleicht ein falscher Prophet, der gegen den Hohen Rat hetzt.",
-      "duration": 0
+      "duration": 4776
     },
     "396": {
       "text": "-",
-      "duration": 0
+      "duration": 456
     },
     "397": {
       "text": "Er ist der ersehnte Messias!",
-      "duration": 0
+      "duration": 2616
     },
     "398": {
       "text": "Dieser Jesus aus Nazareth.",
-      "duration": 0
+      "duration": 2808
     },
     "399": {
       "text": "Er lehrt unsere Gesetze und Vorschriften eigentümlich.",
-      "duration": 0
+      "duration": 4920
     },
     "400": {
       "text": "Als kenne er alle Schriften ganz genau.",
-      "duration": 0
+      "duration": 3912
     },
     "401": {
       "text": "Seine Reden sind gefährlich, Bewohner Jerusalems!",
-      "duration": 0
+      "duration": 5352
     },
     "402": {
       "text": "Lassen wir ihn so fortfahren, so werden alle an ihn glauben; und dann kommen die Römer und nehmen uns Land und Leute weg.",
-      "duration": 0
+      "duration": 7656
     },
     "403": {
       "text": "Ihr wisset nichts und bedenket nicht, dass es für uns besser ist, ein Mensch sterbe für das Volk, als dass das ganze Volk verderbe!",
-      "duration": 0
+      "duration": 8087
     },
     "404": {
       "text": "Lob dir, Pilatus, Vertreter des Römischen Kaisers!",
-      "duration": 0
+      "duration": 4728
     },
     "405": {
       "text": "Kaiphas, gibt es in der Stadt etwas Besonderes oder warum sind hier so viele Menschen?",
-      "duration": 0
+      "duration": 7800
     },
     "406": {
       "text": "Zum Passah-Fest sind immer viele Pilger in Jerusalem.",
-      "duration": 0
+      "duration": 4848
     },
     "407": {
       "text": "Kaiphas, Kaiphas",
-      "duration": 0
+      "duration": 2784
     },
     "408": {
       "text": "Du weißt, was ich meine!",
-      "duration": 0
+      "duration": 1752
     },
     "409": {
       "text": "Ich möchte nur mit dem Hohepriester sprechen.",
-      "duration": 0
+      "duration": 5160
     },
     "410": {
       "text": "Ich habe niemanden hergerufen",
-      "duration": 0
+      "duration": 3120
     },
     "411": {
       "text": "Einem unbedeutenden Wanderprediger haben sie gehuldigt …",
-      "duration": 0
+      "duration": 4032
     },
     "412": {
       "text": "Hosianna, riefen sie!",
-      "duration": 0
+      "duration": 3120
     },
     "413": {
       "text": "Hosianna, riefen sie?",
-      "duration": 0
+      "duration": 7752
     },
     "414": {
       "text": "Kaiphas, du übertreibst.",
-      "duration": 0
+      "duration": 3912
     },
     "415": {
       "text": "Das Römische Reich schützt euch vor den Räubern im Norden, den Nomadenhorden im Osten, den Meeresriesen im Westen und den Menschenfressern im Süden.",
-      "duration": 0
+      "duration": 11016
     },
     "416": {
       "text": "Für diesen Schutz sollte man dankbar sein.",
-      "duration": 0
+      "duration": 4008
     },
     "417": {
       "text": "In der Stadt herrscht Ruhe.",
-      "duration": 0
+      "duration": 3312
     },
     "418": {
       "text": "Niemand",
-      "duration": 0
+      "duration": 1488
     },
     "419": {
       "text": "Ein ungehorsames Volk ohne Ordnung",
-      "duration": 0
+      "duration": 4200
     },
     "420": {
       "text": "Ein Niemandsvolk ohne Führung wart ihr, als ich euch übernahm.",
-      "duration": 0
+      "duration": 5064
     },
     "421": {
       "text": "Pilatus!",
-      "duration": 0
+      "duration": 1344
     },
     "422": {
       "text": "Kaiphas, wessen Gesicht siehst du auf dem Dinar?",
-      "duration": 0
+      "duration": 5904
     },
     "423": {
       "text": "Das des Kaisers.",
-      "duration": 0
+      "duration": 2136
     },
     "424": {
       "text": "Du erinnerst dich daran, was dir der unbedeutende Prediger, dieser Jesus aus Nazareth, vor einigen Tagen sagte. So gebet dem Kaiser, was des Kaisers, und Gott, was Gottes ist!",
-      "duration": 0
+      "duration": 14256
     },
     "425": {
       "text": "Du kennst seinen Namen?",
-      "duration": 0
+      "duration": 3624
     },
     "426": {
       "text": "Kaiphas, vergiss nicht!",
-      "duration": 0
+      "duration": 3480
     },
     "427": {
       "text": "Meine Kundschafter sind sehr zuverlässig.",
-      "duration": 0
+      "duration": 4200
     },
     "428": {
       "text": "Wir sehen uns.",
-      "duration": 0
+      "duration": 1632
     },
     "429": {
       "text": "Dann ist er abgeritten",
-      "duration": 0
+      "duration": 2520
     },
     "430": {
       "text": "Pilatus, unser Prokurator.",
-      "duration": 0
+      "duration": 3120
     },
     "431": {
       "text": "Und Kaiphas?",
-      "duration": 0
+      "duration": 1728
     },
     "432": {
       "text": "Kaiphas?",
-      "duration": 0
+      "duration": 1272
     },
     "433": {
       "text": "Der hat sich geärgert.",
-      "duration": 0
+      "duration": 1752
     },
     "434": {
       "text": "Dass Pilatus ihn nicht ernst nimmt.",
-      "duration": 0
+      "duration": 3024
     },
     "435": {
       "text": "Kaiphas behauptete, dass Jesus den Menschen die Schriften falsch erkläre",
-      "duration": 0
+      "duration": 5640
     },
     "436": {
       "text": "Das steht ihm nicht zu, und das Volk begreift sowieso nichts, hat er geschrien.",
-      "duration": 0
+      "duration": 4920
     },
     "437": {
       "text": "Kaiphas hat gemerkt, dass sich eine große Gefahr nähert.",
-      "duration": 0
+      "duration": 4368
     },
     "438": {
       "text": "Aber die Gefahr war unsichtbar, versteckt, unbekannt, fremd, verborgen.",
-      "duration": 0
+      "duration": 6792
     },
     "439": {
       "text": "Angst trübt die Gedanken und weckt gefährliche Mächte.",
-      "duration": 0
+      "duration": 4968
     },
     "440": {
       "text": "Was hat Kaiphas getan?",
-      "duration": 0
+      "duration": 2784
     },
     "441": {
       "text": "Er berief den Hohen Rat ein!",
-      "duration": 0
+      "duration": 2280
     },
     "442": {
       "text": "Dieser Jesus macht uns zum Gespött des Volkes.",
-      "duration": 0
+      "duration": 3960
     },
     "443": {
       "text": "Wie kann ein einfacher Mann aus Nazareth so mächtig wirken?",
-      "duration": 0
+      "duration": 6000
     },
     "444": {
       "text": "Er, der die Gesetze der Propheten nicht einhält.",
-      "duration": 0
+      "duration": 3984
     },
     "445": {
       "text": "Er, der gegen unsere Götter hetzt?",
-      "duration": 0
+      "duration": 3168
     },
     "446": {
       "text": "Er macht sogar seltsame Zeichen.",
-      "duration": 0
+      "duration": 3864
     },
     "447": {
       "text": "Möchten wir stundenlange Gespräche mit ihm?",
-      "duration": 0
+      "duration": 3456
     },
     "448": {
       "text": "Nein, wir müssen einschreiten.",
-      "duration": 0
+      "duration": 4320
     },
     "449": {
       "text": "Entweder wir und das Testament Mose oder Jesus aus Nazareth.",
-      "duration": 0
+      "duration": 6288
     },
     "450": {
       "text": "Als Hoher Rat haben wir eine gewisse Verantwortung.",
-      "duration": 0
+      "duration": 4440
     },
     "451": {
       "text": "Man sollte ihm eine Falle stellen.",
-      "duration": 0
+      "duration": 2880
     },
     "452": {
       "text": "Ja, eine Falle, die ihn zerschmettert und vernichtet!",
-      "duration": 0
+      "duration": 4512
     },
     "453": {
       "text": "Er kommt jeden Tag in den Tempel.",
-      "duration": 0
+      "duration": 3240
     },
     "454": {
       "text": "Dort könnten wir ihn verhaften!",
-      "duration": 0
+      "duration": 2592
     },
     "455": {
       "text": "Genau!",
-      "duration": 0
+      "duration": 1248
     },
     "456": {
       "text": "Ja!",
-      "duration": 0
+      "duration": 1320
     },
     "457": {
       "text": "Das wäre unklug",
-      "duration": 0
+      "duration": 2568
     },
     "458": {
       "text": "Gerade jetzt, wenn das Passah-Fest stattfindet und so viele Pilger in der Stadt sind,.",
-      "duration": 0
+      "duration": 6648
     },
     "459": {
       "text": "Können wir ihn nicht einfach verhaften.",
-      "duration": 0
+      "duration": 2976
     },
     "460": {
       "text": "Wollen wir also warten, bis das Fest vorbei ist?",
-      "duration": 0
+      "duration": 3168
     },
     "461": {
       "text": "Sie haben nicht gewartet!",
-      "duration": 0
+      "duration": 2880
     },
     "462": {
       "text": "Der Hohe Rat hat einen Verräter gesucht.",
-      "duration": 0
+      "duration": 3504
     },
     "463": {
       "text": "Besser gesagt, der Verräter hat zu ihnen gefunden.",
-      "duration": 0
+      "duration": 4128
     },
     "464": {
       "text": "Judas!",
-      "duration": 0
+      "duration": 1728
     },
     "465": {
       "text": "Judas Iskariot, Apostel und Freund Jesu",
-      "duration": 0
+      "duration": 5496
     },
     "466": {
       "text": "Er wollte ihn vor dem Schlimmsten bewahren und hat genau das Gegenteil bewirkt.",
-      "duration": 0
+      "duration": 6504
     },
     "467": {
       "text": "Er wollte nur seine Gefangenschaft, nicht seinen Tod.",
-      "duration": 0
+      "duration": 5496
     },
     "468": {
       "text": "Er wollte einen lebenden Jesus unter den Lebenden, keinen Toten, ins Grab gelegten.",
-      "duration": 0
+      "duration": 6456
     },
     "469": {
       "text": "Wie hätte Jesus dann auferstehen und uns alle erlösen können?",
-      "duration": 0
+      "duration": 6144
     },
     "470": {
       "text": "Das Todesurteil war notwendig.",
-      "duration": 0
+      "duration": 4104
     },
     "471": {
       "text": "Ester!",
-      "duration": 0
+      "duration": 1200
     },
     "472": {
       "text": "Ester!",
-      "duration": 0
+      "duration": 1128
     },
     "473": {
       "text": "Sarah?",
-      "duration": 0
+      "duration": 1536
     },
     "474": {
       "text": "Ester?",
-      "duration": 0
+      "duration": 1224
     },
     "475": {
       "text": "Sarah.",
-      "duration": 0
+      "duration": 1056
     },
     "476": {
       "text": "Wie viele von ihnen treffen sich heute hier?",
-      "duration": 0
+      "duration": 7536
     },
     "477": {
       "text": "Zwölf und Jesus aus Nazareth, ihr Anführer.",
-      "duration": 0
+      "duration": 3936
     },
     "478": {
       "text": "Kennst du ihn persönlich?",
-      "duration": 0
+      "duration": 2232
     },
     "479": {
       "text": "Nein, aber es wird viel über ihn erzählt",
-      "duration": 0
+      "duration": 3576
     },
     "480": {
       "text": "Persönlich habe ich ihn noch nicht getroffen.",
-      "duration": 0
+      "duration": 3672
     },
     "481": {
       "text": "Kennst du sein großartiges Wirken nicht?",
-      "duration": 0
+      "duration": 3312
     },
     "482": {
       "text": "Doch!",
-      "duration": 0
+      "duration": 1320
     },
     "483": {
       "text": "und wie er Kranke heilt?",
-      "duration": 0
+      "duration": 2472
     },
     "484": {
       "text": "Ja!",
-      "duration": 0
+      "duration": 1320
     },
     "485": {
       "text": "Wie er in Beispielen erzählend unser Volk belehrt.",
-      "duration": 0
+      "duration": 4848
     },
     "486": {
       "text": "Ja",
-      "duration": 0
+      "duration": 1224
     },
     "487": {
       "text": "und zu guten Taten ermuntert?",
-      "duration": 0
+      "duration": 2136
     },
     "488": {
       "text": "Ja",
-      "duration": 0
+      "duration": 1176
     },
     "489": {
       "text": "Fackeln?",
-      "duration": 0
+      "duration": 840
     },
     "490": {
       "text": "Fackeln!",
-      "duration": 0
+      "duration": 1416
     },
     "491": {
       "text": "Wir müssen den Raum erleuchten.",
-      "duration": 0
+      "duration": 2496
     },
     "492": {
       "text": "Petrus, komm!",
-      "duration": 0
+      "duration": 2064
     },
     "493": {
       "text": "Nimmermehr sollst du mir die Füße waschen!",
-      "duration": 0
+      "duration": 3264
     },
     "494": {
       "text": "Nie und nimmermehr!",
-      "duration": 0
+      "duration": 2088
     },
     "495": {
       "text": "Was ich tue, weißt du jetzt nicht, du wirst es aber hernach erfahren.",
-      "duration": 0
+      "duration": 6048
     },
     "496": {
       "text": "Werde ich dich nicht waschen, so hast du keine Gemeinschaft mit mir.",
-      "duration": 0
+      "duration": 6096
     },
     "497": {
       "text": "Herr, nicht meine Füße nur, sondern auch die Hände und das Haupt!",
-      "duration": 0
+      "duration": 5208
     },
     "498": {
       "text": "Wer gebadet ist, hat nicht nötig, gewaschen zu werden, ausgenommen die Füße, sondern er ist ganz rein.",
-      "duration": 0
+      "duration": 7752
     },
     "499": {
       "text": "Auch dir will ich die Füße waschen.",
-      "duration": 0
+      "duration": 3576
     },
     "500": {
       "text": "Nein, das geht nicht!",
-      "duration": 0
+      "duration": 3816
     },
     "501": {
       "text": "Ich bin eine Dienerin!",
-      "duration": 0
+      "duration": 1968
     },
     "502": {
       "text": "Ich müsste dir die Füße waschen.",
-      "duration": 0
+      "duration": 3024
     },
     "503": {
       "text": "Versteht ihr, was ich euch getan habe?",
-      "duration": 0
+      "duration": 3888
     },
     "504": {
       "text": "Ihr heißet mich Meister und Herr und saget es mit Recht; denn ich bin es auch.",
-      "duration": 0
+      "duration": 6504
     },
     "505": {
       "text": "Wenn nun ich, der Herr und Meister, euch die Füße gewaschen habe, so sollt auch ihr einander die Füße waschen.",
-      "duration": 0
+      "duration": 8928
     },
     "506": {
       "text": "Folge mir nach!",
-      "duration": 0
+      "duration": 1584
     },
     "507": {
       "text": "Denn ein Vorbild habe ich euch gegeben, damit auch ihr tut, wie ich euch getan habe.",
-      "duration": 0
+      "duration": 6744
     },
     "508": {
       "text": "Wahrlich, wahrlich, ich sage euch, der Knecht ist nicht größer als sein Herr, noch der Gesandte größer als der ihn gesandt hat.",
-      "duration": 0
+      "duration": 9480
     },
     "509": {
       "text": "Jesus, warum bist du plötzlich so traurig?",
-      "duration": 0
+      "duration": 4608
     },
     "510": {
       "text": "Wahrlich, wahrlich, ich sage euch, einer unter euch wird mich verraten!",
-      "duration": 0
+      "duration": 6408
     },
     "511": {
       "text": "Wer ist es?",
-      "duration": 0
+      "duration": 1488
     },
     "512": {
       "text": "Wen meint er?",
-      "duration": 0
+      "duration": 1416
     },
     "513": {
       "text": "Mich hat herzlich verlangt, dieses Passah mit euch zu essen, ehe ich leide.",
-      "duration": 0
+      "duration": 6360
     },
     "514": {
       "text": "Denn ich sage euch, ich werde es nicht mehr essen, bis es erfüllt sein wird im Reiche Gottes.",
-      "duration": 0
+      "duration": 6888
     },
     "515": {
       "text": "Das ist mein Leib, der für euch gegeben wird.",
-      "duration": 0
+      "duration": 4224
     },
     "516": {
       "text": "Nehmet und teilet es.",
-      "duration": 0
+      "duration": 2784
     },
     "517": {
       "text": "Das tut zu meinem Gedächtnis!",
-      "duration": 0
+      "duration": 2664
     },
     "518": {
       "text": "Ich sage euch aber, ich werde von jetzt an von diesem Gewächs des Weinstocks nicht mehr trinken, bis zu jenem Tage, da ich es neu mit euch trinken werde im Reiche meines Vaters.",
-      "duration": 0
+      "duration": 13848
     },
     "519": {
       "text": "Dieser Kelch ist der neue Bund in meinem Blute, das für euch vergossen wird.",
-      "duration": 0
+      "duration": 7104
     },
     "520": {
       "text": "Und noch etwas muss ich euch sagen. Streitet euch nicht darüber, wer der Größte ist!",
-      "duration": 0
+      "duration": 7704
     },
     "521": {
       "text": "Der Größte unter euch soll sein wie der Jüngste.",
-      "duration": 0
+      "duration": 3864
     },
     "522": {
       "text": "Und der Gebieter wie der Diener.",
-      "duration": 0
+      "duration": 2928
     },
     "523": {
       "text": "Denn wer ist größer: wer zu Tische sitzt, oder der Diener?",
-      "duration": 0
+      "duration": 6312
     },
     "524": {
       "text": "Ich aber bin mitten unter euch wie der Diener.",
-      "duration": 0
+      "duration": 3552
     },
     "525": {
       "text": "Ihr aber seid die, welche bei mir ausgeharrt haben in meinen Anfechtungen.",
-      "duration": 0
+      "duration": 6096
     },
     "526": {
       "text": "Und ich verordne euch, wie mir mein Vater das Reich verordnet hat, dass ihr an meinem Tische in meinem Reiche essen und trinken und auf Thronen sitzen sollt, um die zwölf Stämme Israels zu richten.",
-      "duration": 0
+      "duration": 15000
     },
     "527": {
       "text": "Judas!",
-      "duration": 0
+      "duration": 1728
     },
     "528": {
       "text": "Was du tun willst, das tue bald!",
-      "duration": 0
+      "duration": 3720
     },
     "529": {
       "text": "Herr!",
-      "duration": 0
+      "duration": 1320
     },
     "530": {
       "text": "Ich bin bereit, mit dir ins Gefängnis und in den Tod zu gehen!",
-      "duration": 0
+      "duration": 4296
     },
     "531": {
       "text": "Wahrlich, ich sage dir, heute in dieser Nacht, ehe der Hahn zweimal kräht, wirst du mich dreimal verleugnen!",
-      "duration": 0
+      "duration": 9480
     },
     "532": {
       "text": "Wenn ich mit dir sterben müsste, werde ich dich nicht verleugnen.",
-      "duration": 0
+      "duration": 4104
     },
     "533": {
       "text": "Wohin gehen wir?",
-      "duration": 0
+      "duration": 6648
     },
     "534": {
       "text": "In den Garten Gethsemane.",
-      "duration": 0
+      "duration": 2736
     },
     "535": {
       "text": "Auf den Ölberg!",
-      "duration": 0
+      "duration": 1728
     },
     "536": {
       "text": "Herr, lehre uns beten, wie auch Johannes seine Jünger lehrte!",
-      "duration": 0
+      "duration": 5304
     },
     "537": {
       "text": "Wenn ihr betet, so sprechet. Vater, geheiligt werde dein Name! Es komme dein Reich!",
-      "duration": 0
+      "duration": 8496
     },
     "538": {
       "text": "Vaterunser auf Aramäisch.",
-      "duration": 0
+      "duration": 2256
     },
     "539": {
       "text": "Dieser Jesus gefällt mir.",
-      "duration": 0
+      "duration": 3120
     },
     "540": {
       "text": "Er sagte. Folge mir nach!",
-      "duration": 0
+      "duration": 2520
     },
     "541": {
       "text": "Ihm folgen",
-      "duration": 0
+      "duration": 2088
     },
     "542": {
       "text": "Aber wohin?",
-      "duration": 0
+      "duration": 1992
     },
     "543": {
       "text": "Bin ich dazu überhaupt fähig?",
-      "duration": 0
+      "duration": 3072
     },
     "544": {
       "text": "Ich will ihm folgen!",
-      "duration": 0
+      "duration": 1944
     },
     "545": {
       "text": "Nur gut, dass ich dich wiedergefunden habe",
-      "duration": 0
+      "duration": 3864
     },
     "546": {
       "text": "Ich musste deinetwegen die Herde verlassen und lange suchen.",
-      "duration": 0
+      "duration": 5616
     },
     "547": {
       "text": "Aber die Suche hat sich gelohnt, kleines, junges Lämmchen.",
-      "duration": 0
+      "duration": 5280
     },
     "548": {
       "text": "Nun aber schnell zurück zur Herde!",
-      "duration": 0
+      "duration": 3816
     },
     "549": {
       "text": "Jemand nähert sich.",
-      "duration": 0
+      "duration": 2256
     },
     "550": {
       "text": "Was machen sie heute Nacht im Garten Gethsemane?",
-      "duration": 0
+      "duration": 6096
     },
     "551": {
       "text": "Vater!",
-      "duration": 0
+      "duration": 1176
     },
     "552": {
       "text": "Vater, wenn du willst, so nimm diesen Kelch von mir, Doch nicht mein, sondern dein Wille geschehe!",
-      "duration": 0
+      "duration": 7800
     },
     "553": {
       "text": "Ich bin vom Vater ausgegangen und in die Welt gekommen; wiederum verlasse ich die Welt und gehe zum Vater.",
-      "duration": 0
+      "duration": 9096
     },
     "554": {
       "text": "Mein Vater, wenn dieser Kelch nicht an mir vorübergehen kann, ohne dass ich ihn trinke, so geschehe dein Wille!",
-      "duration": 0
+      "duration": 8183
     },
     "555": {
       "text": "Folge mir nach!",
-      "duration": 0
+      "duration": 1584
     },
     "556": {
       "text": "Was schlafet ihr?",
-      "duration": 0
+      "duration": 2112
     },
     "557": {
       "text": "Stehet auf und betet, dass ihr nicht in Anfechtung fallet!",
-      "duration": 0
+      "duration": 5400
     },
     "558": {
       "text": "Versuchung!",
-      "duration": 0
+      "duration": 1224
     },
     "559": {
       "text": "Judas’ Verrat?",
-      "duration": 0
+      "duration": 1824
     },
     "560": {
       "text": "Petrus’ dreimalige Verleugnung?",
-      "duration": 0
+      "duration": 3216
     },
     "561": {
       "text": "Versuchung: Etwas zu versuchen, was mir bewusst verboten ist.",
-      "duration": 0
+      "duration": 5544
     },
     "562": {
       "text": "Versuchung: Etwas absichtlich zu tun, was nicht erlaubt ist.",
-      "duration": 0
+      "duration": 5208
     },
     "563": {
       "text": "Versuchung: Das Gute queren – dagegen arbeiten.",
-      "duration": 0
+      "duration": 4752
     },
     "564": {
       "text": "Folge mir nach! hat er damals gesagt, weil er wusste, dass ich dort versteckt alles beobachte.",
-      "duration": 0
+      "duration": 7248
     },
     "565": {
       "text": "Und ich bin ihm gefolgt.",
-      "duration": 0
+      "duration": 4296
     },
     "566": {
       "text": "Jesus hat Blut geschwitzt.",
-      "duration": 0
+      "duration": 2880
     },
     "567": {
       "text": "Blutschweiß!",
-      "duration": 0
+      "duration": 1992
     },
     "568": {
       "text": "So eine Angst hatte er vor Folter und brutaler Bestrafung.",
-      "duration": 0
+      "duration": 5040
     },
     "569": {
       "text": "Ihm waren die Folgen bewusst und trotzdem hat er sich freiwillig gefangen nehmen lassen.",
-      "duration": 0
+      "duration": 5448
     },
     "570": {
       "text": "Er kannte das Urteil des darauffolgenden Tages.",
-      "duration": 0
+      "duration": 3696
     },
     "571": {
       "text": "Und was taten die Apostel?",
-      "duration": 0
+      "duration": 2856
     },
     "572": {
       "text": "Sie sind geflohen.",
-      "duration": 0
+      "duration": 1392
     },
     "573": {
       "text": "Dreißig Silberstücke hat er auf den Tisch gelegt.",
-      "duration": 0
+      "duration": 5352
     },
     "574": {
       "text": "Dreißig",
-      "duration": 0
+      "duration": 12360
     },
     "575": {
       "text": "Dreißig",
-      "duration": 0
+      "duration": 1464
     },
     "576": {
       "text": "Dreißig!",
-      "duration": 0
+      "duration": 1440
     },
     "577": {
       "text": "Nicht zehn",
-      "duration": 0
+      "duration": 1584
     },
     "578": {
       "text": "Nicht zwanzig",
-      "duration": 0
+      "duration": 1224
     },
     "579": {
       "text": "Dreißig, für einen Strick.",
-      "duration": 0
+      "duration": 3168
     },
     "580": {
       "text": "Es ist zwar ein starker Strick, aber dreißig",
-      "duration": 0
+      "duration": 4320
     },
     "581": {
       "text": "Was mache ich damit?",
-      "duration": 0
+      "duration": 3216
     },
     "582": {
       "text": "Vielleicht teilen",
-      "duration": 0
+      "duration": 1968
     },
     "583": {
       "text": "Mit, dir, dir, und dir",
-      "duration": 0
+      "duration": 4104
     },
     "584": {
       "text": "Oder verprassen",
-      "duration": 0
+      "duration": 2328
     },
     "585": {
       "text": "Urlaub",
-      "duration": 0
+      "duration": 8183
     },
     "586": {
       "text": "Ein neuer Karren",
-      "duration": 0
+      "duration": 1992
     },
     "587": {
       "text": "Mit Pferd",
-      "duration": 0
+      "duration": 1272
     },
     "588": {
       "text": "Oder sogar zwei, oder vier, oder sechs",
-      "duration": 0
+      "duration": 4320
     },
     "589": {
       "text": "Und ein Dach über den Karren",
-      "duration": 0
+      "duration": 2184
     },
     "590": {
       "text": "Ich bemerke gerade, dass mich diese Menge Geld beunruhigt.",
-      "duration": 0
+      "duration": 3552
     },
     "591": {
       "text": "Aber warum denke ich plötzlich so seltsam?",
-      "duration": 0
+      "duration": 4872
     },
     "592": {
       "text": "Und warum bin ich so zerstreut, als wäre ich abhängig vom Mammon?",
-      "duration": 0
+      "duration": 6408
     },
     "593": {
       "text": "Judas, bist du völlig wahnsinnig?",
-      "duration": 0
+      "duration": 4320
     },
     "594": {
       "text": "Oh, Judas, was hast du nur getan?",
-      "duration": 0
+      "duration": 3864
     },
     "595": {
       "text": "Du hast Jesus verraten.",
-      "duration": 0
+      "duration": 3120
     },
     "596": {
       "text": "Und nun fliehst du vor uns, deinen Freunden.",
-      "duration": 0
+      "duration": 4968
     },
     "597": {
       "text": "Dass das falsch war, weißt du selbst.",
-      "duration": 0
+      "duration": 3864
     },
     "598": {
       "text": "Niemand ist fehlerlos.",
-      "duration": 0
+      "duration": 2856
     },
     "599": {
       "text": "Wir sind doch alle Jesu Freunde.",
-      "duration": 0
+      "duration": 2928
     },
     "600": {
       "text": "Du kannst doch jetzt nicht alles zurücklassen",
-      "duration": 0
+      "duration": 4512
     },
     "601": {
       "text": "Hast du ihm nicht zugehört?",
-      "duration": 0
+      "duration": 2328
     },
     "602": {
       "text": "Für mich sind seine Worte auch nicht immer verständlich.",
-      "duration": 0
+      "duration": 5712
     },
     "603": {
       "text": "Und trotzdem versuchte ich, das Gehörte richtig zu verstehen.",
-      "duration": 0
+      "duration": 5904
     },
     "604": {
       "text": "Aber er wird dir vergeben, oder hat es schon getan.",
-      "duration": 0
+      "duration": 5016
     },
     "605": {
       "text": "Ehrwürdiger Prokurator unseres berühmten Römischen Kaisers!",
-      "duration": 0
+      "duration": 6408
     },
     "606": {
       "text": "Ich bin müde.",
-      "duration": 0
+      "duration": 1248
     },
     "607": {
       "text": "Kann das nicht warten?",
-      "duration": 0
+      "duration": 1776
     },
     "608": {
       "text": "Wenn es sich nicht um so einen schlimmen Verbrecher handeln würde, würden wir Dich nicht so zeitig stören, sondern ihn nach unseren Gesetzen bestrafen.",
-      "duration": 0
+      "duration": 8616
     },
     "609": {
       "text": "Also dann, welcher Verbrechen beschuldigt ihr ihn?",
-      "duration": 0
+      "duration": 5640
     },
     "610": {
       "text": "Er hat sich auf unterschiedliche Arten an unserem Gesetz vergangen.",
-      "duration": 0
+      "duration": 5352
     },
     "611": {
       "text": "Was interessiert mich euer Gesetz?",
-      "duration": 0
+      "duration": 4728
     },
     "612": {
       "text": "So nehmet ihr ihn und richtet ihn nach eurem Gesetz!",
-      "duration": 0
+      "duration": 6504
     },
     "613": {
       "text": "Der Hohe Rat verlangt seinen Tod.",
-      "duration": 0
+      "duration": 2664
     },
     "614": {
       "text": "Seinen Tod?",
-      "duration": 0
+      "duration": 1584
     },
     "615": {
       "text": "Nun sind wir hergekommen, damit Du, der das alleinige Recht dazu hat, ihn verurteilst.",
-      "duration": 0
+      "duration": 6504
     },
     "616": {
       "text": "Was hat er verbrochen?",
-      "duration": 0
+      "duration": 2016
     },
     "617": {
       "text": "Er soll sterben.",
-      "duration": 0
+      "duration": 1536
     },
     "618": {
       "text": "Sterben?",
-      "duration": 0
+      "duration": 1344
     },
     "619": {
       "text": "Welches Gesetz missachtete er?",
-      "duration": 0
+      "duration": 3432
     },
     "620": {
       "text": "Wir haben ein Gesetz und diesem Gesetz nach hat er zu sterben, denn er nennt sich Gottes Sohn.",
-      "duration": 0
+      "duration": 7104
     },
     "621": {
       "text": "Wir haben die Gotteslästerung selbst aus seinem Mund gehört.",
-      "duration": 0
+      "duration": 4512
     },
     "622": {
       "text": "Gotteslästerung!",
-      "duration": 0
+      "duration": 2208
     },
     "623": {
       "text": "Hast du nichts Besseres als Gotteslästerung?",
-      "duration": 0
+      "duration": 4968
     },
     "624": {
       "text": "Ist es nicht Schuld genug, wenn er sich als König Israels ausgibt?",
-      "duration": 0
+      "duration": 5904
     },
     "625": {
       "text": "Er hetzt das Volk auf, sich gegen den Kaiser zu widersetzen!",
-      "duration": 0
+      "duration": 5112
     },
     "626": {
       "text": "Hörst du, was sie dir vorwerfen?",
-      "duration": 0
+      "duration": 3000
     },
     "627": {
       "text": "Was sagst du dazu?",
-      "duration": 0
+      "duration": 2088
     },
     "628": {
       "text": "Er schweigt.",
-      "duration": 0
+      "duration": 1224
     },
     "629": {
       "text": "Er leugnet es nicht.",
-      "duration": 0
+      "duration": 2328
     },
     "630": {
       "text": "Er schweigt und bekennt sich damit zum Verbrechen.",
-      "duration": 0
+      "duration": 5568
     },
     "631": {
       "text": "Verurteile ihn!",
-      "duration": 0
+      "duration": 2064
     },
     "632": {
       "text": "Hörst du ihre Beschwerde?",
-      "duration": 0
+      "duration": 2544
     },
     "633": {
       "text": "Was sagst du dazu?",
-      "duration": 0
+      "duration": 1848
     },
     "634": {
       "text": "Weißt du nicht, dass ich die Macht habe, dich zu kreuzigen oder freizulassen?",
-      "duration": 0
+      "duration": 6288
     },
     "635": {
       "text": "Du hättest keine Macht, wenn dir die Macht nicht von oben gegeben worden wäre.",
-      "duration": 0
+      "duration": 5856
     },
     "636": {
       "text": "Bist du der König der Juden?",
-      "duration": 0
+      "duration": 3312
     },
     "637": {
       "text": "Redest du das von dir selbst oder haben es dir andere von mir gesagt?",
-      "duration": 0
+      "duration": 5904
     },
     "638": {
       "text": "Bin ich denn ein Jude?",
-      "duration": 0
+      "duration": 2112
     },
     "639": {
       "text": "Dein Volk und die Hohepriester haben dich mir überantwortet!",
-      "duration": 0
+      "duration": 4992
     },
     "640": {
       "text": "Sie werfen dir vor, du nennst dich König der Juden.",
-      "duration": 0
+      "duration": 5160
     },
     "641": {
       "text": "Mein Reich ist nicht von dieser Welt.",
-      "duration": 0
+      "duration": 3720
     },
     "642": {
       "text": "Wäre mein Reich von dieser Welt, so hätten meine Diener gekämpft, dass ich den Juden nicht ausgeliefert würde; nun aber ist mein Reich nicht von hier.",
-      "duration": 0
+      "duration": 10968
     },
     "643": {
       "text": "So bist du also ein König?",
-      "duration": 0
+      "duration": 3384
     },
     "644": {
       "text": "Wo ist es, dein Königreich?",
-      "duration": 0
+      "duration": 3456
     },
     "645": {
       "text": "Du sagst es; ich bin ein König.",
-      "duration": 0
+      "duration": 4008
     },
     "646": {
       "text": "Ich bin dazu geboren und dazu in die Welt gekommen, dass ich der Wahrheit Zeugnis gebe.",
-      "duration": 0
+      "duration": 7344
     },
     "647": {
       "text": "Jeder, der aus der Wahrheit ist, hört meine Stimme.",
-      "duration": 0
+      "duration": 4200
     },
     "648": {
       "text": "Was ist Wahrheit?",
-      "duration": 0
+      "duration": 1872
     },
     "649": {
       "text": "Was in Jerusalem Wahrheit ist, bestimme ich!",
-      "duration": 0
+      "duration": 4752
     },
     "650": {
       "text": "Kaiphas, ich lasse ihn auspeitschen.",
-      "duration": 0
+      "duration": 3576
     },
     "651": {
       "text": "Damit schlagen wir ihm diese verrückten Gedanken aus dem Kopf.",
-      "duration": 0
+      "duration": 5352
     },
     "652": {
       "text": "Auspeitschen!",
-      "duration": 0
+      "duration": 1680
     },
     "653": {
       "text": "Mein lieber Mann, warte!",
-      "duration": 0
+      "duration": 2928
     },
     "654": {
       "text": "Was hast du?",
-      "duration": 0
+      "duration": 1488
     },
     "655": {
       "text": "Ich bitte dich!",
-      "duration": 0
+      "duration": 10272
     },
     "656": {
       "text": "Habe du nichts zu schaffen mit diesem Gerechten.",
-      "duration": 0
+      "duration": 3000
     },
     "657": {
       "text": "Denn ich habe heute im Traume seinetwegen viel gelitten!",
-      "duration": 0
+      "duration": 4608
     },
     "658": {
       "text": "Sie verlangen seinen Tod.",
-      "duration": 0
+      "duration": 2856
     },
     "659": {
       "text": "Ich lasse ihn auspeitschen.",
-      "duration": 0
+      "duration": 2568
     },
     "660": {
       "text": "Das ändert ihn, wie alle vor ihm.",
-      "duration": 0
+      "duration": 2904
     },
     "661": {
       "text": "Was hat er Schlimmes verbrochen?",
-      "duration": 0
+      "duration": 2400
     },
     "662": {
       "text": "Wenn ich das wüsste.",
-      "duration": 0
+      "duration": 7992
     },
     "663": {
       "text": "Sie sagen, er hetze gegen Gott.",
-      "duration": 0
+      "duration": 3384
     },
     "664": {
       "text": "Mein lieber Mann, hör auf, ihn auszupeitschen.",
-      "duration": 0
+      "duration": 5544
     },
     "665": {
       "text": "Er ist jemand ganz Besonderes.",
-      "duration": 0
+      "duration": 3864
     },
     "666": {
       "text": "Es reicht!",
-      "duration": 0
+      "duration": 9072
     },
     "667": {
       "text": "Es reicht, habe ich gesagt!",
-      "duration": 0
+      "duration": 2616
     },
     "668": {
       "text": "Bist du wahnsinnig?",
-      "duration": 0
+      "duration": 1848
     },
     "669": {
       "text": "Auspeitschen habe ich gesagt, nicht",
-      "duration": 0
+      "duration": 3624
     },
     "670": {
       "text": "Habe ich es hier nur mit Dummköpfen zu tun?",
-      "duration": 0
+      "duration": 3168
     },
     "671": {
       "text": "Gebt ihm einen Umhang.",
-      "duration": 0
+      "duration": 1752
     },
     "672": {
       "text": "Oh, eine Krone.",
-      "duration": 0
+      "duration": 2616
     },
     "673": {
       "text": "Jetzt bist du König.",
-      "duration": 0
+      "duration": 2712
     },
     "674": {
       "text": "Die Kleidung macht dich zum König.",
-      "duration": 0
+      "duration": 7800
     },
     "675": {
       "text": "Ich gebe euch den Gefangenen zurück.",
-      "duration": 0
+      "duration": 3384
     },
     "676": {
       "text": "Ich verurteile ihn nicht zum Tode.",
-      "duration": 0
+      "duration": 2328
     },
     "677": {
       "text": "Komm, Frau.",
-      "duration": 0
+      "duration": 1728
     },
     "678": {
       "text": "Ist es nicht ein großer Verrat, wenn sich jemand in der Provinz des Kaisers als König betitelt?",
-      "duration": 0
+      "duration": 6888
     },
     "679": {
       "text": "Verdient er dafür nicht den Tod?",
-      "duration": 0
+      "duration": 3336
     },
     "680": {
       "text": "Ja, er soll sterben!",
-      "duration": 0
+      "duration": 2016
     },
     "681": {
       "text": "Ist es nicht genug Schuld, dass er Unruhe ins ganze Land bringt, sogar bis nach Jerusalem?",
-      "duration": 0
+      "duration": 6744
     },
     "682": {
       "text": "Wir fordern seinen Tod.",
-      "duration": 0
+      "duration": 1800
     },
     "683": {
       "text": "Er schmäht Gott bewusst in aller Öffentlichkeit.",
-      "duration": 0
+      "duration": 3864
     },
     "684": {
       "text": "Und das wird mit dem Tode bestraft.",
-      "duration": 0
+      "duration": 3024
     },
     "685": {
       "text": "Kaiphas, warum?",
-      "duration": 0
+      "duration": 2424
     },
     "686": {
       "text": "Seht, Nikodemus und seine Anhängerschaft.",
-      "duration": 0
+      "duration": 4128
     },
     "687": {
       "text": "Wie lächerlich.",
-      "duration": 0
+      "duration": 1248
     },
     "688": {
       "text": "Brüder, hört nicht auf sie!",
-      "duration": 0
+      "duration": 2784
     },
     "689": {
       "text": "Auch andere Propheten haben sie bereits hingerichtet.",
-      "duration": 0
+      "duration": 4008
     },
     "690": {
       "text": "Ihr seid weise und nennt euch gelehrt.",
-      "duration": 0
+      "duration": 5160
     },
     "691": {
       "text": "Aber ihr seid blind vor Hass, Neid und Boshaftigkeit.",
-      "duration": 0
+      "duration": 5808
     },
     "692": {
       "text": "Hört nicht auf ihn!",
-      "duration": 0
+      "duration": 2184
     },
     "693": {
       "text": "Lasst euch nicht verwirren!",
-      "duration": 0
+      "duration": 3144
     },
     "694": {
       "text": "Hört auf den Hohepriester Kaiphas!",
-      "duration": 0
+      "duration": 4296
     },
     "695": {
       "text": "Preiset die Kinder Abrahams.",
-      "duration": 0
+      "duration": 3576
     },
     "696": {
       "text": "Rettet unser Volk vor Unglück und Verderben.",
-      "duration": 0
+      "duration": 4512
     },
     "697": {
       "text": "Ans Kreuz mit ihm!",
-      "duration": 0
+      "duration": 1848
     },
     "698": {
       "text": "Er soll sterben!",
-      "duration": 0
+      "duration": 1632
     },
     "699": {
       "text": "Hörst du, was sie rufen?",
-      "duration": 0
+      "duration": 3480
     },
     "700": {
       "text": "Weißt du, was das heißt?",
-      "duration": 0
+      "duration": 3120
     },
     "701": {
       "text": "Es ist aber Brauch, dass ich zu großen Festen einen aus dem Gefängnis freilasse.",
-      "duration": 0
+      "duration": 7392
     },
     "702": {
       "text": "Wollt ihr also, dass ich diesen König Jesus freilasse?",
-      "duration": 0
+      "duration": 5016
     },
     "703": {
       "text": "Nein, nicht den, nicht den!",
-      "duration": 0
+      "duration": 2376
     },
     "704": {
       "text": "Ja, lass Jesus frei!",
-      "duration": 0
+      "duration": 2232
     },
     "705": {
       "text": "Wen denn sonst?",
-      "duration": 0
+      "duration": 1944
     },
     "706": {
       "text": "Barabbas!",
-      "duration": 0
+      "duration": 1632
     },
     "707": {
       "text": "Barabbas!",
-      "duration": 0
+      "duration": 1632
     },
     "708": {
       "text": "Jesus!",
-      "duration": 0
+      "duration": 1344
     },
     "709": {
       "text": "Jesus!",
-      "duration": 0
+      "duration": 1416
     },
     "710": {
       "text": "Barabbas?",
-      "duration": 0
+      "duration": 1272
     },
     "711": {
       "text": "Dieser Mörder?",
-      "duration": 0
+      "duration": 1728
     },
     "712": {
       "text": "Was hat euch Jesus so Schlimmes getan?",
-      "duration": 0
+      "duration": 4272
     },
     "713": {
       "text": "Was?",
-      "duration": 0
+      "duration": 1488
     },
     "714": {
       "text": "Er, Er ist ein falscher Prophet.",
-      "duration": 0
+      "duration": 3096
     },
     "715": {
       "text": "Er nennt sich Messias.",
-      "duration": 0
+      "duration": 2856
     },
     "716": {
       "text": "Pilatus, gib uns Barabbas!",
-      "duration": 0
+      "duration": 3960
     },
     "717": {
       "text": "Und was ist mit Jesus?",
-      "duration": 0
+      "duration": 3312
     },
     "718": {
       "text": "Ans Kreuz, kreuzige ihn!",
-      "duration": 0
+      "duration": 2688
     },
     "719": {
       "text": "Hörst du, Prokurator, das Volk verlangt den Tod!",
-      "duration": 0
+      "duration": 5256
     },
     "720": {
       "text": "Euren Messias soll ich kreuzigen lassen?",
-      "duration": 0
+      "duration": 3552
     },
     "721": {
       "text": "Sonst bist du kein Freund des Kaisers!",
-      "duration": 0
+      "duration": 4416
     },
     "722": {
       "text": "Ehrwürdiger Prokurator, warum zögerst du so mit dem Urteil?",
-      "duration": 0
+      "duration": 6048
     },
     "723": {
       "text": "Vor kurzem hast du etwa hundert Menschen, die gegen den Kaiser protestiert haben, ohne großes Gerichtsverfahren von Soldaten erschlagen lassen.",
-      "duration": 0
+      "duration": 9096
     },
     "724": {
       "text": "Und nun zögerst du?",
-      "duration": 0
+      "duration": 3024
     },
     "725": {
       "text": "Dann soll es so sein!",
-      "duration": 0
+      "duration": 2280
     },
     "726": {
       "text": "Ich bin unschuldig an dem Blut dieses Gerechten; sehet ihr zu!",
-      "duration": 0
+      "duration": 5304
     },
     "727": {
       "text": "Das ist Eure Verantwortung!",
-      "duration": 0
+      "duration": 3432
     },
     "728": {
       "text": "So kreuzigt ihn!",
-      "duration": 0
+      "duration": 2352
     },
     "729": {
       "text": "Wie grausam kann der Mensch dem anderen gegenüber sein?",
-      "duration": 0
+      "duration": 3888
     },
     "730": {
       "text": "So ein Martyrium hat er für uns erlitten, seinen Leib haben sie zerschlagen, Wunde um Wunde.",
-      "duration": 0
+      "duration": 6744
     },
     "731": {
       "text": "Doch Jesu Willen brachen sie nicht.",
-      "duration": 0
+      "duration": 2640
     },
     "732": {
       "text": "Seine Botschaft bis zum Ende war Liebe.",
-      "duration": 0
+      "duration": 3960
     },
     "733": {
       "text": "Ich wollte ihm helfen, aber wie?",
-      "duration": 0
+      "duration": 2496
     },
     "734": {
       "text": "Seine Augen sagten mir klar und deutlich. Folge mir nach, Pontius Pilatus, mein Ehemann, ein lieber Vater, wollte ihn nicht töten.",
-      "duration": 0
+      "duration": 10032
     },
     "735": {
       "text": "Nein!",
-      "duration": 0
+      "duration": 1032
     },
     "736": {
       "text": "Aber das vermaledeite Volk, das nicht glaubte, dass er der Erlöser ist, hat meinem Mann gedroht.",
-      "duration": 0
+      "duration": 6744
     },
     "737": {
       "text": "Er musste seine Kreuzigung befehlen.",
-      "duration": 0
+      "duration": 2136
     },
     "738": {
       "text": "Er musste!",
-      "duration": 0
+      "duration": 936
     },
     "739": {
       "text": "Er musste!",
-      "duration": 0
+      "duration": 1056
     },
     "740": {
       "text": "Jesus wurde wie ein Lamm zum Schlachter geführt.",
-      "duration": 0
+      "duration": 3480
     },
     "741": {
       "text": "Ich wollte mit dem Seiler mit zur Golgota.",
-      "duration": 0
+      "duration": 4056
     },
     "742": {
       "text": "Doch der Seiler wollte mich nicht mitzunehmen.",
-      "duration": 0
+      "duration": 2928
     },
     "743": {
       "text": "Man hätte mich nicht erkannt. Dieser Schal verhüllte mein Gesicht.",
-      "duration": 0
+      "duration": 5736
     },
     "744": {
       "text": "Noch einmal. Ich darf dich nicht mitnehmen!",
-      "duration": 0
+      "duration": 3096
     },
     "745": {
       "text": "Bitte, nimm mich mit!",
-      "duration": 0
+      "duration": 2352
     },
     "746": {
       "text": "Nein. Ich will nicht.",
-      "duration": 0
+      "duration": 1344
     },
     "747": {
       "text": "Ich habe nicht verstanden, warum er gekreuzigt werden soll.",
-      "duration": 0
+      "duration": 4752
     },
     "748": {
       "text": "Er hat sich nicht gewehrt.",
-      "duration": 0
+      "duration": 2568
     },
     "749": {
       "text": "Sie werfen ihm Gotteslästerung vor.",
-      "duration": 0
+      "duration": 2520
     },
     "750": {
       "text": "Er erklärt und deutet die Schriften und Gesetze eurer Götter.",
-      "duration": 0
+      "duration": 4872
     },
     "751": {
       "text": "Und das werfen sie ihm vor.",
-      "duration": 0
+      "duration": 1752
     },
     "752": {
       "text": "Er macht Bekanntes aus alter Zeit auf eine neue Weise bewusst.",
-      "duration": 0
+      "duration": 4416
     },
     "753": {
       "text": "Er vermischt also Altbekanntes mit Neuem?",
-      "duration": 0
+      "duration": 3840
     },
     "754": {
       "text": "Dann wundert es mich nicht, dass sie ihm so hartnäckig drohen.",
-      "duration": 0
+      "duration": 4800
     },
     "755": {
       "text": "Sie haben Angst und wehren sich.",
-      "duration": 0
+      "duration": 2616
     },
     "756": {
       "text": "Sie wissen genau, wenn sie das Altehrwürdige nicht schützen, dass sich alles Sichere und Beständiges verliert.",
-      "duration": 0
+      "duration": 7008
     },
     "757": {
       "text": "Sie haben Angst vor dem Neuen.",
-      "duration": 0
+      "duration": 2064
     },
     "758": {
       "text": "Ich fahre zu ihm zur Golgota!",
-      "duration": 0
+      "duration": 2496
     },
     "759": {
       "text": "Nimm mich mit!",
-      "duration": 0
+      "duration": 2088
     },
     "760": {
       "text": "Nein!",
-      "duration": 0
+      "duration": 840
     },
     "761": {
       "text": "Das ist verboten.",
-      "duration": 0
+      "duration": 2640
     },
     "762": {
       "text": "Bitte!",
-      "duration": 0
+      "duration": 1416
     },
     "763": {
       "text": "Aber bist du nicht, du bist?",
-      "duration": 0
+      "duration": 3240
     },
     "764": {
       "text": "Du bist die Frau von Pontius Pilatus!",
-      "duration": 0
+      "duration": 4104
     },
     "765": {
       "text": "Ich weiß.",
-      "duration": 0
+      "duration": 1320
     },
     "766": {
       "text": "Bitte!",
-      "duration": 0
+      "duration": 576
     },
     "767": {
       "text": "Ich darf nicht.",
-      "duration": 0
+      "duration": 1560
     },
     "768": {
       "text": "Mach schon, Mach, dass du weiterkommst!",
-      "duration": 0
+      "duration": 3432
     },
     "769": {
       "text": "Oder soll ich dich tragen?",
-      "duration": 0
+      "duration": 2280
     },
     "770": {
       "text": "Ha, ha, ha! Tragen.",
-      "duration": 0
+      "duration": 2184
     },
     "771": {
       "text": "Beeil dich, Weib, und dann weg mit dir!",
-      "duration": 0
+      "duration": 4272
     },
     "772": {
       "text": "Folge mir nach!",
-      "duration": 0
+      "duration": 1224
     },
     "773": {
       "text": "Jetzt aber weiter, verdammt!",
-      "duration": 0
+      "duration": 3168
     },
     "774": {
       "text": "Dummkopf, warum fällst du?",
-      "duration": 0
+      "duration": 1992
     },
     "775": {
       "text": "Steh auf und geh weiter!",
-      "duration": 0
+      "duration": 2880
     },
     "776": {
       "text": "Hej, du Mann!",
-      "duration": 0
+      "duration": 1176
     },
     "777": {
       "text": "Hej, du dort hinten!",
-      "duration": 0
+      "duration": 2088
     },
     "778": {
       "text": "Hilf ihm, das Kreuz zu tragen!",
-      "duration": 0
+      "duration": 2568
     },
     "779": {
       "text": "Ich?",
-      "duration": 0
+      "duration": 768
     },
     "780": {
       "text": "Warum gerade ich?",
-      "duration": 0
+      "duration": 1584
     },
     "781": {
       "text": "Frag nicht!",
-      "duration": 0
+      "duration": 1440
     },
     "782": {
       "text": "Das ist ein Befehl!",
-      "duration": 0
+      "duration": 1824
     },
     "783": {
       "text": "Veronika!",
-      "duration": 0
+      "duration": 1440
     },
     "784": {
       "text": "Veronika!",
-      "duration": 0
+      "duration": 1536
     },
     "785": {
       "text": "Veronika, was ist mit dir?",
-      "duration": 0
+      "duration": 3120
     },
     "786": {
       "text": "So nah war ich ihm noch nie, das Gesicht ist verwundet, aber kein Hass",
-      "duration": 0
+      "duration": 5808
     },
     "787": {
       "text": "Folge mir nach!",
-      "duration": 0
+      "duration": 1416
     },
     "788": {
       "text": "Folge mir nach!",
-      "duration": 0
+      "duration": 1536
     },
     "789": {
       "text": "Wahrhaftig, er ist der Sohn Gottes",
-      "duration": 0
+      "duration": 4656
     },
     "790": {
       "text": "Ja",
-      "duration": 0
+      "duration": 1224
     },
     "791": {
       "text": "Wahrhaftig, er ist der Sohn Gottes!",
-      "duration": 0
+      "duration": 4176
     },
     "792": {
       "text": "Veronika, komm mit!",
-      "duration": 0
+      "duration": 2472
     },
     "793": {
       "text": "Aber warum?",
-      "duration": 0
+      "duration": 1632
     },
     "794": {
       "text": "Veronika, der, der da hilft, das Kreuz zu tragen, ist mein Onkel, Simon von Cyrene!",
-      "duration": 0
+      "duration": 6936
     },
     "795": {
       "text": "Ich habe ihm auch geholfen, aber dann haben mich die Soldaten vertrieben.",
-      "duration": 0
+      "duration": 4512
     },
     "796": {
       "text": "Was geschieht dort?",
-      "duration": 0
+      "duration": 2232
     },
     "797": {
       "text": "Ich sehe nichts!",
-      "duration": 0
+      "duration": 2064
     },
     "798": {
       "text": "Junge, setz dich auf meine Schultern, damit du besser siehst und erzähle, was passiert.",
-      "duration": 0
+      "duration": 6888
     },
     "799": {
       "text": "Das Kreuz liegt auf dem Boden.",
-      "duration": 0
+      "duration": 2376
     },
     "800": {
       "text": "Und jetzt reißen ihm die Soldaten die Kleider vom Leib.",
-      "duration": 0
+      "duration": 3792
     },
     "801": {
       "text": "Sie haben ihn zu Boden geworfen.",
-      "duration": 0
+      "duration": 2400
     },
     "802": {
       "text": "Zwei Soldaten streiten sich um seine Kleidung.",
-      "duration": 0
+      "duration": 2952
     },
     "803": {
       "text": "Seine Kleidung?",
-      "duration": 0
+      "duration": 1152
     },
     "804": {
       "text": "Wie es prophezeit wurde.",
-      "duration": 0
+      "duration": 2208
     },
     "805": {
       "text": "Sie teilen seine Kleider unter sich und werfen das Los um sein Gewand!",
-      "duration": 0
+      "duration": 5544
     },
     "806": {
       "text": "Ein Soldat hat große Nägel in der Hand.",
-      "duration": 0
+      "duration": 2976
     },
     "807": {
       "text": "So große Nägel!",
-      "duration": 0
+      "duration": 1896
     },
     "808": {
       "text": "Und jetzt, oh nein",
-      "duration": 0
+      "duration": 2232
     },
     "809": {
       "text": "Das ist nichts für deine Augen.",
-      "duration": 0
+      "duration": 3192
     },
     "810": {
       "text": "Komm wieder runter.",
-      "duration": 0
+      "duration": 1704
     },
     "811": {
       "text": "Und ganz oben ist ein Täfelchen angebracht.",
-      "duration": 0
+      "duration": 3120
     },
     "812": {
       "text": "Ich weiß aber nicht, was draufsteht.",
-      "duration": 0
+      "duration": 1872
     },
     "813": {
       "text": "Wahrscheinlich sein Name.",
-      "duration": 0
+      "duration": 2328
     },
     "814": {
       "text": "Ruhm und Ehre dir, König der Juden.",
-      "duration": 0
+      "duration": 3624
     },
     "815": {
       "text": "Hör auf, ihn zu verhöhnen.",
-      "duration": 0
+      "duration": 2304
     },
     "816": {
       "text": "Wir sind Mörder und verdienen die Bestrafung.",
-      "duration": 0
+      "duration": 3648
     },
     "817": {
       "text": "Er nicht!",
-      "duration": 0
+      "duration": 1776
     },
     "818": {
       "text": "He, du König!",
-      "duration": 0
+      "duration": 1944
     },
     "819": {
       "text": "Steig vom Kreuz und hilf auch uns!",
-      "duration": 0
+      "duration": 4368
     },
     "820": {
       "text": "Eli, Eli, lama sabachthani!",
-      "duration": 0
+      "duration": 1488
     },
     "821": {
       "text": "Der ruft den Elia!",
-      "duration": 0
+      "duration": 2784
     },
     "822": {
       "text": "Auch Elia wird ihn nicht erlösen.",
-      "duration": 0
+      "duration": 3216
     },
     "823": {
       "text": "Mein Gott, mein Gott, warum hast du mich verlassen?",
-      "duration": 0
+      "duration": 6384
     },
     "824": {
       "text": "Andere hat er gerettet, sich selbst kann er nicht retten.",
-      "duration": 0
+      "duration": 4536
     },
     "825": {
       "text": "Ist er der König Israels.",
-      "duration": 0
+      "duration": 4008
     },
     "826": {
       "text": "So steige er nun vom Kreuz herab, so wollen wir ihm glauben!",
-      "duration": 0
+      "duration": 3936
     },
     "827": {
       "text": "Der du den Tempel zerstörst und in drei Tagen aufbaust, hilf dir selbst!",
-      "duration": 0
+      "duration": 5712
     },
     "828": {
       "text": "Bist du Gottes Sohn, so steig vom Kreuze herab!",
-      "duration": 0
+      "duration": 4416
     },
     "829": {
       "text": "Vater, vergib ihnen",
-      "duration": 0
+      "duration": 2136
     },
     "830": {
       "text": "Bist du wirklich der Sohn des leibhaftigen Gottes",
-      "duration": 0
+      "duration": 5184
     },
     "831": {
       "text": "Herr, gedenke meiner, wenn du zu deiner Königswürde kommst!",
-      "duration": 0
+      "duration": 5568
     },
     "832": {
       "text": "Wahrhaftig, ich sage dir. Heut schon wirst du mit mir im Paradies sein!",
-      "duration": 0
+      "duration": 6960
     },
     "833": {
       "text": "auch deine Mutter!",
-      "duration": 0
+      "duration": 1104
     },
     "834": {
       "text": "Frau, auch dein Sohn!",
-      "duration": 0
+      "duration": 2136
     },
     "835": {
       "text": "Mich dürstet!",
-      "duration": 0
+      "duration": 1776
     },
     "836": {
       "text": "Hier!",
-      "duration": 0
+      "duration": 864
     },
     "837": {
       "text": "Es ist vollbracht!",
-      "duration": 0
+      "duration": 1536
     },
     "838": {
       "text": "Wahrhaftig, dieser war Gottes Sohn!",
-      "duration": 0
+      "duration": 3864
     },
     "839": {
       "text": "Vater, in deine Hände befehle ich meinen Geist!",
-      "duration": 0
+      "duration": 4320
     },
     "840": {
       "text": "Als aber der Hauptmann sah, was geschah, pries er Gott und sprach. Wahrlich, dieser Mensch war gerecht!",
-      "duration": 0
+      "duration": 8712
     },
     "841": {
       "text": "Und die ganze Volksmenge, die herbeigekommen war zu diesem Schauspiel, als sie sah, was geschah, schlug sich an die Brust und kehrte um.",
-      "duration": 0
+      "duration": 8928
     },
     "842": {
       "text": "Es standen aber alle seine Bekannten von ferne und sahen dies.",
-      "duration": 0
+      "duration": 4992
     },
     "843": {
       "text": "Und siehe, ein Mann namens Joseph, der ein Ratsherr war, war ein guter und gerechter Mann, der ihrem Rat und Tun nicht beigestimmt hatte.",
-      "duration": 0
+      "duration": 8880
     },
     "844": {
       "text": "Er kam aus Arimathäa, einer Stadt der Juden.",
-      "duration": 0
+      "duration": 3384
     },
     "845": {
       "text": "Dieser ging zu Pilatus und bat um den Leib Jesu.",
-      "duration": 0
+      "duration": 3576
     },
     "846": {
       "text": "Und dann nahmen sie seinen Leib vom Kreuz und bestatteten ihn.",
-      "duration": 0
+      "duration": 4464
     },
     "847": {
       "text": "Als ich unter dem Kreuz stand, sah ich Maria, seine Mutter",
-      "duration": 0
+      "duration": 4608
     },
     "848": {
       "text": "Sie war die ganze Zeit bei ihm und hat es ertragen. So eine starke, liebevolle, gute Mutter.",
-      "duration": 0
+      "duration": 7896
     },
     "849": {
       "text": "Ihr Mund sagte nichts, doch ihr Herz sprach Bände.",
-      "duration": 0
+      "duration": 4296
     },
     "850": {
       "text": "Siehe, ich bin die Magd des Herrn; mir geschehe nach deinem Wort.",
-      "duration": 0
+      "duration": 5400
     },
     "851": {
       "text": "Ja, das alles hat mein Leben verändert.",
-      "duration": 0
+      "duration": 3768
     },
     "852": {
       "text": "Ich bin glücklich und dankbar, dass Jesus dich geschickt hat, um mich zu finden.",
-      "duration": 0
+      "duration": 6048
     },
     "853": {
       "text": "Meine Herde grast außerhalb der Stadttore.",
-      "duration": 0
+      "duration": 3624
     },
     "854": {
       "text": "Ich will sie keiner Gefahr aussetzen.",
-      "duration": 0
+      "duration": 4272
     },
     "855": {
       "text": "Friede sei mit euch!",
-      "duration": 0
+      "duration": 3096
     },
     "856": {
       "text": "Warte!",
-      "duration": 0
+      "duration": 1416
     },
     "857": {
       "text": "Friede sei mit euch!",
-      "duration": 0
+      "duration": 2136
     },
     "858": {
       "text": "Ich möchte nicht allein durch die Stadt gehen.",
-      "duration": 0
+      "duration": 3864
     },
     "859": {
       "text": "Ich komme mit euch.",
-      "duration": 0
+      "duration": 1344
     },
     "860": {
       "text": "Paulus, ich möchte dir etwas zeigen.",
-      "duration": 0
+      "duration": 4008
     },
     "861": {
       "text": "Frau, du bist so still.",
-      "duration": 0
+      "duration": 2352
     },
     "862": {
       "text": "Hast du Jesus auch gekannt?",
-      "duration": 0
+      "duration": 2064
     },
     "863": {
       "text": "Ja, habe ich. Als er litt, war ich ihm bis zum Tod am Kreuz ganz nahe.",
-      "duration": 0
+      "duration": 6840
     },
     "864": {
       "text": "Obwohl die Soldaten ihn schlugen und verhöhnten, flammte Liebe in seinen Augen.",
-      "duration": 0
+      "duration": 6000
     },
     "865": {
       "text": "Die Kreuzigung war das Schlimmste.",
-      "duration": 0
+      "duration": 2208
     },
     "866": {
       "text": "Warum sprichst du nicht davon?",
-      "duration": 0
+      "duration": 2088
     },
     "867": {
       "text": "Ich war erschrocken, als ich dich sah.",
-      "duration": 0
+      "duration": 2664
     },
     "868": {
       "text": "Weshalb?",
-      "duration": 0
+      "duration": 792
     },
     "869": {
       "text": "Weil ich dich kenne.",
-      "duration": 0
+      "duration": 3096
     },
     "870": {
       "text": "Wir sind uns schon begegnet.",
-      "duration": 0
+      "duration": 2208
     },
     "871": {
       "text": "Als du den jungen Diakon Stephan steinigen ließt.",
-      "duration": 0
+      "duration": 3672
     },
     "872": {
       "text": "Ich hörte den Befehl zur Hinrichtung aus deinem Mund, Saulus!",
-      "duration": 0
+      "duration": 4248
     },
     "873": {
       "text": "Ich bin nicht der Saulus, der ich früher war.",
-      "duration": 0
+      "duration": 2832
     },
     "874": {
       "text": "Jesus hat mich verändert, ich habe mich bekehrt.",
-      "duration": 0
+      "duration": 4032
     },
     "875": {
       "text": "Er hat mir die Augen geöffnet und einen neuen Weg gezeigt, den ich jetzt beschreite.",
-      "duration": 0
+      "duration": 5208
     },
     "876": {
       "text": "Geh und lass dich taufen und verkünde der ganzen Welt die frohe Botschaft.",
-      "duration": 0
+      "duration": 7248
     },
     "877": {
       "text": "Nimm dieses Tuch, dieses Wunder, das Jesus uns hinterließ, er lebt!",
-      "duration": 0
+      "duration": 6024
     },
     "878": {
       "text": "Jesus war als Mensch unter uns und hat sich für uns aufgeopfert.",
-      "duration": 0
+      "duration": 5232
     },
     "879": {
       "text": "Frau, wie heißt du?",
-      "duration": 0
+      "duration": 1896
     },
     "880": {
       "text": "Veronika.",
-      "duration": 0
+      "duration": 1152
     },
     "881": {
       "text": "Paulus, ich vergebe dir aus ganzem Herzen.",
-      "duration": 0
+      "duration": 5112
     },
     "882": {
       "text": "Was vergibst du mir?",
-      "duration": 0
+      "duration": 1656
     },
     "883": {
       "text": "Stephan war mein jüngster Bruder. Friede sei immer mit dir.",
-      "duration": 0
+      "duration": 6120
     },
     "884": {
       "text": "Unmöglich !",
-      "duration": 0
+      "duration": 1536
     },
     "885": {
       "text": "Nein,nein!",
-      "duration": 0
+      "duration": 2064
     },
     "886": {
       "text": "Das glaube ich nicht.",
-      "duration": 0
+      "duration": 2664
     },
     "887": {
       "text": "nein, das kann nicht",
-      "duration": 0
+      "duration": 3864
     },
     "888": {
       "text": "Thomas, was ist los?",
-      "duration": 0
+      "duration": 2664
     },
     "889": {
       "text": "Das, glaube ich nicht!",
-      "duration": 0
+      "duration": 2616
     },
     "890": {
       "text": "Was glaubst du nicht?",
-      "duration": 0
+      "duration": 1320
     },
     "891": {
       "text": "Dass Jesus lebt und das Grab leer ist.",
-      "duration": 0
+      "duration": 4296
     },
     "892": {
       "text": "Wir wollten ihn salben, aber das Grab war leer.",
-      "duration": 0
+      "duration": 4032
     },
     "893": {
       "text": "Das Grab war offen.",
-      "duration": 0
+      "duration": 1776
     },
     "894": {
       "text": "Der große Stein beiseite gerollt!",
-      "duration": 0
+      "duration": 4320
     },
     "895": {
       "text": "Das glaube ich nicht!",
-      "duration": 0
+      "duration": 2616
     },
     "896": {
       "text": "Nur die Tücher, in die er eingewickelt war, lagen da.",
-      "duration": 0
+      "duration": 3816
     },
     "897": {
       "text": "Und ein Engel.",
-      "duration": 0
+      "duration": 1800
     },
     "898": {
       "text": "Ein schneeweißer Engel.",
-      "duration": 0
+      "duration": 2688
     },
     "899": {
       "text": "Das glaube ich nicht!",
-      "duration": 0
+      "duration": 2712
     },
     "900": {
       "text": "Der Engel fragte uns. Was suchet ihr den Lebenden bei den Toten?",
-      "duration": 0
+      "duration": 5976
     },
     "901": {
       "text": "Und er sagte, dass Jesus nicht im Grab, sondern auferstanden sei.",
-      "duration": 0
+      "duration": 5448
     },
     "902": {
       "text": "Wie auferstanden? habe ich mich gefragt.",
-      "duration": 0
+      "duration": 2400
     },
     "903": {
       "text": "Das glaube ich nicht!",
-      "duration": 0
+      "duration": 2880
     },
     "904": {
       "text": "Der Engel sprach. Denket daran, wie er zu euch redete, als er noch in Galiläa war und sagte. Des Menschen Sohn muss in die Hände sündiger Menschen überantwortet.",
-      "duration": 0
+      "duration": 14016
     },
     "905": {
       "text": "Und gekreuzigt werden",
-      "duration": 0
+      "duration": 1992
     },
     "906": {
       "text": "Und am dritten Tage auferstehen.",
-      "duration": 0
+      "duration": 2472
     },
     "907": {
       "text": "Ich glaube nicht, dass Jesus lebt!",
-      "duration": 0
+      "duration": 4728
     },
     "908": {
       "text": "Johannes und ich trafen ihn auch.",
-      "duration": 0
+      "duration": 3360
     },
     "909": {
       "text": "Das glaube ich nicht!",
-      "duration": 0
+      "duration": 2160
     },
     "910": {
       "text": "Auf dem Weg nach Emmaus hat er uns die Schriften erklärt.",
-      "duration": 0
+      "duration": 4728
     },
     "911": {
       "text": "Aber wir erkannten ihn erst, als er das Brot brach.",
-      "duration": 0
+      "duration": 4632
     },
     "912": {
       "text": "Und ihr glaubt, dass Jesus wirklich am Leben ist?",
-      "duration": 0
+      "duration": 4848
     },
     "913": {
       "text": "Wir haben den Herrn gesehen!",
-      "duration": 0
+      "duration": 1392
     },
     "914": {
       "text": "Das glaube ich nicht!",
-      "duration": 0
+      "duration": 1656
     },
     "915": {
       "text": "Wenn ich nicht an seinen Händen das Nägelmal sehe und lege meinen Finger in das Nägelmal und lege meine Hand in seine Seite, so glaube ich es nicht!",
-      "duration": 0
+      "duration": 10464
     },
     "916": {
       "text": "Friede sei mit euch!",
-      "duration": 0
+      "duration": 2424
     },
     "917": {
       "text": "Jesus!",
-      "duration": 0
+      "duration": 816
     },
     "918": {
       "text": "Jesus!",
-      "duration": 0
+      "duration": 1320
     },
     "919": {
       "text": "Friede sei mit euch!",
-      "duration": 0
+      "duration": 1824
     },
     "920": {
       "text": "Reiche deinen Finger her und siehe meine Hände, und reiche deine Hand her und lege sie in meine Seite, und sei nicht ungläubig, sondern gläubig!",
-      "duration": 0
+      "duration": 9480
     },
     "921": {
       "text": "Mein Herr und mein Gott!",
-      "duration": 0
+      "duration": 3456
     },
     "922": {
       "text": "Weil du mich gesehen hast, Thomas, so glaubst du.",
-      "duration": 0
+      "duration": 3696
     },
     "923": {
       "text": "Selig sind, die nicht sehen und doch glauben.",
-      "duration": 0
+      "duration": 4872
     },
     "924": {
       "text": "Jesus, verzeih meine Zweifel!",
-      "duration": 0
+      "duration": 3336
     },
     "925": {
       "text": "Mir ist gegeben alle Gewalt im Himmel und auf Erden.",
-      "duration": 0
+      "duration": 5496
     },
     "926": {
       "text": "Wahrhaftige Liebe ist die Botschaft.",
-      "duration": 0
+      "duration": 2664
     },
     "927": {
       "text": "Er leitet uns, auch wenn wir es nicht merken.",
-      "duration": 0
+      "duration": 4944
     },
     "928": {
       "text": "Halleluja!",
-      "duration": 0
+      "duration": 1536
     },
     "929": {
       "text": "Verzeihen ist eine Gabe.",
-      "duration": 0
+      "duration": 2712
     },
     "930": {
       "text": "Vergeben erfreut und befriedigt den Menschen.",
-      "duration": 0
+      "duration": 4608
     },
     "931": {
       "text": "Halleluja!",
-      "duration": 0
+      "duration": 1536
     },
     "932": {
       "text": "Wer sucht und die Zeichen erkennt, der findet ihn.",
-      "duration": 0
+      "duration": 4680
     },
     "933": {
       "text": "Halleluja!",
-      "duration": 0
+      "duration": 1344
     },
     "934": {
       "text": "Den richtigen Schritt zu gehen, auch wenn man sich nicht sicher ist.",
-      "duration": 0
+      "duration": 4872
     },
     "935": {
       "text": "Halleluja!",
-      "duration": 0
+      "duration": 1776
     },
     "936": {
       "text": "Nicht mit den Augen, nicht mit dem Verstand, sondern mit dem Herzen musst du seine Botschaft befolgen.",
-      "duration": 0
+      "duration": 6984
     },
     "937": {
       "text": "Halleluja!",
-      "duration": 0
+      "duration": 1344
     },
     "938": {
       "text": "Gehet hin und machet zu Jüngern alle Völker, indem ihr sie taufet auf den Namen des himmlischen Vaters und lehret sie alles, was ich euch geboten habe.",
-      "duration": 0
+      "duration": 10512
     },
     "939": {
       "text": "Fürchtet euch nicht, seid tapfer.",
-      "duration": 0
+      "duration": 2928
     },
     "940": {
       "text": "Und siehe, ich bin bei euch alle Tage bis ans Ende der Weltzeit!",
-      "duration": 0
+      "duration": 6288
     },
     "941": {
       "text": "Folgt mir nach!",
-      "duration": 0
+      "duration": 1584
     },
     "942": {
       "text": "Halleluja!",
-      "duration": 0
+      "duration": 1488
     },
     "943": {
       "text": "Lieber Jesus, ist das das Ende?",
-      "duration": 0
+      "duration": 3480
     },
     "944": {
       "text": "Nein, Ramos, das ist der Anfang.",
-      "duration": 0
+      "duration": 3480
     },
     "945": {
       "text": "Halleluja!",
-      "duration": 0
+      "duration": 1680
     }
   },
   "en": {
@@ -11681,7 +11681,7 @@ export const transcripts =
     },
     "80": {
       "text": "Je",
-      "duration": 1032
+      "duration": 456
     },
     "81": {
       "text": "Mais Saul",
@@ -15467,7 +15467,7 @@ export const transcripts =
     },
     "80": {
       "text": "Soy",
-      "duration": 864
+      "duration": 1056
     },
     "81": {
       "text": "Pero Saul",
@@ -19253,7 +19253,7 @@ export const transcripts =
     },
     "80": {
       "text": "Jsem",
-      "duration": 432
+      "duration": 408
     },
     "81": {
       "text": "Ale Saule",
@@ -23039,7 +23039,7 @@ export const transcripts =
     },
     "80": {
       "text": "Jestem",
-      "duration": 936
+      "duration": 864
     },
     "81": {
       "text": "Ale Saul",
@@ -26825,7 +26825,7 @@ export const transcripts =
     },
     "80": {
       "text": "Sono",
-      "duration": 384
+      "duration": 648
     },
     "81": {
       "text": "Ma Saul",
