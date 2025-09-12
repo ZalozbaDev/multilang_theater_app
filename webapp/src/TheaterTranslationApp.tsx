@@ -235,42 +235,38 @@ export default function TheaterTranslationApp() {
           </div>
         </div>
 
-        {/* Audio Toggle - hide it, if language is german
-         */}
-        {selectedLanguage !== 'de' && (
-          <div className='flex justify-center mb-8'>
-            <label
-              className={`flex items-center gap-3 px-6 py-3 rounded-lg cursor-pointer transition-all duration-300 border-2 ${
-                darkMode
-                  ? 'bg-red-800 hover:bg-red-700 border-red-600'
-                  : 'bg-red-600 hover:bg-red-500 border-red-400'
-              }`}
-            >
-              <div className='relative'>
-                <input
-                  type='checkbox'
-                  checked={enableAudio}
-                  onChange={e => setEnableAudio(e.target.checked)}
-                  className='sr-only'
-                />
+        <div className='flex justify-center mb-8'>
+          <label
+            className={`flex items-center gap-3 px-6 py-3 rounded-lg cursor-pointer transition-all duration-300 border-2 ${
+              darkMode
+                ? 'bg-red-800 hover:bg-red-700 border-red-600'
+                : 'bg-red-600 hover:bg-red-500 border-red-400'
+            }`}
+          >
+            <div className='relative'>
+              <input
+                type='checkbox'
+                checked={enableAudio}
+                onChange={e => setEnableAudio(e.target.checked)}
+                className='sr-only'
+              />
+              <div
+                className={`w-12 h-6 rounded-full transition-colors duration-300 ${
+                  enableAudio ? 'bg-white' : 'bg-red-300'
+                }`}
+              >
                 <div
-                  className={`w-12 h-6 rounded-full transition-colors duration-300 ${
-                    enableAudio ? 'bg-white' : 'bg-red-300'
-                  }`}
-                >
-                  <div
-                    className={`w-5 h-5 bg-red-600 rounded-full shadow-md transform transition-transform duration-300 ${
-                      enableAudio ? 'translate-x-6' : 'translate-x-0.5'
-                    } mt-0.5`}
-                  ></div>
-                </div>
+                  className={`w-5 h-5 bg-red-600 rounded-full shadow-md transform transition-transform duration-300 ${
+                    enableAudio ? 'translate-x-6' : 'translate-x-0.5'
+                  } mt-0.5`}
+                ></div>
               </div>
-              <span className='font-bold text-white'>
-                {getTranslations().audio}
-              </span>
-            </label>
-          </div>
-        )}
+            </div>
+            <span className='font-bold text-white'>
+              {getTranslations().audio}
+            </span>
+          </label>
+        </div>
 
         {/* Control Buttons */}
         <div className='flex justify-center gap-4 mb-8'>
