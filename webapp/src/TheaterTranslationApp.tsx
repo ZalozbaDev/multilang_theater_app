@@ -36,7 +36,8 @@ export default function TheaterTranslationApp() {
 
     setIsDownloadingAudio(true)
     setDownloadProgress(0)
-
+    const time = new Date().getTime()
+    console.log('Loading audio for', lang)
     for (let cue = 0; cue < TOTAL_CUES; cue++) {
       const key = `${cue}.${lang}`
       if (!audioCache.current[key]) {
@@ -44,12 +45,11 @@ export default function TheaterTranslationApp() {
         audio.load()
         audioCache.current[key] = audio
       }
-
-      // 👉 künstliche kleine Pause, damit Progress sichtbar wird
-      await new Promise(resolve => setTimeout(resolve, 30))
-
+      console.log(cue)
       setDownloadProgress(Math.round(((cue + 1) / TOTAL_CUES) * 100))
     }
+    const time2 = new Date().getTime() - time
+    console.log(`Loaded audio for ${lang} in ${time2}ms`)
 
     setIsDownloadingAudio(false)
   }
