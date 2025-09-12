@@ -198,7 +198,7 @@ export default function TheaterTranslationApp() {
   return (
     <div
       className={`min-h-screen transition-all duration-500 ${
-        darkMode ? 'bg-red-900' : 'bg-red-800'
+        darkMode ? 'bg-black' : 'bg-red-800'
       }`}
     >
       <div className='container mx-auto px-4 py-8 max-w-6xl'>
@@ -226,7 +226,7 @@ export default function TheaterTranslationApp() {
               onClick={() => setShowMainInterface(false)}
               className={`px-3 py-1 rounded-full text-xs transition-colors border-2 ${
                 darkMode
-                  ? 'bg-red-800 text-red-200 hover:bg-red-700 border-red-600'
+                  ? 'bg-black text-red-200 hover:bg-gray-800 border-red-600'
                   : 'bg-red-700 text-red-100 hover:bg-red-600 border-red-500'
               }`}
             >
@@ -239,7 +239,7 @@ export default function TheaterTranslationApp() {
           <label
             className={`flex items-center gap-3 px-6 py-3 rounded-lg cursor-pointer transition-all duration-300 border-2 ${
               darkMode
-                ? 'bg-red-800 hover:bg-red-700 border-red-600'
+                ? 'bg-black hover:bg-gray-800 border-red-600'
                 : 'bg-red-600 hover:bg-red-500 border-red-400'
             }`}
           >
@@ -274,7 +274,7 @@ export default function TheaterTranslationApp() {
             onClick={toggleDarkMode}
             className={`group flex items-center gap-2 px-4 py-2 rounded-lg transition-all duration-300 border-2 ${
               darkMode
-                ? 'bg-red-700 hover:bg-red-600 text-white border-red-500'
+                ? 'bg-black hover:bg-gray-800 text-white border-red-500'
                 : 'bg-red-600 hover:bg-red-500 text-white border-red-400'
             }`}
           >
@@ -286,7 +286,7 @@ export default function TheaterTranslationApp() {
             onClick={increaseFont}
             className={`group flex items-center gap-2 px-4 py-2 rounded-lg transition-all duration-300 border-2 ${
               darkMode
-                ? 'bg-red-700 hover:bg-red-600 text-white border-red-500'
+                ? 'bg-black hover:bg-gray-800 text-white border-red-500'
                 : 'bg-red-600 hover:bg-red-500 text-white border-red-400'
             }`}
           >
@@ -298,7 +298,7 @@ export default function TheaterTranslationApp() {
             onClick={decreaseFont}
             className={`group flex items-center gap-2 px-4 py-2 rounded-lg transition-all duration-300 border-2 ${
               darkMode
-                ? 'bg-red-700 hover:bg-red-600 text-white border-red-500'
+                ? 'bg-black hover:bg-gray-800 text-white border-red-500'
                 : 'bg-red-600 hover:bg-red-500 text-white border-red-400'
             }`}
           >
@@ -312,7 +312,7 @@ export default function TheaterTranslationApp() {
           <div
             className={`rounded-lg p-6 md:p-8 whitespace-pre-wrap transition-all duration-300 border-2 ${
               darkMode
-                ? 'bg-red-800 border-red-600'
+                ? 'bg-black border-red-600'
                 : 'bg-white border-red-400 shadow-lg'
             }`}
             style={{
